@@ -169,8 +169,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
   margin-right: 8px;
+  width:200px;
 }
 
 .header .logo h1 {
@@ -699,7 +699,7 @@ section,
   text-align: center;
   position: relative;
   min-height: 75vh;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
 .hero h2 {
