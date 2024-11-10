@@ -99,6 +99,21 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.custom-button {
+  background-color: #254f45; /* Background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Spacing inside the button */
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.custom-button:hover {
+  background-color: #1e403a; /* Darker green for hover effect */
+}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -1133,7 +1148,7 @@ section,
   padding: 15px;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 {
+.portfolio .portfolio-item .portfolio-info h4, h5{
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
@@ -1170,6 +1185,18 @@ section,
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
+}
+
+.portfolio-edit {
+  background-color: #060606a9!important;
+  display: flex;
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  height: 100%; /* Ensure the div takes up full height for centering */
+  text-align: center;
+}
+.portfolio-edit h4, h5{
+  color: white!important;
 }
 
 /*--------------------------------------------------------------
