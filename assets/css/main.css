@@ -2796,7 +2796,7 @@ section,
   align-items: center;
   margin: 20px 0; /* Adjust spacing as needed */
   background-color: #2e544f; /* Background color similar to the screenshot */
-  padding: 40px 0; /* Top and bottom padding to give space around the button */
+  padding: 0px 0; /* Top and bottom padding to give space around the button */
 }
 
 /* Style for the "Join Us" button */
@@ -2810,7 +2810,7 @@ section,
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  transition: 0.3s ease; /* Smooth hover effect */
+  transition: 0.1s ease; /* Smooth hover effect */
 }
 
 .join-us-button:hover {
