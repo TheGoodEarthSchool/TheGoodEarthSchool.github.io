@@ -2788,3 +2788,31 @@ section,
   font-weight: 700;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
+
+/* Join us button at Our Story */
+.join-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* Adjust spacing as needed */
+  background-color: #2e544f; /* Background color similar to the screenshot */
+  padding: 40px 0; /* Top and bottom padding to give space around the button */
+}
+
+/* Style for the "Join Us" button */
+.join-us-button {
+  display: inline-block;
+  background-color: #ffffff; /* Button background color */
+  color: #2e544f; /* Text color */
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s ease; /* Smooth hover effect */
+}
+
+.join-us-button:hover {
+  background-color: #d9d9d9; /* Lighter color on hover */
+}
