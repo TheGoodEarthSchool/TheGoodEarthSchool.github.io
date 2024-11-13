@@ -78,6 +78,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.video{
+  background-image: url('./../img/test.gif');  
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -492,11 +499,6 @@ h6 {
 .footer .social-links a:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
   text-decoration: none;
-}
-
-.footer .copyright {
-  padding-top: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .credits {
@@ -1331,6 +1333,29 @@ section,
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 100%;
+  overflow-x: scroll;
+}
+
+/* Customize scrollbar width */
+.contributor-track::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Customize scrollbar thumb (draggable part) */
+.contributor-track::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0); /* Darker thumb */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #ffffff00; /* White border around thumb */
+}
+
+/* Customize scrollbar track (background of scrollbar) */
+.contributor-track::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0); /* Lighter gray track */
+}
+
+/* Hover effect on the scrollbar thumb */
+.contributor-track::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0); /* Darker thumb on hover */
 }
 
 .contributor-item {

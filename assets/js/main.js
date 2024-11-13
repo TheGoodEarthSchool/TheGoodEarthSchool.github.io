@@ -224,3 +224,35 @@
             if (newSlide >= totalSlides) newSlide = 0;
             showSlide(newSlide);
         }
+
+        let isDragging = false;
+        let startX = 0;  // X position where the mouse button was pressed
+        let scrollLeft = 0;  // The initial scroll position of the container
+        
+        // Function to start dragging
+        partnertrack.addEventListener('mousedown', (e) => {
+          isDragging = true;
+          startX = e.clientX;  // Get the initial mouse position (X axis)
+          scrollLeft = partnertrack.scrollLeft;  // Get the initial scroll position (left)
+          partnertrack.style.cursor = 'grabbing';  // Change cursor to grabbing
+        });
+        
+        // Function to handle dragging (mousemove)
+        partnertrack.addEventListener('mousemove', (e) => {
+          if (!isDragging) return;  // Do nothing if not dragging
+          const distance = e.clientX - startX;  // Calculate the distance moved
+          partnertrack.scrollLeft = scrollLeft - distance;  // Adjust the scroll position horizontally
+        });
+        
+        // Stop dragging when mouse is released (mouseup)
+        partnertrack.addEventListener('mouseup', () => {
+          isDragging = false;  // Stop dragging
+          partnertrack.style.cursor = 'grab';  // Reset cursor to grab
+        });
+        
+        // Stop dragging if mouse leaves the container (mouseleave)
+        partnertrack.addEventListener('mouseleave', () => {
+          isDragging = false;  // Stop dragging if mouse leaves the container
+          partnertrack.style.cursor = 'grab';  // Reset cursor to grab
+        });
+        

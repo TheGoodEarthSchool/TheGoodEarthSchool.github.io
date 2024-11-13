@@ -50,8 +50,8 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
-
+<body class="index-page video">
+  <div class="video">
   <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
@@ -94,7 +94,7 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section" style="background-color: #0d3d1418; color: white;">
+    <section id="hero" class="hero section" style="background-color: #0d3d1400; color: white;">
 
       <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel" >
         <!-- Slide 1 -->
@@ -337,17 +337,6 @@
     </section><!-- /Portfolio Section -->
 
 
-
-
-            </div><!-- End Portfolio Container -->
-
-        </div>
-
-    </div>
-
-</section><!-- /Portfolio Section -->
-
-
     <!-- Image Gallery -->
     <section id="imageGallery" class="portfolio section">
       <div style="background-color: #254f45; padding: 50px; justify-content: space-between; width: 100%;">
@@ -430,12 +419,8 @@
           for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none"; // Hide all slides
           }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" image-carousel-active", ""); // Remove active class
-          }
           slides[slideIndex-1].style.display = "block"; // Show current slide
           dots[slideIndex-1].className += " image-carousel-active"; // Add active class to current dot
-          captionText.innerHTML = dots[slideIndex-1].alt; // Update caption text
         }
         </script>
     </section>
@@ -481,9 +466,9 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section">
       <!-- Section Title -->
-       <center>
+      <div style="padding: 50px; justify-content: space-between; width: 100%;">
         <h1 style="color: black"><b>Testimonials</b></h1>
-       </center>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -618,7 +603,9 @@
     </section><!-- /Testimonials Section -->
 
     <sectiion id="Partners" class="partners section">
-      <h1>Our Partners and Community</h1>
+      <div style="padding: 50px; justify-content: space-between; width: 100%;">
+        <h1 style="color: black"><b>Our Partners and Community</b></h1>
+      </div>
         <div class="contributor-container">
         <div class="contributor-track">
             <div class="contributor-item"><img src="./assets/img/Semula.png" alt="Semula"></div>
