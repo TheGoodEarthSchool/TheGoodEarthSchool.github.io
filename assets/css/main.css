@@ -2790,11 +2790,6 @@ section,
 }
 
 /* Join us button at Our Story */
-.green-line {
-  border: 1px solid #254f45; /* This color matches the green background you have */
-  width: 100%;
-  margin: 10px 0;
-}
 .join-us-container {
   display: flex;
   justify-content: center;
