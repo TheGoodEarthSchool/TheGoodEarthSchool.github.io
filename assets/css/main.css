@@ -85,6 +85,55 @@ body {
   background-repeat: no-repeat;
 }
 
+.ourstory{
+  background-image: url('./../img/test.gif');  
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.littlegreengardians{
+  background-image: url('./../img/');  
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.childrenvoice{
+  background-image: url('./../img/test.gif');  
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.greenfuture{
+  background-image: url('./../img/test.gif');  
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.greenwisdom{
+  background-image: url('./../img/test.gif');  
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.sustainableliving{
+  background-image: url('./../img/test.gif');  
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.doinggood{
+  background-image: url('./../img/test.gif');  
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
