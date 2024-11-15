@@ -79,49 +79,49 @@ body {
 }
 
 .video{
-  background-image: url('./../img/test.gif');  
+  background-image: url('./../img/index.gif');  
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
 }
 
 .ourstory{
-  background-image: url('./../img/test.gif');  
+  background-image: url('./../img/ourstory.gif');  
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
 }
 
 .littlegreengardians{
-  background-image: url('./../img/test.gif');  
+  background-image: url('./../img/green.jpg');  
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
 }
 
 .childrenvoice{
-  background-image: url('./../img/test.gif');  
+  background-image: url('./../img/green.jpg');  
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
 }
 
 .greenfuture{
-  background-image: url('./../img/test.gif');  
+  background-image: url('./../img/green.jpg');    
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
 }
 
 .greenwisdom{
-  background-image: url('./../img/test.gif');  
+  background-image: url('./../img/green.jpg');   
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
 }
 
 .sustainableliving{
-  background-image: url('./../img/test.gif');  
+  background-image: url('./../img/susliving.gif');  
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
