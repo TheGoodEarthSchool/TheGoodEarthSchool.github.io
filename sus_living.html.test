@@ -2,44 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Sustainable Living</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-  
-    <!-- Favicons -->
-    <link href="assets/img/tgeslogo.png" rel="icon">
-    <link href="assets/img/tgeslogo.png" rel="apple-touch-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-  
-    <!-- =======================================================
-    * Template Name: Selecao
-    * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
-    * Updated: Aug 07 2024 with Bootstrap v5.3.3
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
-  </head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Children's Voices for Biodiversity, Environment: The Good Earth School- Making nature and animal education accessible to all</title>
+  <meta property="og:image" content="assets/img/logo.png" />
+  <meta name="description" content="Nature and animal care education accessible to all. From nature walks, urban cleanups, plastic recycling, animal care workshops, to sustainable living workshops like soy wax candle making. "/>
+  <meta property="og:title" content="The Good Earth School: Nature and Animal Care Education accessible to all" />
+  <meta property="og:description" content="Nature and animal care education accessible to all. From nature walks, urban cleanups, plastic recycling, animal care workshops, to sustainable living workshops like soy wax candle making." />
+  <meta property="og:image" content="assets/img/edu.png" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="google-site-verification" content="SLOowdwNVGL_ZfBDJ6ufd3YwCEL0C_NyxzTiWFFtkxk" />
+
+   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
 <body class="index-page">
-  <div class="sustainableliving">
+  <div class="littlegreengardians">
     <header id="header" class="header d-flex align-items-center">
       <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
@@ -56,20 +68,18 @@
               <ul>
                 <li class="dropdown"><a href="#"><span>For The Environment</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
-                    <li><a href="preschool_programmes.html">Little Green Guardians</a></li>
-                    <li><a href="primary_programmes.html">Primary Program [TGES]</a></li>
-                    <li><a href="seocndary_programmes.html">Secondary Program [TGES]</a></li>
-                    <li><a href="tertiary_program.html">Tertiary Program [TGES]</a></li>
-                    <li><a href="for_the_adults.html">Adult</a></li>
+                    <li><a href="preschool_programmes.html">Little Green Heros</a></li>
+                    <li><a href="primary_programmes.html">Childen’s Voices for Biodiversity</a></li>
+                    <li><a href="youth_for_a_green_future.html">Youth for a Green Future</a></li>
+                    <li><a href="green_wisdom.html">Green Wisdom</a></li>
+          
                   </ul>
                 </li>
-                <li><a href="animalwelfareacademy.com">For The Animals</a></li>
+                <li><a href="https://www.animalwelfareacademy.com">For The Animals</a></li>
                 <li class="dropdown"><a href="#"><span>For Fellow Humans</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
                     <li><a href="sus_living.html">Sustainable Living</a></li>
-                    <li><a href="mum.html">Power To The Moms</a></li>
-                    <li><a href="youth_prog.html">Youth Programs (TGP)</a></li>
-                    <li><a href="coming_soon.html">Preschool Programs (TGP)</a></li>
+                    <li><a href="thegoodpeople.com">Doing good, Together.</a></li>
                   </ul>
                 </li>
               </ul>
@@ -83,107 +93,91 @@
 
     <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section" style="background-color: #0d3d1418; color: white;">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section" style="background-color: #0d3d1400; color: white;">
 
-      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel" >
-        <!-- Slide 1 -->
-          <div class="carousel-container">
-            <h1 class="animate__animated animate__fadeInDown" style="color: white; font-size: 10vw;"><b>Sustainable Living</b> </h1>
-            <br>
-          </div>
-      </div>
+        <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel" >
+          <!-- Slide 1 -->
+            <div class="carousel-container">
+              <h1 class="animate__animated animate__fadeInDown" style="color: white; font-size: 9vw;">Children's Voices <br>for Biodiversity</h1>
+            </div>
+        </div>
 
-    </section><!-- /Hero Section -->
+      </section><!-- /Hero Section -->
   </div>
-    <section id="portfolio" class="portfolio section">
+      <section id="portfolio" class="portfolio section">
+        <!-- event description -->
+        <div class="container">
+                  <h1>Children's Voices for Biodiversity (Suitable for ages 6-12)</h1>
 
-            <!-- event description -->
-            <div class="container">
-                <h1>Title</h1>
+                  <p>Understanding our environment and what you can do to care for it!</p>
 
-                <p>Fill in the blank</p>
+                  <p>
+                      <b>Workshops in this series</b>
+                  </p>
+                  <ul>
+                      <li>Guided Nature Walks</li>
+                      <li>Beach / Urban Cleanips</li>
+                      <li>Biodiversity Workshops [In-centre or external]</li>
+                      <li>Plastic Recycling Workshop</li>
+                      <li>Urban Tiller Workshop</li>
+                    <li>Paper Recycling Workshop</li>
+                  </ul>
+                  
+                  <div class="container">
+                      <a href="mailto:hello@thegoodearthschool.org" class="custom-button">Find Out More</a><br><br>
+                  </div>
 
-                <p>
-                    <b>Items Include</b>
-                </p>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
+                
+                  <b>Venue: On campus or one of our partner venues! <br> Located near:</b>
+                  <ul>
+                      <li>Tai Seng</li>
+                      <li>Botanic Gardens</li>
+                      <li>Maxwell</li>
+                  </ul>
 
-                <button class="custom-button">Register Now</button><br><br>
+                  <b>Fees:</b>
+                  <ul>
+                      <li>Children's Voices for Biodiversity - S$99/Workshop</li>
+                      <li>Bring a friend! - S$148/Workshop</li>
+                      <li>Day Camp! - S$150 [3 workshops]</li>
+                  </ul>
+        </div>
+        <br><br>
 
-                <b>Venue:</b>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
+              <!--for the list of workshops-->
+                <div class="container">
 
-                <b>Fees:</b>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
-              </div>
-              <br><br>
-
-
-              <div class="container">
-
-                <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-        
-                  <div class="tab-pane fade active show" id="features-tab-1">
-                    <div class="row">
-        
-                      <!-- Image Container -->
-                      <div class="col-lg-6 text-center">
-                        <img src="assets/img/working-1.jpg" alt="" class="img-fluid">
-                      </div>
-        
-                      <!-- Text Content -->
-                      <div class="col-lg-6 mt-3 mt-lg-0">
-                        <h1>About Us</h1><br><br>
-                        <p class="fst-italic">
-                          We’re driven by the belief that small, meaningful actions can have a profound impact on the world. <br><br><br>
-                          As we face urgent environmental challenges, The Good Earth School seeks to empower individuals and communities to reconnect with nature and take positive action.<br><br><br> 
-                          We aim to inspire a sense of responsibility toward the planet, fostering a love for the environment and all living beings. <br><br><br>
-                          Through education, we strive to instill sustainable habits that ripple outward, creating a healthier planet, stronger communities, and a brighter future for generations to come.
-                        </p>
-                        </p>
-                       
-                    
-                      </div>
-        
-                    </div>
-                  </div><!-- End Tab Content Item -->
-        
-                </div>
-                <br><br>
-                <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-        
+                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+          
                     <div class="tab-pane fade active show" id="features-tab-1">
                       <div class="row">
           
                         <!-- Image Container -->
-                        <div class="col-lg-6 text-center">
-                          <img src="assets/img/working-1.jpg" alt="" class="img-fluid">
+                        <div class="col-lg-6 text-center" >
+                        <img src="assets/img/pri_biod.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
                         </div>
           
                         <!-- Text Content -->
                         <div class="col-lg-6 mt-3 mt-lg-0">
-                          <h1>About Us</h1><br><br>
+                          <h4> <strong>Guided Nature Walks</strong></h4>
+                          <p>
+                          <h5 <h5 style="color: #0d3d14!important;">In this workshop, children will learn about:</text></h5> 
+                        
+                          </p>
+                        
                           <p class="fst-italic">
-                            We’re driven by the belief that small, meaningful actions can have a profound impact on the world. <br><br><br>
-                            As we face urgent environmental challenges, The Good Earth School seeks to empower individuals and communities to reconnect with nature and take positive action.<br><br><br> 
-                            We aim to inspire a sense of responsibility toward the planet, fostering a love for the environment and all living beings. <br><br><br>
-                            Through education, we strive to instill sustainable habits that ripple outward, creating a healthier planet, stronger communities, and a brighter future for generations to come.
+                            - Local Biodiversity in Singapore <br>
+                            - Basic plant and animal identification <br>
+                            - The sounds and textures of nature <br>
+                            - How to respect and protect natural spaces <br>
+                          </p>
+                          <p>
+                          <h5 style="color: #0d3d14!important;"> Please note:</h5>
+                          </p class="fst-italic">
+                            While our biodiversity guided walks aim to explore the rich ecosystems and diverse wildlife in natural habitats, sightings of specific animals are not guaranteed. Wildlife visibility depends on various factors, including weather, time of day, and animal behavior. Our focus is to provide an immersive and educational experience, highlighting the importance of conserving natural habitats and understanding biodiversity as a whole. We appreciate your understanding that the unpredictability of nature is part of its beauty, and we look forward to sharing valuable insights into these ecosystems with you.
                           </p>
                           </p>
-                         
                       
                         </div>
           
@@ -191,112 +185,324 @@
                     </div><!-- End Tab Content Item -->
           
                   </div>
-              </div>
-              <br><br>
+                  <br><br>
 
-              <div class="container">
-                <!-- Input your url -->
-                <span>Follow us on <a style="text-decoration: underline;" href="">Facebook</a> or <a style="text-decoration: underline;" href="">instagram</a> for upcoming events</span> <br><br>
-                <span>Fill in the blank </span>
-              </div>
-              <br><br>
-
-            <!-- photo gallery -->
-            <div class="container">
-      
-              <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                
-                <div style="padding: 0px; justify-content: space-between; width: 100%;">
-                  <!-- Left Section: Patreon Text -->
-                    <h1 style="color: black;"><b>Gallery</b></h1>
-                    <HR>
                 </div>
-              
-                <div class="container" style="width:100%; max-width: 100%;">
 
-                    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                <div class="container">
+
+                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+          
+                    <div class="tab-pane fade active show" id="features-tab-1">
+                      <div class="row">
+          
+                        <!-- Image Container -->
+                        <div class="col-lg-6 text-center" >
+                          <img src="assets/img/priurbancleanup.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                        </div>
+          
+                        <!-- Text Content -->
+                        <div class="col-lg-6 mt-3 mt-lg-0">
+                          <h4> <strong>Beach / Urban Cleanups</strong></h4>
+                          <h5 style="color: #0d3d14!important;">In this workshop, children will learn about:</h5><br>
+                            <p class="fst-italic">
+                              - The interconnectedness of ecosystems and the ripple effects of litter on marine and urban biodiversity <br>
+                              - How waste management impacts both local wildlife and human health <br>
+                              - The concept of sustainability and how their choices can shape the future environment <br>
+                            </p>
+
+                      
+                          <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
+                          <p class="fst-italic">
+                               - Hands-on cleanup of a beach or urban area <br>
+                            - Sorting collected litter for recycling vs. waste <br>
+                            - Fun team-based activities to build a sense of community and responsibility <br>
+                          </p>
+                          </p>
+                      
+                        </div>
+          
+                      </div>
+                    </div><!-- End Tab Content Item -->
+          
+                  </div>
+                  <br><br>
+
+                </div>
+
+          
+                  </div>
+                </div>
+
+
+                <div class="container">
+                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+          
+                    <div class="tab-pane fade active show" id="features-tab-1">
+                      <div class="row">
+          
+                        <!-- Image Container -->
+                        <div class="col-lg-6 text-center" >
+                          <img src="assets/img/primaryplastic_recycling (1).jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                        </div>
+          
+                        <!-- Text Content -->
+                        <div class="col-lg-6 mt-3 mt-lg-0">
+                          <h4> <strong>Plastic Recycling Workshop</strong></h4>
+                          <p>
+                          <h5 style="color: #0d3d14!important;">In this workshop, children will learn about:</h5> 
+                           
+                          </p>
+                        
+                          <p class="fst-italic">
+                                   <p class="fst-italic">
+                            - The science of plastics: understanding types, properties, and recyclability <br>
+                            - How microplastics enter food chains and their impact on ecosystems and health <br>
+                            - Ways to implement the "3Rs" (Reduce, Reuse, Recycle) effectively at school and home <br>
+                          </p>
+                          </p>
+                          <p>
+                          <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
+                          </p class="fst-italic">
+                            - Hands-on activities with recyclable materials, allowing children to safely explore the recycling process <br>
+                            - Creative repurposing projects where children can transform plastic items into useful or decorative objects <br>
+                            - Interactive discussions about the environmental impact of plastic and the importance of mindful recycling practices <br>
+                          </p>
+                          </p>
+                      
+                        </div>
+          
+                      </div>
+                    </div><!-- End Tab Content Item -->
+          
+                  </div>
+                  <br><br>
+                </div>
             
-                      <div class="row gy-4 isotope-container" >
+                             <div class="container">
+
+                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+          
+                    <div class="tab-pane fade active show" id="features-tab-1">
+                      <div class="row">
+          
+                        <!-- Image Container -->
+                        <div class="col-lg-6 text-center" >
+                          <img src="assets/img/paper.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                        </div>
+          
+                        <!-- Text Content -->
+                        <div class="col-lg-6 mt-3 mt-lg-0">
+                          <h4> <strong>Paper Recycling</strong></h4>
+                          <p>
+                          <h5 <h5 style="color: #0d3d14!important;">In this workshop, children will learn about:</text></h5> 
+                        
+                          </p>
+                        
+                                 <p class="fst-italic">
+                            - How paper production affects forests and biodiversity <br>
+                            - The science of recycling: turning waste paper into reusable materials <br>
+                            - The role of community initiatives in promoting large-scale recycling efforts <br>
+                          </p>
+
+                          <p>
+                          <h5 style="color: #0d3d14!important;"> Activity Highlights include:</h5><br>
+                          </p class="fst-italic">
+  - Creating recycled paper sheets with embedded seeds for eco-friendly planting <br>
+  - Designing and presenting eco-themed greeting cards using recycled paper <br>
+  - Learning advanced sorting techniques for identifying recyclable materials <br>
+  - An engaging sorting activity to identify recyclable and non-recyclable paper types <br>
+  - A fun recycling relay race to reinforce proper paper disposal practices <br>
+  - Interactive discussions and games to inspire eco-friendly habits and creativity <br>
+                          </p>
+                          </p>
+                      
+                        </div>
+          
+                      </div>
+                    </div><!-- End Tab Content Item -->
+           
+                  </div>
+                  <br><br>
+                </div>         
+                    
+                    <div class="container">
+
+                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+          
+                    <div class="tab-pane fade active show" id="features-tab-1">
+                      <div class="row">
+          
+                        <!-- Image Container -->
+                        <div class="col-lg-6 text-center" >
+                          <img src="assets/img/preschool_planting.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                        </div>
+          
+                        <!-- Text Content -->
+                        <div class="col-lg-6 mt-3 mt-lg-0">
+                          <h4> <strong>Urban Tiller</strong></h4>
+                           <h5 style="color: #0d3d14!important;">In this workshop, children will learn about:</h5><br>
+                                               <p class="fst-italic">
+                          - The role of urban gardens in combating climate change and reducing the urban heat island effect <br>
+                          - How to create a thriving micro-ecosystem that attracts pollinators and supports biodiversity <br>
+                          - Advanced plant care techniques, including composting and organic fertilizers <br>
+                        </p>
+
+                          </p>
+                      
+                          <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
+<p class="fst-italic">
+  - [tbc] Designing and planting a small urban garden plan based on space and biodiversity goals <br>
+  - Hands-on contact with compost and others! <br>
+  - Composting demonstrations with common household waste <br>
+  - Creative games that simulate farming challenges, encouraging teamwork and critical thinking <br>
+</p>
+                          </p>
+                      
+                        </div>
+          
+                      </div>
+                    </div><!-- End Tab Content Item -->
+          
+                  </div>
+                  <br><br>
+
+                </div>
+          
+                <div class="container">
+                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+          
+                    <div class="tab-pane fade active show" id="features-tab-1">
+                      <div class="row">
+                        <!-- Image Container -->
+                        <div class="col-lg-6 text-center" >
+                          <img src="assets/img/primary_biod.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                        </div>
             
-                        <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-app">
-                          <img src="assets/img/darkTree.jpg" class="img-fluid" alt="">
-                          <div class="portfolio-info">
-                            <h4>Product 1</h4>
-                            <a href="assets/img/darkTree.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                          <!-- Text Content -->
+                          <div class="col-lg-6 mt-3 mt-lg-0">
+                            <h4> <strong>Biodiversity Workshops</strong></h4>
+                            <h5 style="color: #0d3d14!important;">In this workshop, children will learn about:</h5><br>
+         <p class="fst-italic">
+  - Advanced concepts of food webs, keystone species, and their role in ecosystems <br>
+  - How human activities influence habitats and species distribution <br>
+  - Practical actions to restore and conserve biodiversity in their community <br>
+</p>
+
+                            </p>
+                             <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
+                              <p class="fst-italic">
+                                - Building a mini ecosystem model to understand interdependencies in nature <br>
+                                - Identifying local species through guided nature observation and cataloging <br>
+                                - Role-playing as conservationists to solve real-world biodiversity challenges <br>
+                              </p>
+                            </p>
+                        
                           </div>
-                        </div><!-- End Portfolio Item -->
             
-                        <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-product">
-                          <img src="assets/img/darkTree.jpg" class="img-fluid" alt="">
-                          <div class="portfolio-info">
-                            <h4>Product 1</h4>
-                            <a href="assets/img/darkTree.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                          </div>
-                        </div><!-- End Portfolio Item -->
-            
-                        <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-branding">
-                          <img src="assets/img/darkTree.jpg" class="img-fluid" alt="">
-                          <div class="portfolio-info">
-                            <h4>Branding 1</h4>
-                            <a href="assets/img/darkTree.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                          </div>
-                        </div><!-- End Portfolio Item -->
-            
-                        <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-app">
-                          <img src="assets/img/darkTree.jpg" class="img-fluid" alt="">
-                          <div class="portfolio-info">
-                            <h4>App 2</h4>
-                            <a href="assets/img/darkTree.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                          </div>
-                        </div><!-- End Portfolio Item -->
-            
-                        <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-product">
-                          <img src="assets/img/darkTree.jpg" class="img-fluid" alt="">
-                          <div class="portfolio-info">
-                            <h4>Product 2</h4>
-                            <a href="assets/img/darkTree.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                          </div>
-                        </div><!-- End Portfolio Item -->
-            
-                        <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-branding">
-                          <img src="assets/img/darkTree.jpg" class="img-fluid" alt="">
-                          <div class="portfolio-info">
-                            <h4>Branding 2</h4>
-                            <a href="assets/img/darkTree.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                          </div>
-                        </div><!-- End Portfolio Item -->
-            
-                        <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-app">
-                          <img src="assets/img/darkTree.jpg" class="img-fluid" alt="">
-                          <div class="portfolio-info">
-                            <h4>App 3</h4>
-                            <a href="assets/img/darkTree.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                          </div>
-                        </div><!-- End Portfolio Item -->
-            
-                        <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-product">
-                          <img src="assets/img/darkTree.jpg" class="img-fluid" alt="">
-                          <div class="portfolio-info">
-                            <h4>Product 3</h4>
-                            <a href="assets/img/darkTree.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                          </div>
-                        </div><!-- End Portfolio Item -->
-            
-                      </div><!-- End Portfolio Container -->
+                        </div>
+                      </div><!-- End Tab Content Item -->
             
                     </div>
-            
+                    
+                  <br><br>
+                </div>
+
+                <div class="container">
+                  <!-- Input your url -->
+                  <span>Chat with us on <a style="text-decoration: underline;" href="https://wa.me/+6587725464">WhatsApp</a> or follow us on <a style="text-decoration: underline;" href="https://www.instagram.com/thegoodearthschoolsg">Instagram</a> for upcoming events</span> <br><br>
+                
+              
+                </div>
+                <br><br>
+
+              <!-- photo gallery -->
+              <div class="container">
+        
+                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                  
+                  <div style="padding: 0px; justify-content: space-between; width: 100%;">
+                    <!-- Left Section: Patreon Text -->
+                      <h1 style="color: black;"><b>Gallery</b></h1>
+                      <HR>
                   </div>
-      
+                
+                  <div class="container" style="width:100%; max-width: 100%;">
+
+                      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+              
+                        <div class="row gy-4 isotope-container" >
+              
+                          <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-app">
+                            <img src="assets/img/pri_recycling.jpg" style="width: 200px; height: 200px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                              <h4>Recycling Workshop</h4>
+                            </div>
+                          </div><!-- End Portfolio Item -->
+              
+                          <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-product">
+                            <img src="assets/img/primarycleanup.jpg" style="width: 200px; height: 200px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                              <h4>Urban Cleanup</h4>
+                            </div>
+                          </div><!-- End Portfolio Item -->
+              
+                          <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-branding">
+                            <img src="assets/img/sandpit.jpg" style="width: 200px; height: 200px; alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                              <h4>Sand Pit during Biod Workshop</h4>
+                            </div>
+                          </div><!-- End Portfolio Item -->
+              
+                          <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-app">
+                            <img src="assets/img/primaryplastic_recycling.jpg" style="width: 200px; height: 200px; alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                              <h4>Plastic Recycling</h4>
+                            </div>
+                          </div><!-- End Portfolio Item -->
+              
+                          <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-product">
+                            <img src="assets/img/pri_plastic.jpg" style="width: 200px; height: 200px; alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                              <h4>Plastic Recycling Workshop</h4>
+                            </div>
+                          </div><!-- End Portfolio Item -->
+              
+                          <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-branding">
+                            <img src="assets/img/plasticprimary.jpg" style="width: 200px; height: 200px; alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                              <h4>Plastic Recycling</h4>
+                            </div>
+                          </div><!-- End Portfolio Item -->
+              
+                          <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-app">
+                            <img src="assets/img/pri_plastic_grinding.jpg" style="width: 200px; height: 200px; alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                              <h4>Plastic Recycling</h4>
+                            </div>
+                          </div><!-- End Portfolio Item -->
+              
+                          <div class="col-lg-3 col-md-6 portfolio-item  isotope-item filter-product">
+                            <img src="assets/img/primary_plastic_recycling.jpg" style="width: 200px; height: 200px; alt="" class="img-fluid">
+                            <div class="portfolio-info">
+                              <h4>Plastic Recycling Workshop</h4>
+                            </div>
+                          </div><!-- End Portfolio Item -->
+              
+                        </div><!-- End Portfolio Container -->
+              
+                      </div>
+              
+                    </div>
+        
+                </div>
+        
               </div>
-      
-            </div>
-      
-    </section><!-- /Portfolio Section -->
+        
+      </section><!-- /Portfolio Section -->
 
-  </div>
 
-  </main>
+    </main>
 
   <footer id="footer" class="footer footer-background">
     <div class="container">      
@@ -308,9 +514,9 @@
       <div style="padding: 20px;" class="social-links d-flex justify-content-center">
        
         
-        <a href="instagram.com/thegoodearthschoolsg"><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="fa-regular fa-envelope"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/thegoodearthschoolsg"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:hello@thegoodearthschool.org" title="Email Us"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.linkedin.com/company/-tges/"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
@@ -344,6 +550,10 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script>
+    new PureCounter();
+  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
