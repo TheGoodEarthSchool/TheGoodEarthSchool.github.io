@@ -79,7 +79,7 @@ body {
 }
 
 .video{
-  background-image: url('./../img/index.gif');  
+  background-image: url('./../img/dark.gif');  
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
