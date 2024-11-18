@@ -1173,11 +1173,18 @@ section,
 .portfolio .portfolio-item {
   position: relative;
   overflow: hidden;
+  padding:0px;
+  margin: 0px;
 }
 
 .port-gaps{
   padding:0px;
   margin: 0px;
+}
+
+.portfolio-item img {
+  width: 350px!important;
+  height: 350px!important;
 }
 
 .portfolio .portfolio-item .portfolio-info {
