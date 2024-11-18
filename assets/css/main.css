@@ -1195,7 +1195,6 @@ section,
 .portfolio .portfolio-item .portfolio-info h4, h5{
   font-size: 18px;
   font-weight: 600;
-  padding-right: 50px;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
@@ -2837,8 +2836,7 @@ section,
   justify-content: center;
   align-items: center;
   margin: 20px 0; /* Adjust spacing as needed */
-  background-color: #2e544f; /* Background color similar to the screenshot */
-  padding: 0px 0; /* Top and bottom padding to give space around the button */
+  padding-top: 60px; /* Top and bottom padding to give space around the button */
 }
 
 /* Style for the "Join Us" button */
