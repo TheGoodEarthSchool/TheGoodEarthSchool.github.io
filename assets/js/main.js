@@ -255,4 +255,3 @@
           isDragging = false;  // Stop dragging if mouse leaves the container
           partnertrack.style.cursor = 'grab';  // Reset cursor to grab
         });
-        
