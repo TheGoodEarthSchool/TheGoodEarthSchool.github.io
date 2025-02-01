@@ -1,0 +1,686 @@
+backup in case i need to use for the gallery portion
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>The Good Earth School: Making nature and animal education accessible to all</title>
+  <meta property="og:image" content="assets/img/logo.png" />
+  <meta name="description" content="Nature and animal care education accessible to all. From nature walks, urban cleanups, plastic recycling, animal care workshops, to sustainable living workshops like soy wax candle making. "/>
+  <meta property="og:title" content="The Good Earth School: Nature and Animal Care Education accessible to all" />
+  <meta property="og:description" content="Nature and animal care education accessible to all. From nature walks, urban cleanups, plastic recycling, animal care workshops, to sustainable living workshops like soy wax candle making." />
+  <meta property="og:image" content="assets/img/edu.png" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="google-site-verification" content="SLOowdwNVGL_ZfBDJ6ufd3YwCEL0C_NyxzTiWFFtkxk" />
+
+   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+  <div class="video">
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+      
+        <img src="assets/img/tgeslogo.png"> 
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="ourstory.html">Our Story</a></li>
+         <li><a href="thegoodconversations.html">The Good Conversations</a></li>
+          <li class="dropdown"><a href="#"><span>What We Do</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="https://thegoodearthschool.org/environment.html"><span>For The Environment</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="preschool_programmes.html">Little Green Heros</a></li>
+                  <li><a href="primary_programmes.html">Children’s Voices for Biodiversity</a></li>
+                  <li><a href="youth_for_a_green_future.html">Youth for a Green Future</a></li>
+                  <li><a href="green_wisdom.html">Green Wisdom</a></li>
+        
+                </ul>
+              </li>
+              <li><a href="animalallies.html" target="_blank">For The Animals</a></li>
+              <li class="dropdown"><a href="#"><span>For Fellow Humans</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="sus_living.html">Sustainable Living</a></li>
+                  <li><a href="https://thegoodpeople.sg/" target="_blank">Doing good, Together.</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section" style="background-color: #0d3d1400; color: white;">
+
+      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel" >
+        <!-- Slide 1 -->
+          <div class="carousel-container">
+            <h1 class="animate__animated animate__fadeInDown" style="color: white; font-size: 9vw;">The Good Earth School </h1>
+            <p class="animate__animated animate__fadeInUp">"An understanding of the natural world is a source of not only great curiosity, but great fulfilment."</p>
+          </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+  </div>
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+      <div class="container">
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+
+              <!-- Image Container -->
+              <div class="col-lg-6 text-center">
+                <img src="assets/img/working-1.jpg" alt="" class="img-fluid">
+              </div>
+
+              <!-- Text Content -->
+              <div class="col-lg-6 mt-3 mt-lg-0">
+                <h3>Why We Do What We Do</h3><br><br>
+                <p class="fst-italic">
+                    At The Good Earth School, we believe that education is a powerful tool for shaping a more compassionate and sustainable world. <br><br><br>
+                    Our mission is to connect people with the environment, animals, and each other through  hands-on learning experiences. <br><br><br>
+                    We offer a range of programs designed for all age groups, from children to adults, that promote environmental awareness, sustainable living, and kindness to animals. <br><br><br>
+                    By integrating nature, community, and education, we inspire individuals to become mindful stewards of the Earth and active participants in creating a better future for all.
+                </p>
+                </p>
+               
+            
+              </div>
+
+            </div>
+          </div><!-- End Tab Content Item -->
+
+        </div>
+      </div>
+    </section><!-- /Features Section -->
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div style="display: flex; justify-content: center; text-align: center; align-items: center; margin: 0 auto; padding: 50px;">
+
+          <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 position-relative" style="height: 350px; width: 350px; background-image: url(assets/img/environment1.jpg); background-size: cover; background-position: center; border: 2px solid #ddd; border-radius: 5px;">
+            <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></div>
+            <div class="content position-absolute text-center" style="top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+              <!-- <img src="./assets/img/owl-icon.png" alt="Owl Icon" style="width: 50px; height: auto; margin-bottom: 15px;"> -->
+              <h3 style="color: white;">For The Environment</h3>
+              <a href="environment.html" class="btn btn-primary" style="background-color: #2c5a44; border: none;">Learn More</a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 position-relative" style="height: 350px; width: 350px; background-image: url(assets/img/animal1.jpg); background-size: cover; background-position: center; border: 2px solid #ddd; border-radius: 5px;">
+            <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></div>
+            <div class="content position-absolute text-center" style="top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+              <!-- <img src="./assets/img/owl-icon.png" alt="Owl Icon" style="width: 50px; height: auto; margin-bottom: 15px;"> -->
+              <h3 style="color: white;">For The Animals</h3>
+              <a href="animalallies.html" target="_blank" class="btn btn-primary" style="background-color: #2c5a44; border: none;">Learn More</a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 position-relative" style="height: 350px; width: 350px; background-image: url(assets/img/susliving1.png); background-size: cover; background-position: center; border: 2px solid #ddd; border-radius: 5px;">
+            <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></div>
+            <div class="content position-absolute text-center" style="top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+              <!-- <img src="./assets/img/owl-icon.png" alt="Owl Icon" style="width: 50px; height: auto; margin-bottom: 15px;"> -->
+              <h3 style="color: white;">For Fellow Humans</h3>
+              <a href="sus_living.html" class="btn btn-primary" style="background-color: #2c5a44; border: none;">Learn More</a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container" style="padding: 50px; width: 100%;">
+        <div style="display: flex; justify-content: space-between; width: 100%;">
+            <!-- Left Section: Patreon Text -->
+            <h1 style="color: black"><b>Our Gallery</b></h1>
+          </div>
+          <br><br>
+
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row gy-4 isotope-container" >
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/plasticr-1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Roadshow engaging families</h4>
+                <a href="assets/img/plasticr-1.png"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Biodiversity Workshop</h4>
+                <a href="assets/img/photo-2.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Plastic Recycling Workshop</h4>
+                <a href="assets/img/photo-3.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Wildlife Coexistence Workshop</h4>
+                <a href="assets/img/photo-4.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/skm2024.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Supporting SRC with Sustainability Workshops</h4>
+                <a href="assets/img/photo-5.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Recycled Paper x Biod Workshop</h4>
+                <a href="assets/img/photo-6.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/event1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Community Engagement Booths</h4>
+                <a href="assets/img/event1.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-8.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Urban Cleanup</h4>
+                <a href="assets/img/photo-8.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-9.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Animal Care Workshop</h4>
+                <a href="assets/img/photo-9.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-10.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Insight to a Vet's Life Workshop</h4>
+                <a href="assets/img/photo-10.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-11.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Plastic x Biod Booth</h4>
+                <a href="assets/img/photo-11.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-12.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Hamster care workshop</h4>
+                <a href="assets/img/photo-12.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-13.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Assembly Talk</h4>
+                <a href="assets/img/photo-13.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-14.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Inquiry-Based Learning about Animals</h4>
+                <a href="assets/img/photo-14.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-15.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Plastic Recycling</h4>
+                <a href="assets/img/photo-15.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-3 col-md-6 portfolio-item port-gaps isotope-item filter-app">
+              <img src="assets/img/photo-16.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Plastic Recycling</h4>
+                <a href="assets/img/photo-16.jpg"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+    <!-- Image Gallery -->
+    <section id="imageGallery" class="portfolio section">
+      <div style="background-color: #254f45; padding: 50px; justify-content: space-between; width: 100%;">
+        <div class="container">
+          <h1 style="color: white;"><b>As Seen on the Media</b></h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image-carousel-container">
+          <div class="image-carousel-slide">
+            <div class="image-carousel-numbertext">1 / 6</div>
+            <img src="./assets/img/media1.jpg" style="width:100%">
+          </div>
+        
+          <div class="image-carousel-slide">
+            <div class="image-carousel-numbertext">2 / 6</div>
+            <img src="./assets/img/media2.png" style="width:100%">
+          </div>
+        
+          <div class="image-carousel-slide">
+            <div class="image-carousel-numbertext">3 / 6</div>
+            <img src="./assets/img/media3.jpg" style="width:100%">
+          </div>
+            
+          <div class="image-carousel-slide">
+            <div class="image-carousel-numbertext">4 / 6</div>
+            <img src="./assets/img/media4.png" style="width:100%">
+          </div>
+        
+          <div class="image-carousel-slide">
+            <div class="image-carousel-numbertext">5 / 6</div>
+            <img src="./assets/img/media5.png" style="width:100%">
+          </div>
+            
+          <div class="image-carousel-slide">
+            <div class="image-carousel-numbertext">6 / 6</div>
+            <img src="./assets/img/media6.jpg" style="width:100%">
+          </div>
+            
+          <a class="image-carousel-prev" onclick="plusSlides(-1)">❮</a>
+          <a class="image-carousel-next" onclick="plusSlides(1)">❯</a>
+        
+          <div class="image-carousel-row">
+            <div class="image-carousel-column">
+              <img class="image-carousel-demo image-carousel-cursor" src="./assets/img/media1.jpg" style="width:100%" onclick="currentSlide(1)" alt="st">
+            </div>
+            <div class="image-carousel-column">
+              <img class="image-carousel-demo image-carousel-cursor" src="./assets/img/media2.png" style="width:100%" onclick="currentSlide(2)" alt="st2">
+            </div>
+            <div class="image-carousel-column">
+              <img class="image-carousel-demo image-carousel-cursor" src="./assets/img/media3.jpg" style="width:100%" onclick="currentSlide(3)" alt="cna">
+            </div>
+            <div class="image-carousel-column">
+              <img class="image-carousel-demo image-carousel-cursor" src="./assets/img/media4.png" style="width:100%" onclick="currentSlide(4)" alt="mothership">
+            </div>
+            <div class="image-carousel-column">
+              <img class="image-carousel-demo image-carousel-cursor" src="./assets/img/media5.png" style="width:100%" onclick="currentSlide(5)" alt="brightminds">
+            </div>    
+            <div class="image-carousel-column">
+              <img class="image-carousel-demo image-carousel-cursor" src="./assets/img/media6.jpg" style="width:100%" onclick="currentSlide(6)" alt="news_screenshot">
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("image-carousel-slide");
+          let dots = document.getElementsByClassName("image-carousel-demo");
+          let captionText = document.getElementById("image-carousel-caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; // Hide all slides
+          }
+          slides[slideIndex-1].style.display = "block"; // Show current slide
+          dots[slideIndex-1].className += " image-carousel-active"; // Add active class to current dot
+        }
+      </script>
+    </section>
+    <!-- Image Gallery -->
+    
+    <!-- Stats Section -->
+    <section id="stats" class="stats section dark-background">
+      <img src="assets/img/counter.jpg" alt="" data-aos="fade-in">
+      
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center text-center">
+      
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item w-100 h-100">
+              <span data-purecounter-start="400" data-purecounter-end="437" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Workshops</p>
+            </div>
+          </div><!-- End Stats Item -->
+      
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item w-100 h-100">
+              <span data-purecounter-start="600" data-purecounter-end="621" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+      
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item w-100 h-100">
+              <span data-purecounter-start="2300" data-purecounter-end="2453" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Waste "ReThought (In Kg)"</p>
+            </div>
+          </div><!-- End Stats Item -->
+         <div class="col-lg-3 col-md-6">
+            <div class="stats-item w-100 h-100">
+              <span data-purecounter-start="6500" data-purecounter-end="6537" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Individuals Engaged"</p>
+            </div>
+          </div><!-- End Stats Item -->
+        </div>
+      </div>
+    </section><!-- /Stats Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <!-- Section Title -->
+      <div style="padding: 50px; justify-content: space-between; width: 100%;">
+        <h1 style="color: black"><b>Testimonials</b></h1>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 10
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Pamela Wong </h3>
+                <h4>Head of Community Partnerships, Singapore Cancer Society</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Our facilitator Jeryl Yep was engaging and knowledgeable and, his and his team’s dedication to the cause was evident. He shared with us how waste could be turned into functional items, educated us on the different types of plastics and the different resin identification codes as well as the long-lasting impact recycling would make on the environment.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Felix</h3>
+                <h4>Committee member and event organiser</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>On behalf of Changi Simei Community Club, I would like to thank John and his team for joining us at Eco Green Bazaar 2024 held in conjunction with Changkat Changi Secondary School. Many praised the booth’s hands-on demonstration using machines which can be easily operated by our residents. We are pleased and satisfied at RTG’s commitment to educating the public on sustainability practices and we hope to collaborate more with the team for future events.
+                <i class="bi bi-quote quote-icon-right"></i></span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Joycelyn </h3>
+                <h4>Youth Guidance</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The workshop has helped the youth to better understand the environmental impact of not recycling plastics in Singapore and understand the movement towards a "Circular Economy". They enjoyed and were really happy to be able to turn their recycled plastic bottle caps into something useful, like the carabiner and comb. Thank you for this hands-on experience!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Teacher Maga</h3>
+                <h4>MOE Kindergarten@North Vista</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The sessions today were very engaging and informative for the children. They enjoyed a lot and learnt many new facts about pets. These sessions helped to extend their knowledge on pets and about their welfare. I hope to engage with you all again soon next time.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Karling</h3>
+                <h4>GovTech [AWA x GovTech SPCA visit]</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Keep up the great job! I have enjoyed Ariessa's sharing and the spca tour. Everyone seems passionate on what they do and work hard for animal welfare.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+           <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Fang Ling</h3>
+                <h4>Schneider Electric [AWA x SE SPCA Visit]</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Collaborating with AWA has allowed us to engage in workshops that are relevant to our colleagues and their families, aligning to the company's commitment to volunteerism. We enjoyed the workshops and returned home with not just knowledge on animal welfare but also, a greater sense of empathy and kindness.
+                
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+                       <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Bedok Bethesda Tampines Church Children Ministry</h3>
+                <h4>Holiday Camp</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Our children had a paw-some time learning about rabbits, guinea pigs, and dogs and of course, meeting our special furry friends. Both children and teachers had a great fun time together. <br/><br/> We also greatly appreciate your open communication, detailed planning and effective cooperation before and during the programme!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+                       <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Jessica</h3>
+                <h4>Parent [SPCA X AWA Tour]</h4>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Easy to understand and interactive!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <sectiion id="Partners" class="partners section">
+      <div style="padding: 50px; justify-content: space-between; width: 100%;">
+        <h1 style="color: black"><b>Our Partners and Community</b></h1>
+      </div>
+        <div class="contributor-container">
+        <div class="contributor-track">
+            <div class="contributor-item"><img src="./assets/img/Semula.png" alt="Semula"></div>
+            <div class="contributor-item"><img src="./assets/img/Terra.png" alt="Terra"></div>
+            <div class="contributor-item"><img src="./assets/img/thegoodco.png" alt="The Good Co."></div>
+            <div class="contributor-item"><img src="./assets/img/awa.png" alt="Animal Welfare Academy"></div>
+            <div class="contributor-item"><img src="./assets/img/rtg.png" alt="ReThink Good"></div>
+            <div class="contributor-item"><img src="./assets/img/" alt=""></div>
+        </div>
+    </div>
+    </sectiion>
+  </main>
+
+  <footer id="footer" class="footer footer-background">
+    <div class="container">      
+        <img src="assets/img/tgeslogo.png" width="300"> 
+    </a>
+      </button>
+      <br>
+      
+      <div style="padding: 20px;" class="social-links d-flex justify-content-center">
+       
+        
+        <a href="https://www.instagram.com/thegoodearthschoolsg"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:hello@thegoodearthschool.org" title="Email Us"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.linkedin.com/company/-tges/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Corporate | Media | Partnerships | Everything - Planet, Animals, Humans </span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          hello@thegoodearthschool.org</a>
+
+          <hr>
+          <span>© The Good Earth School. All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script>
+    new PureCounter();
+  </script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
