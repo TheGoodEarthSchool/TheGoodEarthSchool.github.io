@@ -5,122 +5,225 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Secondary Programme | The Good Earth School</title>
+  <title>
+    The Good Earth School: Making nature and animal education accessible to all
+  </title>
 
   <meta
     name="description"
-    content="Secondary school environmental education programmes by The Good Earth School."
+    content="Nature and animal care education accessible to all. From nature walks, urban cleanups, plastic recycling, animal care workshops, to sustainable living workshops."
   >
 
   <meta
     name="keywords"
-    content="secondary school, sustainability, environmental education, Singapore"
+    content="green workshops Singapore, sustainability workshops Singapore, environmental workshops Singapore, recycling workshops Singapore, sustainable living workshops, green education, recycling workshop, upcycling workshop, plastic recycling workshop"
   >
 
-  <!-- Favicons -->
-  <link href="assets/img/tgeslogo.png" rel="icon">
-  <link href="assets/img/tgeslogo.png" rel="apple-touch-icon">
+  <meta
+    property="og:title"
+    content="The Good Earth School: Nature and Animal Care Education Accessible to All"
+  >
 
-  <!-- Icons -->
+  <meta
+    property="og:description"
+    content="Nature and animal care education accessible to all through nature walks, urban cleanups, plastic recycling, animal care workshops and sustainable living programmes."
+  >
+
+  <meta property="og:image" content="assets/img/edu.png">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
   <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/favicon-32x32.png"
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/favicon-16x16.png"
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="/favicon-96x96.png"
+    sizes="96x96"
+  >
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta
+    name="google-site-verification"
+    content="SLOowdwNVGL_ZfBDJ6ufd3YwCEL0C_NyxzTiWFFtkxk"
   >
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    href="https://fonts.gstatic.com"
+    rel="preconnect"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet"
   >
 
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  >
+
   <!-- Vendor CSS -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link
+    href="assets/vendor/bootstrap/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link
+    href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+    rel="stylesheet"
+  >
+
+  <link
+    href="assets/vendor/aos/aos.css"
+    rel="stylesheet"
+  >
+
+  <link
+    href="assets/vendor/animate.css/animate.min.css"
+    rel="stylesheet"
+  >
+
+  <link
+    href="assets/vendor/glightbox/css/glightbox.min.css"
+    rel="stylesheet"
+  >
+
+  <link
+    href="assets/vendor/swiper/swiper-bundle.min.css"
+    rel="stylesheet"
+  >
 
   <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Gallery and modal CSS -->
+  <!-- Gallery CSS -->
   <style>
-    .programme-gallery-card {
+    .programme-section {
+      padding: 50px;
+    }
+
+    .programme-image {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .programme-heading {
+      color: #0d3d14 !important;
+    }
+
+    #preschool-gallery .gallery-info-card {
       position: relative;
       display: block;
       width: 100%;
       padding: 0;
       overflow: hidden;
-      color: inherit;
       text-align: left;
       background: transparent;
       border: 0;
-      border-radius: 0;
+      border-radius: 5px;
       cursor: pointer;
     }
 
-    .programme-gallery-card img {
+    #preschool-gallery .gallery-info-card img {
       display: block;
       width: 100%;
-      aspect-ratio: 4 / 3;
+      aspect-ratio: 1 / 1;
       object-fit: cover;
-      transition:
-        transform 0.3s ease,
-        opacity 0.3s ease;
+      border-radius: 5px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
-    .programme-gallery-card:hover img {
-      opacity: 0.82;
-      transform: scale(1.03);
+    #preschool-gallery .gallery-info-card:hover img {
+      opacity: 0.8;
+      transform: scale(1.04);
     }
 
-    .programme-gallery-card:focus-visible {
-      outline: 3px solid #198754;
+    #preschool-gallery .gallery-info-card:focus-visible {
+      outline: 3px solid #0d3d14;
       outline-offset: 4px;
     }
 
-    .programme-gallery-card .portfolio-info {
+    #preschool-gallery .portfolio-info {
       pointer-events: none;
     }
 
-    .programme-gallery-card .preview-link {
+    #preschool-gallery .preview-link {
       display: inline-flex;
       align-items: center;
       justify-content: center;
     }
 
-    .programme-gallery-card .preview-link i {
+    #preschool-gallery .preview-link i {
       font-size: 22px;
     }
 
-    #programmeModalImage {
+    #galleryInfoModalImage {
       display: block;
       width: 100%;
       max-height: 430px;
       object-fit: cover;
     }
 
-    .programme-modal-section {
+    .gallery-modal-section {
       margin-top: 24px;
     }
 
-    .programme-modal-section h5 {
-      margin-bottom: 8px;
+    .gallery-modal-section h5 {
+      margin-bottom: 10px;
       font-weight: 700;
+      color: #0d3d14;
     }
 
-    .programme-modal-section p:last-child,
-    .programme-modal-section ul:last-child {
-      margin-bottom: 0;
+    @media (max-width: 991px) {
+      .programme-section {
+        padding: 30px 20px;
+      }
+
+      .programme-image {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+      }
     }
 
     @media (max-width: 767px) {
-      .programme-gallery-card img {
-        aspect-ratio: 16 / 10;
+      #hero h1 {
+        font-size: 14vw !important;
+      }
+
+      #hero table {
+        font-size: 13px;
+      }
+
+      #hero td {
+        padding-right: 4px;
       }
     }
   </style>
@@ -128,161 +231,217 @@
 
 <body class="index-page">
 
-  <!-- Header -->
-  <header id="header" class="header d-flex align-items-center">
+  <div class="littlegreengardians">
 
-    <div
-      class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+    <!-- Header -->
+    <header
+      id="header"
+      class="header d-flex align-items-center"
     >
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img
-          src="assets/img/tgeslogo.png"
-          alt="The Good Earth School"
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center"
         >
-      </a>
 
-      <nav id="navmenu" class="navmenu">
+          <img
+            src="assets/img/tgeslogo.png"
+            alt="The Good Earth School"
+          >
 
-        <ul>
+        </a>
 
-          <li>
-            <a href="index.html">Home</a>
-          </li>
+        <nav id="navmenu" class="navmenu">
 
-          <li>
-            <a href="ourstory.html">Our Story</a>
-          </li>
+          <ul>
 
-          <li class="dropdown">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
 
-            <a href="#">
-              <span>What We Do</span>
-              <i class="bi bi-chevron-down toggle-dropdown"></i>
-            </a>
+            <li>
+              <a href="ourstory.html">Our Story</a>
+            </li>
 
-            <ul>
+            <li>
+              <a href="projects.html">Notable Projects</a>
+            </li>
 
-              <li class="dropdown">
+            <li class="dropdown">
 
-                <a href="#">
-                  <span>For The Environment</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i>
-                </a>
+              <a href="#">
+                <span>What We Do</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
 
-                <ul>
-                  <li>
-                    <a href="preschool_programmes.html">
-                      Little Green Guardians
-                    </a>
-                  </li>
+              <ul>
 
-                  <li>
-                    <a href="primary_programmes.html">
-                      Primary Programme [TGES]
-                    </a>
-                  </li>
+                <li class="dropdown">
 
-                  <li>
-                    <a href="secondary_programmes.html">
-                      Secondary Programme [TGES]
-                    </a>
-                  </li>
+                  <a href="https://thegoodearthschool.org/environment.html">
+                    <span>For The Environment</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                  </a>
 
-                  <li>
-                    <a href="tertiary_program.html">
-                      Tertiary Programme [TGES]
-                    </a>
-                  </li>
+                  <ul>
 
-                  <li>
-                    <a href="for_the_adults.html">
-                      Adult
-                    </a>
-                  </li>
-                </ul>
+                    <li>
+                      <a href="preschool_programmes.html">
+                        Little Green Heroes
+                      </a>
+                    </li>
 
-              </li>
+                    <li>
+                      <a href="primary_programmes.html">
+                        Children’s Voices for Biodiversity
+                      </a>
+                    </li>
 
-              <li>
-                <a
-                  href="https://animalwelfareacademy.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  For The Animals
-                </a>
-              </li>
+                    <li>
+                      <a href="youth_for_a_green_future.html">
+                        Youth for a Green Future
+                      </a>
+                    </li>
 
-              <li class="dropdown">
+                    <li>
+                      <a href="green_wisdom.html">
+                        Green Wisdom
+                      </a>
+                    </li>
 
-                <a href="#">
-                  <span>For Fellow Humans</span>
-                  <i class="bi bi-chevron-down toggle-dropdown"></i>
-                </a>
+                  </ul>
 
-                <ul>
-                  <li>
-                    <a href="sus_living.html">
-                      Sustainable Living
-                    </a>
-                  </li>
+                </li>
 
-                  <li>
-                    <a href="mum.html">
-                      Power To The Moms
-                    </a>
-                  </li>
+                <li>
+                  <a
+                    href="animalallies.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    For The Animals
+                  </a>
+                </li>
 
-                  <li>
-                    <a href="youth_prog.html">
-                      Youth Programmes [TGP]
-                    </a>
-                  </li>
+                <li class="dropdown">
 
-                  <li>
-                    <a href="coming_soon.html">
-                      Preschool Programmes [TGP]
-                    </a>
-                  </li>
-                </ul>
+                  <a href="#">
+                    <span>For Fellow Humans</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                  </a>
 
-              </li>
+                  <ul>
 
-            </ul>
+                    <li>
+                      <a href="sus_living.html">
+                        Sustainable Living
+                      </a>
+                    </li>
 
-          </li>
+                    <li>
+                      <a href="volunteer.html">
+                        Doing Good, Together
+                      </a>
+                    </li>
 
-        </ul>
+                  </ul>
 
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </li>
 
-      </nav>
+              </ul>
 
-    </div>
+            </li>
 
-  </header>
+          </ul>
 
-  <!-- Main content -->
-  <main class="main">
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+        </nav>
+
+      </div>
+
+    </header>
 
     <!-- Hero -->
     <section
       id="hero"
       class="hero section"
-      style="background-color: #0d3d1418; color: white;"
+      style="background-color: #0d3d1400; color: white;"
     >
 
-      <div class="container">
+      <div
+        id="hero-carousel"
+        class="container carousel carousel-fade"
+        data-bs-interval="5000"
+        data-bs-ride="carousel"
+      >
 
         <div class="carousel-container">
 
           <h1
             class="animate__animated animate__fadeInDown"
-            style="color: white; font-size: clamp(48px, 10vw, 140px);"
+            style="color: white; font-size: 9vw;"
           >
-            <strong>Secondary Programme</strong>
+            Little Green Heroes
           </h1>
+
+          <br><br>
+
+          <table>
+
+            <tr>
+
+              <td>
+                <i
+                  class="fa"
+                  style="font-size: 20px;"
+                  aria-hidden="true"
+                >
+                  &#xf015;
+                </i>
+              </td>
+
+              <td>
+                <a
+                  href="index.html"
+                  style="color: white;"
+                >
+                  Home
+                </a>
+              </td>
+
+              <td>
+                <span style="font-size: 20px;">
+                  &#11208;
+                </span>
+              </td>
+
+              <td>
+                <a
+                  href="https://thegoodearthschool.org/environment.html"
+                  style="color: white;"
+                >
+                  For The Environment
+                </a>
+              </td>
+
+              <td>
+                <span style="font-size: 20px;">
+                  &#11208;
+                </span>
+              </td>
+
+              <td>
+                <span>Little Green Heroes</span>
+              </td>
+
+            </tr>
+
+          </table>
 
         </div>
 
@@ -290,48 +449,62 @@
 
     </section>
 
-    <!-- Programme section -->
-    <section id="portfolio" class="portfolio section">
+  </div>
 
-      <!-- Main description -->
-      <div class="container">
+  <main class="main">
 
-        <h1>Programme Title</h1>
+    <section
+      id="portfolio"
+      class="portfolio section"
+    >
+
+      <!-- Programme introduction -->
+      <div class="container programme-section">
+
+        <h1>
+          Little Green Heroes
+          <small style="font-size: 60%;">
+            Suitable for ages 4 to 5
+          </small>
+        </h1>
 
         <p>
-          Add a short introduction to your secondary school programme here.
-          You can explain the purpose of the programme, the learning outcomes
-          and the types of activities offered.
+          Understanding our environment and what children can do to care for it.
         </p>
 
         <p>
-          <strong>Programme includes</strong>
+          <strong>Workshops in this series</strong>
         </p>
 
         <ul>
-          <li>Environmental education</li>
-          <li>Hands-on group activities</li>
-          <li>Reflection and practical action</li>
+          <li>Guided Nature Walks</li>
+          <li>Beach and Urban Cleanups</li>
+          <li>Biodiversity Workshops, in-centre or external</li>
+          <li>Plastic Recycling Workshop</li>
+          <li>Urban Tiller Workshop</li>
         </ul>
 
         <a
+          href="mailto:hello@thegoodearthschool.org?subject=Little%20Green%20Heroes%20Enquiry"
           class="custom-button"
-          href="mailto:hello@thegoodearthschool.org?subject=Secondary%20Programme%20Enquiry"
         >
-          Register Now
+          Find Out More
         </a>
 
-        <br>
-        <br>
+        <br><br>
 
         <p>
-          <strong>Venue</strong>
+          <strong>
+            Venue: On campus or at one of our partner venues.
+            <br>
+            Located near:
+          </strong>
         </p>
 
         <ul>
-          <li>Conducted at your school or selected community venue</li>
-          <li>Indoor or outdoor options may be available</li>
-          <li>Venue requirements depend on the selected activity</li>
+          <li>Tai Seng</li>
+          <li>Botanic Gardens</li>
+          <li>Maxwell</li>
         </ul>
 
         <p>
@@ -339,116 +512,77 @@
         </p>
 
         <ul>
-          <li>Fees depend on programme duration</li>
-          <li>Fees depend on group size and materials</li>
-          <li>Contact us for a formal quotation</li>
+          <li>Little Green Heroes: S$99 per workshop</li>
+          <li>Bring a Friend: S$148 per workshop</li>
+          <li>Day Camp: S$150 for three workshops</li>
         </ul>
 
+        <p>
+          <strong>Some Programmes</strong>
+        </p>
+
       </div>
 
-      <br>
-      <br>
-
-      <!-- First feature row -->
-      <div class="container">
+      <!-- Guided Nature Walk -->
+      <div class="container programme-section">
 
         <div
-          class="tab-content"
           data-aos="fade-up"
           data-aos-delay="200"
         >
 
-          <div
-            class="tab-pane fade active show"
-            id="secondary-feature-1"
-          >
+          <div class="row align-items-start">
 
-            <div class="row align-items-center">
+            <div class="col-lg-6 text-center">
 
-              <div class="col-lg-6 text-center">
-
-                <img
-                  src="assets/img/working-1.jpg"
-                  alt="Students taking part in an environmental activity"
-                  class="img-fluid"
-                >
-
-              </div>
-
-              <div class="col-lg-6 mt-4 mt-lg-0">
-
-                <h2>Learning Through Action</h2>
-
-                <p class="fst-italic">
-                  Our programmes help students connect environmental topics
-                  with practical action.
-                </p>
-
-                <p>
-                  Students take part in guided activities that build awareness,
-                  teamwork and responsibility.
-                </p>
-
-                <p>
-                  The activities can include recycling, biodiversity,
-                  sustainable living, food waste, upcycling and community action.
-                </p>
-
-              </div>
+              <img
+                src="assets/img/guidednaturewalk.webp"
+                class="img-fluid programme-image"
+                alt="Children taking part in a guided nature walk"
+              >
 
             </div>
 
-          </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
 
-        </div>
+              <h4>
+                <strong>Guided Nature Walks</strong>
+              </h4>
 
-        <br>
-        <br>
+              <h5 class="programme-heading">
+                In this workshop, children will learn about:
+              </h5>
 
-        <!-- Second feature row -->
-        <div
-          class="tab-content"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+              <p class="fst-italic">
+                - Local biodiversity in Singapore
+                <br>
+                - Basic plant and animal identification
+                <br>
+                - The sounds and textures of nature
+                <br>
+                - How to respect and protect natural spaces
+              </p>
 
-          <div
-            class="tab-pane fade active show"
-            id="secondary-feature-2"
-          >
+              <h5 class="programme-heading">
+                Please note:
+              </h5>
 
-            <div class="row align-items-center">
+              <p>
+                Our guided walks explore the ecosystems and wildlife found in
+                natural spaces, but sightings of specific animals cannot be
+                guaranteed.
+              </p>
 
-              <div class="col-lg-6 text-center">
+              <p>
+                Wildlife visibility depends on factors such as the weather,
+                time of day and animal behaviour. The session focuses on
+                habitats, biodiversity and respectful observation.
+              </p>
 
-                <img
-                  src="assets/img/working-1.jpg"
-                  alt="Students working together during a programme"
-                  class="img-fluid"
-                >
-
-              </div>
-
-              <div class="col-lg-6 mt-4 mt-lg-0">
-
-                <h2>Designed for Secondary Students</h2>
-
-                <p class="fst-italic">
-                  Each programme can be adjusted according to the students'
-                  age, group size and learning needs.
-                </p>
-
-                <p>
-                  Sessions may be conducted as a single workshop, a series of
-                  workshops or part of a wider school programme.
-                </p>
-
-                <p>
-                  We can also include service learning, student leadership,
-                  project work or a school-wide environmental campaign.
-                </p>
-
-              </div>
+              <p>
+                The unpredictability of nature is part of the learning
+                experience.
+              </p>
 
             </div>
 
@@ -458,25 +592,260 @@
 
       </div>
 
-      <br>
-      <br>
+      <!-- Cleanup -->
+      <div class="container programme-section">
 
-      <!-- Social media -->
-      <div class="container">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+
+          <div class="row align-items-start">
+
+            <div class="col-lg-6 text-center">
+
+              <img
+                src="assets/img/urbancleanup.webp"
+                class="img-fluid programme-image"
+                alt="Children taking part in an urban cleanup"
+              >
+
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+
+              <h4>
+                <strong>Beach and Urban Cleanups</strong>
+              </h4>
+
+              <h5 class="programme-heading">
+                In this workshop, children will learn about:
+              </h5>
+
+              <p class="fst-italic">
+                - Local biodiversity and its connection to clean habitats
+                <br>
+                - The impact of litter on marine and urban wildlife
+                <br>
+                - Ways to reduce waste and recycle effectively
+              </p>
+
+              <h5 class="programme-heading">
+                Activity highlights include:
+              </h5>
+
+              <p class="fst-italic">
+                - A hands-on cleanup at a beach or urban area
+                <br>
+                - Sorting collected litter into recycling and general waste
+                <br>
+                - Team activities that build responsibility and cooperation
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Plastic recycling -->
+      <div class="container programme-section">
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+
+          <div class="row align-items-start">
+
+            <div class="col-lg-6 text-center">
+
+              <img
+                src="assets/img/preschool_plastic_recycling.webp"
+                class="img-fluid programme-image"
+                alt="Children taking part in a plastic recycling activity"
+              >
+
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+
+              <h4>
+                <strong>Plastic Recycling Workshop</strong>
+              </h4>
+
+              <h5 class="programme-heading">
+                In this workshop, children will learn about:
+              </h5>
+
+              <p class="fst-italic">
+                - The importance of recycling to protect ecosystems and wildlife
+                <br>
+                - How plastic affects biodiversity and food chains
+                <br>
+                - Simple ways to reduce plastic use
+              </p>
+
+              <h5 class="programme-heading">
+                Activity highlights include:
+              </h5>
+
+              <p class="fst-italic">
+                - Safe hands-on activities using recyclable materials
+                <br>
+                - Creative reuse activities using plastic items
+                <br>
+                - Group discussions about plastic waste and recycling
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Urban Tiller -->
+      <div class="container programme-section">
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+
+          <div class="row align-items-start">
+
+            <div class="col-lg-6 text-center">
+
+              <img
+                src="assets/img/preschool_planting.webp"
+                class="img-fluid programme-image"
+                alt="Children taking part in a planting activity"
+              >
+
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+
+              <h4>
+                <strong>Urban Tiller</strong>
+              </h4>
+
+              <h5 class="programme-heading">
+                In this workshop, children will learn about:
+              </h5>
+
+              <p class="fst-italic">
+                - The basics of urban gardening
+                <br>
+                - The value of green spaces in cities
+                <br>
+                - How plants support biodiversity and reduce urban heat
+                <br>
+                - How to care for plants
+              </p>
+
+              <h5 class="programme-heading">
+                Activity highlights include:
+              </h5>
+
+              <p class="fst-italic">
+                - A planting activity where children pot a plant
+                <br>
+                - Simple games about farming and plant care
+                <br>
+                - Discussions about water, sunlight and soil
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Biodiversity -->
+      <div class="container programme-section">
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+
+          <div class="row align-items-start">
+
+            <div class="col-lg-6 text-center">
+
+              <img
+                src="assets/img/photo-1.jpg"
+                class="img-fluid programme-image"
+                alt="Children taking part in a biodiversity workshop"
+              >
+
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+
+              <h4>
+                <strong>Biodiversity Workshops</strong>
+              </h4>
+
+              <h5 class="programme-heading">
+                In this workshop, children will learn about:
+              </h5>
+
+              <p class="fst-italic">
+                - The importance of wildlife within ecosystems
+                <br>
+                - How humans and wildlife can live together in urban areas
+                <br>
+                - Responsible actions that support local wildlife
+                <br>
+                - How different species interact
+                <br>
+                - Why natural habitats should be protected
+              </p>
+
+              <h5 class="programme-heading">
+                Activity highlights include:
+              </h5>
+
+              <p class="fst-italic">
+                - Interactive sessions using animal plushies and specimen models
+                <br>
+                - Hands-on activities about ecosystems and food chains
+                <br>
+                - Role-playing activities about animal behaviour and needs
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Contact -->
+      <div class="container programme-section">
 
         <p>
-          Follow us on
+          Chat with us on
           <a
-            href="https://www.facebook.com/"
+            href="https://wa.me/6587725464"
             target="_blank"
             rel="noopener noreferrer"
             style="text-decoration: underline;"
           >
-            Facebook
+            WhatsApp
           </a>
-          or
+          or follow us on
           <a
-            href="https://www.instagram.com/thegoodearthschoolsg/"
+            href="https://www.instagram.com/thegoodearthschoolsg"
             target="_blank"
             rel="noopener noreferrer"
             style="text-decoration: underline;"
@@ -486,20 +855,13 @@
           for upcoming events.
         </p>
 
-        <p>
-          Contact us at
-          <a href="mailto:hello@thegoodearthschool.org">
-            hello@thegoodearthschool.org
-          </a>.
-        </p>
-
       </div>
 
-      <br>
-      <br>
-
       <!-- Gallery -->
-      <div class="container">
+      <div
+        class="container programme-section"
+        id="preschool-gallery"
+      >
 
         <div
           class="isotope-layout"
@@ -510,322 +872,337 @@
 
           <div style="width: 100%; padding: 0;">
 
-            <h2 style="color: black;">
+            <h1 style="color: black;">
               <strong>Gallery</strong>
-            </h2>
+            </h1>
 
-            <hr>
+            <br><br>
 
           </div>
 
-          <div class="container" style="width: 100%; max-width: 100%;">
+          <div class="row gy-4 isotope-container">
 
+            <!-- Gallery item 1 -->
             <div
-              class="isotope-layout"
-              data-default-filter="*"
-              data-layout="masonry"
-              data-sort="original-order"
+              class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app"
             >
 
-              <div class="row gy-4 isotope-container">
+              <button
+                type="button"
+                class="gallery-info-card"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryInfoModal"
+                data-title="Biodiversity Workshop"
+                data-image="assets/img/biodiworkshop.jpg"
+                data-description="Children learn about local animals, habitats and the importance of caring for biodiversity."
+                data-details="Learn about local plants and animals|Understand how species depend on one another|Take part in hands-on biodiversity activities"
+              >
 
-                <!-- Card 1 -->
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app"
+                <img
+                  src="assets/img/biodiworkshop.jpg"
+                  class="img-fluid"
+                  alt="Biodiversity Workshop"
                 >
 
-                  <button
-                    type="button"
-                    class="programme-gallery-card"
-                    aria-label="Open information about the Plastic Recycling Workshop"
-                    data-title="Plastic Recycling Workshop"
-                    data-image="assets/img/darkTree.jpg"
-                    data-description="Students learn how common plastic waste can be sorted, processed and turned into useful items."
-                    data-includes="Introduction to plastic waste|Material sorting activity|Recycling equipment demonstration|Hands-on making activity"
-                    data-duration="1 to 2 hours"
-                    data-audience="Secondary school students"
-                    data-venue="Indoor venue with tables, chairs and access to a power point"
-                    data-fees="Contact us for a quotation based on group size and activity requirements"
-                  >
+                <div class="portfolio-info">
 
-                    <img
-                      src="assets/img/darkTree.jpg"
-                      class="img-fluid"
-                      alt="Plastic Recycling Workshop"
-                    >
+                  <h4>Biodiversity Workshop</h4>
 
-                    <div class="portfolio-info">
-                      <h4>Plastic Recycling</h4>
-
-                      <span class="preview-link">
-                        <i class="bi bi-info-circle"></i>
-                      </span>
-                    </div>
-
-                  </button>
+                  <span class="preview-link">
+                    <i class="bi bi-info-circle"></i>
+                  </span>
 
                 </div>
 
-                <!-- Card 2 -->
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-product"
+              </button>
+
+            </div>
+
+            <!-- Gallery item 2 -->
+            <div
+              class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app"
+            >
+
+              <button
+                type="button"
+                class="gallery-info-card"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryInfoModal"
+                data-title="Biodiversity Workshop"
+                data-image="assets/img/masonry-portfolio/bworkshop.jpg"
+                data-description="An interactive session introducing children to animals, ecosystems and responsible behaviour around wildlife."
+                data-details="Use animal learning materials|Take part in ecosystem activities|Learn how to care for wildlife"
+              >
+
+                <img
+                  src="assets/img/masonry-portfolio/bworkshop.jpg"
+                  class="img-fluid"
+                  alt="Biodiversity Workshop"
                 >
 
-                  <button
-                    type="button"
-                    class="programme-gallery-card"
-                    aria-label="Open information about the Textile Upcycling Workshop"
-                    data-title="Textile Upcycling Workshop"
-                    data-image="assets/img/darkTree.jpg"
-                    data-description="Students use unwanted fabric and clothing to create practical items while learning about textile waste."
-                    data-includes="Introduction to textile waste|Material selection|No-sew or basic sewing activity|Group reflection"
-                    data-duration="1.5 to 2 hours"
-                    data-audience="Secondary school students"
-                    data-venue="Indoor venue with tables and chairs"
-                    data-fees="Contact us for a quotation based on group size and selected activity"
-                  >
+                <div class="portfolio-info">
 
-                    <img
-                      src="assets/img/darkTree.jpg"
-                      class="img-fluid"
-                      alt="Textile Upcycling Workshop"
-                    >
+                  <h4>Biodiversity Workshop</h4>
 
-                    <div class="portfolio-info">
-                      <h4>Textile Upcycling</h4>
-
-                      <span class="preview-link">
-                        <i class="bi bi-info-circle"></i>
-                      </span>
-                    </div>
-
-                  </button>
+                  <span class="preview-link">
+                    <i class="bi bi-info-circle"></i>
+                  </span>
 
                 </div>
 
-                <!-- Card 3 -->
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-branding"
+              </button>
+
+            </div>
+
+            <!-- Gallery item 3 -->
+            <div
+              class="col-lg-3 col-md-6 portfolio-item isotope-item filter-product"
+            >
+
+              <button
+                type="button"
+                class="gallery-info-card"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryInfoModal"
+                data-title="Biodiversity Workshop"
+                data-image="assets/img/bworkshop.jpg"
+                data-description="Children examine how animals, plants and habitats are connected."
+                data-details="Learn about food chains|Identify local species|Understand the importance of healthy habitats"
+              >
+
+                <img
+                  src="assets/img/bworkshop.jpg"
+                  class="img-fluid"
+                  alt="Biodiversity Workshop"
                 >
 
-                  <button
-                    type="button"
-                    class="programme-gallery-card"
-                    aria-label="Open information about the Biodiversity Programme"
-                    data-title="Biodiversity Programme"
-                    data-image="assets/img/darkTree.jpg"
-                    data-description="Students examine local biodiversity and learn how human activity affects plants, wildlife and habitats."
-                    data-includes="Biodiversity introduction|Observation activity|Species and habitat discussion|Environmental action planning"
-                    data-duration="1.5 to 2 hours"
-                    data-audience="Secondary school students"
-                    data-venue="School grounds, park or selected nature site"
-                    data-fees="Contact us for rates and transport requirements"
-                  >
+                <div class="portfolio-info">
 
-                    <img
-                      src="assets/img/darkTree.jpg"
-                      class="img-fluid"
-                      alt="Biodiversity Programme"
-                    >
+                  <h4>Biodiversity Workshop</h4>
 
-                    <div class="portfolio-info">
-                      <h4>Biodiversity</h4>
-
-                      <span class="preview-link">
-                        <i class="bi bi-info-circle"></i>
-                      </span>
-                    </div>
-
-                  </button>
+                  <span class="preview-link">
+                    <i class="bi bi-info-circle"></i>
+                  </span>
 
                 </div>
 
-                <!-- Card 4 -->
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app"
+              </button>
+
+            </div>
+
+            <!-- Gallery item 4 -->
+            <div
+              class="col-lg-3 col-md-6 portfolio-item isotope-item filter-branding"
+            >
+
+              <button
+                type="button"
+                class="gallery-info-card"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryInfoModal"
+                data-title="Biodiversity Workshop"
+                data-image="assets/img/biodworkshop.jpg"
+                data-description="A hands-on programme helping children understand wildlife and natural spaces."
+                data-details="Basic species identification|Animal and habitat activities|Responsible actions for wildlife"
+              >
+
+                <img
+                  src="assets/img/biodworkshop.jpg"
+                  class="img-fluid"
+                  alt="Biodiversity Workshop"
                 >
 
-                  <button
-                    type="button"
-                    class="programme-gallery-card"
-                    aria-label="Open information about the Food Waste Workshop"
-                    data-title="Food Waste Workshop"
-                    data-image="assets/img/darkTree.jpg"
-                    data-description="Students examine food waste and learn practical ways to reduce waste at school and at home."
-                    data-includes="Food waste discussion|Waste audit activity|Practical reuse activity|Personal action planning"
-                    data-duration="1 to 2 hours"
-                    data-audience="Secondary school students"
-                    data-venue="Indoor venue with tables, chairs and access to water"
-                    data-fees="Contact us for a quotation based on materials and participant numbers"
-                  >
+                <div class="portfolio-info">
 
-                    <img
-                      src="assets/img/darkTree.jpg"
-                      class="img-fluid"
-                      alt="Food Waste Workshop"
-                    >
+                  <h4>Biodiversity Workshop</h4>
 
-                    <div class="portfolio-info">
-                      <h4>Food Waste</h4>
-
-                      <span class="preview-link">
-                        <i class="bi bi-info-circle"></i>
-                      </span>
-                    </div>
-
-                  </button>
+                  <span class="preview-link">
+                    <i class="bi bi-info-circle"></i>
+                  </span>
 
                 </div>
 
-                <!-- Card 5 -->
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-product"
+              </button>
+
+            </div>
+
+            <!-- Gallery item 5 -->
+            <div
+              class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app"
+            >
+
+              <button
+                type="button"
+                class="gallery-info-card"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryInfoModal"
+                data-title="Plastic Recycling"
+                data-image="assets/img/plastic.jpg"
+                data-description="Children learn what happens to plastic waste and how used plastic can become a new item."
+                data-details="Identify recyclable plastic|Learn about plastic pollution|Take part in a recycling activity"
+              >
+
+                <img
+                  src="assets/img/plastic.jpg"
+                  class="img-fluid"
+                  alt="Plastic Recycling"
                 >
 
-                  <button
-                    type="button"
-                    class="programme-gallery-card"
-                    aria-label="Open information about the Sustainable Living Workshop"
-                    data-title="Sustainable Living Workshop"
-                    data-image="assets/img/darkTree.jpg"
-                    data-description="Students review everyday choices and identify realistic ways to reduce waste and resource use."
-                    data-includes="Sustainable living discussion|Personal habits activity|Product comparison|Action commitment"
-                    data-duration="1 to 1.5 hours"
-                    data-audience="Secondary school students"
-                    data-venue="Classroom, hall or activity room"
-                    data-fees="Contact us for a quotation"
-                  >
+                <div class="portfolio-info">
 
-                    <img
-                      src="assets/img/darkTree.jpg"
-                      class="img-fluid"
-                      alt="Sustainable Living Workshop"
-                    >
+                  <h4>Plastic Recycling</h4>
 
-                    <div class="portfolio-info">
-                      <h4>Sustainable Living</h4>
-
-                      <span class="preview-link">
-                        <i class="bi bi-info-circle"></i>
-                      </span>
-                    </div>
-
-                  </button>
+                  <span class="preview-link">
+                    <i class="bi bi-info-circle"></i>
+                  </span>
 
                 </div>
 
-                <!-- Card 6 -->
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-branding"
+              </button>
+
+            </div>
+
+            <!-- Gallery item 6 -->
+            <div
+              class="col-lg-3 col-md-6 portfolio-item isotope-item filter-product"
+            >
+
+              <button
+                type="button"
+                class="gallery-info-card"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryInfoModal"
+                data-title="Guided Nature Walk"
+                data-image="assets/img/guidedwalk2.jpg"
+                data-description="A guided outdoor session where children observe plants, animals, sounds and textures."
+                data-details="Observe local biodiversity|Practise simple species identification|Learn how to respect natural spaces"
+              >
+
+                <img
+                  src="assets/img/guidedwalk2.jpg"
+                  class="img-fluid"
+                  alt="Guided Nature Walk"
                 >
 
-                  <button
-                    type="button"
-                    class="programme-gallery-card"
-                    aria-label="Open information about the Environmental Leadership Programme"
-                    data-title="Environmental Leadership Programme"
-                    data-image="assets/img/darkTree.jpg"
-                    data-description="Students plan environmental projects while building teamwork, communication and project management skills."
-                    data-includes="Issue selection|Project planning|Team role allocation|Presentation and feedback"
-                    data-duration="2 hours or a multi-session programme"
-                    data-audience="Student leaders, environmental clubs and class committees"
-                    data-venue="Classroom, meeting room or school hall"
-                    data-fees="Fees depend on programme length and group size"
-                  >
+                <div class="portfolio-info">
 
-                    <img
-                      src="assets/img/darkTree.jpg"
-                      class="img-fluid"
-                      alt="Environmental Leadership Programme"
-                    >
+                  <h4>Guided Nature Walk</h4>
 
-                    <div class="portfolio-info">
-                      <h4>Student Leadership</h4>
-
-                      <span class="preview-link">
-                        <i class="bi bi-info-circle"></i>
-                      </span>
-                    </div>
-
-                  </button>
+                  <span class="preview-link">
+                    <i class="bi bi-info-circle"></i>
+                  </span>
 
                 </div>
 
-                <!-- Card 7 -->
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app"
+              </button>
+
+            </div>
+
+            <!-- Gallery item 7 -->
+            <div
+              class="col-lg-3 col-md-6 portfolio-item isotope-item filter-branding"
+            >
+
+              <button
+                type="button"
+                class="gallery-info-card"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryInfoModal"
+                data-title="Field Trip to ACRES"
+                data-image="assets/img/field_trip.png"
+                data-description="A learning visit introducing children to wildlife protection and responsible animal care."
+                data-details="Learn about rescued wildlife|Understand threats faced by animals|Discuss responsible behaviour around wildlife"
+              >
+
+                <img
+                  src="assets/img/field_trip.png"
+                  class="img-fluid"
+                  alt="Field Trip to ACRES"
                 >
 
-                  <button
-                    type="button"
-                    class="programme-gallery-card"
-                    aria-label="Open information about the Nature Learning Walk"
-                    data-title="Nature Learning Walk"
-                    data-image="assets/img/darkTree.jpg"
-                    data-description="A guided walk that helps students observe local plants, animals, habitats and environmental relationships."
-                    data-includes="Guided walk|Observation prompts|Group discussion|Closing reflection"
-                    data-duration="1.5 to 2 hours"
-                    data-audience="Secondary school students"
-                    data-venue="Selected parks, gardens or nature areas"
-                    data-fees="Contact us for rates based on location and group size"
-                  >
+                <div class="portfolio-info">
 
-                    <img
-                      src="assets/img/darkTree.jpg"
-                      class="img-fluid"
-                      alt="Nature Learning Walk"
-                    >
+                  <h4>Field Trip to ACRES</h4>
 
-                    <div class="portfolio-info">
-                      <h4>Nature Learning Walk</h4>
-
-                      <span class="preview-link">
-                        <i class="bi bi-info-circle"></i>
-                      </span>
-                    </div>
-
-                  </button>
+                  <span class="preview-link">
+                    <i class="bi bi-info-circle"></i>
+                  </span>
 
                 </div>
 
-                <!-- Card 8 -->
-                <div
-                  class="col-lg-3 col-md-6 portfolio-item isotope-item filter-product"
+              </button>
+
+            </div>
+
+            <!-- Gallery item 8 -->
+            <div
+              class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app"
+            >
+
+              <button
+                type="button"
+                class="gallery-info-card"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryInfoModal"
+                data-title="Urban Cleanup"
+                data-image="assets/img/urbancleanup1.jpg"
+                data-description="Children work together to remove litter while learning how waste affects animals and the environment."
+                data-details="Take part in a cleanup activity|Sort collected litter|Learn ways to reduce waste"
+              >
+
+                <img
+                  src="assets/img/urbancleanup1.jpg"
+                  class="img-fluid"
+                  alt="Urban Cleanup"
                 >
 
-                  <button
-                    type="button"
-                    class="programme-gallery-card"
-                    aria-label="Open information about the School Sustainability Project"
-                    data-title="School Sustainability Project"
-                    data-image="assets/img/darkTree.jpg"
-                    data-description="Students work in teams to respond to an environmental issue within the school or community."
-                    data-includes="Issue research|Project planning|Prototype or campaign development|Final sharing"
-                    data-duration="Three or more sessions"
-                    data-audience="Secondary school classes, clubs or project groups"
-                    data-venue="School-based"
-                    data-fees="Fees depend on the number of sessions, materials and project scope"
-                  >
+                <div class="portfolio-info">
 
-                    <img
-                      src="assets/img/darkTree.jpg"
-                      class="img-fluid"
-                      alt="School Sustainability Project"
-                    >
+                  <h4>Urban Cleanup</h4>
 
-                    <div class="portfolio-info">
-                      <h4>School Project</h4>
-
-                      <span class="preview-link">
-                        <i class="bi bi-info-circle"></i>
-                      </span>
-                    </div>
-
-                  </button>
+                  <span class="preview-link">
+                    <i class="bi bi-info-circle"></i>
+                  </span>
 
                 </div>
 
-              </div>
+              </button>
+
+            </div>
+
+            <!-- Gallery item 9 -->
+            <div
+              class="col-lg-3 col-md-6 portfolio-item isotope-item filter-product"
+            >
+
+              <button
+                type="button"
+                class="gallery-info-card"
+                data-bs-toggle="modal"
+                data-bs-target="#galleryInfoModal"
+                data-title="Plastic Recycling Workshop"
+                data-image="assets/img/preschool_plastic.jpg"
+                data-description="A child-friendly recycling workshop using simple activities and safe materials."
+                data-details="Explore different plastic items|Learn why recycling matters|Create something from reused materials"
+              >
+
+                <img
+                  src="assets/img/preschool_plastic.jpg"
+                  class="img-fluid"
+                  alt="Plastic Recycling Workshop"
+                >
+
+                <div class="portfolio-info">
+
+                  <h4>Plastic Recycling Workshop</h4>
+
+                  <span class="preview-link">
+                    <i class="bi bi-info-circle"></i>
+                  </span>
+
+                </div>
+
+              </button>
 
             </div>
 
@@ -837,12 +1214,12 @@
 
     </section>
 
-    <!-- Shared programme modal -->
+    <!-- Shared gallery modal -->
     <div
       class="modal fade"
-      id="programmeModal"
+      id="galleryInfoModal"
       tabindex="-1"
-      aria-labelledby="programmeModalTitle"
+      aria-labelledby="galleryInfoModalTitle"
       aria-hidden="true"
     >
 
@@ -856,7 +1233,7 @@
 
             <h2
               class="modal-title fs-4"
-              id="programmeModalTitle"
+              id="galleryInfoModalTitle"
             >
               Programme Information
             </h2>
@@ -873,51 +1250,19 @@
           <div class="modal-body">
 
             <img
-              id="programmeModalImage"
+              id="galleryInfoModalImage"
               src=""
               class="img-fluid rounded mb-4"
               alt=""
             >
 
-            <p id="programmeModalDescription"></p>
+            <p id="galleryInfoModalDescription"></p>
 
-            <div class="programme-modal-section">
+            <div class="gallery-modal-section">
 
-              <h5>Programme includes</h5>
+              <h5>What children will experience</h5>
 
-              <ul id="programmeModalIncludes"></ul>
-
-            </div>
-
-            <div class="programme-modal-section">
-
-              <h5>Duration</h5>
-
-              <p id="programmeModalDuration"></p>
-
-            </div>
-
-            <div class="programme-modal-section">
-
-              <h5>Suitable for</h5>
-
-              <p id="programmeModalAudience"></p>
-
-            </div>
-
-            <div class="programme-modal-section">
-
-              <h5>Venue</h5>
-
-              <p id="programmeModalVenue"></p>
-
-            </div>
-
-            <div class="programme-modal-section">
-
-              <h5>Fees</h5>
-
-              <p id="programmeModalFees"></p>
+              <ul id="galleryInfoModalDetails"></ul>
 
             </div>
 
@@ -934,11 +1279,11 @@
             </button>
 
             <a
-              id="programmeModalEmail"
+              id="galleryInfoModalEmail"
               href="mailto:hello@thegoodearthschool.org"
               class="btn btn-success"
             >
-              Enquire Now
+              Find Out More
             </a>
 
           </div>
@@ -952,7 +1297,10 @@
   </main>
 
   <!-- Footer -->
-  <footer id="footer" class="footer footer-background">
+  <footer
+    id="footer"
+    class="footer footer-background"
+  >
 
     <div class="container">
 
@@ -970,7 +1318,7 @@
       >
 
         <a
-          href="https://www.instagram.com/thegoodearthschoolsg/"
+          href="https://www.instagram.com/thegoodearthschoolsg"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -982,11 +1330,13 @@
           href="mailto:hello@thegoodearthschool.org"
           aria-label="Email"
         >
-          <i class="fa-regular fa-envelope"></i>
+          <i class="bi bi-envelope"></i>
         </a>
 
         <a
-          href="#"
+          href="https://www.linkedin.com/company/-tges/"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
           <i class="bi bi-linkedin"></i>
@@ -999,7 +1349,8 @@
         <div class="copyright">
 
           <span>
-            Corporate | Media | Partnerships | Planet, Animals, Humans
+            Corporate | Media | Partnerships | Everything:
+            Planet, Animals, Humans
           </span>
 
         </div>
@@ -1024,7 +1375,7 @@
 
   </footer>
 
-  <!-- Scroll button -->
+  <!-- Scroll Top -->
   <a
     href="#"
     id="scroll-top"
@@ -1037,7 +1388,7 @@
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS -->
+  <!-- Vendor JavaScript -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -1046,110 +1397,81 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+  <!-- Main JavaScript -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Programme modal JS -->
+  <!-- Gallery JavaScript -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const modalElement = document.getElementById("programmeModal");
+      if (typeof PureCounter !== "undefined") {
+        new PureCounter();
+      }
 
-      if (!modalElement || typeof bootstrap === "undefined") {
-        console.error("Bootstrap modal could not be loaded.");
+      const galleryModal = document.getElementById("galleryInfoModal");
+
+      if (!galleryModal) {
         return;
       }
 
-      const programmeModal =
-        bootstrap.Modal.getOrCreateInstance(modalElement);
+      galleryModal.addEventListener("show.bs.modal", function (event) {
+        const selectedCard = event.relatedTarget;
 
-      const titleElement =
-        document.getElementById("programmeModalTitle");
+        if (!selectedCard) {
+          return;
+        }
 
-      const imageElement =
-        document.getElementById("programmeModalImage");
+        const title =
+          selectedCard.dataset.title || "Programme Information";
 
-      const descriptionElement =
-        document.getElementById("programmeModalDescription");
+        const image =
+          selectedCard.dataset.image || "";
 
-      const includesElement =
-        document.getElementById("programmeModalIncludes");
+        const description =
+          selectedCard.dataset.description || "";
 
-      const durationElement =
-        document.getElementById("programmeModalDuration");
+        const details =
+          selectedCard.dataset.details
+            ? selectedCard.dataset.details.split("|")
+            : [];
 
-      const audienceElement =
-        document.getElementById("programmeModalAudience");
+        const modalTitle =
+          document.getElementById("galleryInfoModalTitle");
 
-      const venueElement =
-        document.getElementById("programmeModalVenue");
+        const modalImage =
+          document.getElementById("galleryInfoModalImage");
 
-      const feesElement =
-        document.getElementById("programmeModalFees");
+        const modalDescription =
+          document.getElementById("galleryInfoModalDescription");
 
-      const emailElement =
-        document.getElementById("programmeModalEmail");
+        const modalDetails =
+          document.getElementById("galleryInfoModalDetails");
 
-      const cards =
-        document.querySelectorAll(".programme-gallery-card");
+        const modalEmail =
+          document.getElementById("galleryInfoModalEmail");
 
-      cards.forEach(function (card) {
-        card.addEventListener("click", function (event) {
-          event.preventDefault();
+        modalTitle.textContent = title;
 
-          const title =
-            card.dataset.title || "Programme Information";
+        modalImage.src = image;
+        modalImage.alt = title;
 
-          const image =
-            card.dataset.image || "";
+        modalDescription.textContent = description;
 
-          const description =
-            card.dataset.description || "";
+        modalDetails.innerHTML = "";
 
-          const duration =
-            card.dataset.duration || "Contact us for details";
-
-          const audience =
-            card.dataset.audience || "Secondary school students";
-
-          const venue =
-            card.dataset.venue || "Contact us for venue requirements";
-
-          const fees =
-            card.dataset.fees || "Contact us for a quotation";
-
-          const includes =
-            card.dataset.includes
-              ? card.dataset.includes.split("|")
-              : [];
-
-          titleElement.textContent = title;
-
-          imageElement.src = image;
-          imageElement.alt = title;
-
-          descriptionElement.textContent = description;
-          durationElement.textContent = duration;
-          audienceElement.textContent = audience;
-          venueElement.textContent = venue;
-          feesElement.textContent = fees;
-
-          includesElement.innerHTML = "";
-
-          includes.forEach(function (item) {
-            const listItem = document.createElement("li");
-            listItem.textContent = item.trim();
-            includesElement.appendChild(listItem);
-          });
-
-          const emailSubject =
-            encodeURIComponent(title + " Enquiry");
-
-          emailElement.href =
-            "mailto:hello@thegoodearthschool.org?subject=" +
-            emailSubject;
-
-          programmeModal.show();
+        details.forEach(function (detail) {
+          const listItem = document.createElement("li");
+          listItem.textContent = detail.trim();
+          modalDetails.appendChild(listItem);
         });
+
+        const emailSubject =
+          encodeURIComponent(title + " Enquiry");
+
+        modalEmail.href =
+          "mailto:hello@thegoodearthschool.org?subject=" +
+          emailSubject;
       });
     });
   </script>
