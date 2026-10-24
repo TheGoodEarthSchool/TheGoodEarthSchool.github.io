@@ -970,6 +970,80 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+    <!-- Gallery JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (typeof PureCounter !== "undefined") {
+        new PureCounter();
+      }
+
+      const galleryModal = document.getElementById("galleryInfoModal");
+
+      if (!galleryModal) {
+        return;
+      }
+
+      galleryModal.addEventListener("show.bs.modal", function (event) {
+        const selectedCard = event.relatedTarget;
+
+        if (!selectedCard) {
+          return;
+        }
+
+        const title =
+          selectedCard.dataset.title || "Programme Information";
+
+        const image =
+          selectedCard.dataset.image || "";
+
+        const description =
+          selectedCard.dataset.description || "";
+
+        const details =
+          selectedCard.dataset.details
+            ? selectedCard.dataset.details.split("|")
+            : [];
+
+        const modalTitle =
+          document.getElementById("galleryInfoModalTitle");
+
+        const modalImage =
+          document.getElementById("galleryInfoModalImage");
+
+        const modalDescription =
+          document.getElementById("galleryInfoModalDescription");
+
+        const modalDetails =
+          document.getElementById("galleryInfoModalDetails");
+
+        const modalEmail =
+          document.getElementById("galleryInfoModalEmail");
+
+        modalTitle.textContent = title;
+
+        modalImage.src = image;
+        modalImage.alt = title;
+
+        modalDescription.textContent = description;
+
+        modalDetails.innerHTML = "";
+
+        details.forEach(function (detail) {
+          const listItem = document.createElement("li");
+          listItem.textContent = detail.trim();
+          modalDetails.appendChild(listItem);
+        });
+
+        const emailSubject =
+          encodeURIComponent(title + " Enquiry");
+
+        modalEmail.href =
+          "mailto:hello@thegoodearthschool.org?subject=" +
+          emailSubject;
+      });
+    });
+  </script>
+
 
 </body>
 
