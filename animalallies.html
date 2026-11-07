@@ -21,7 +21,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="google-site-verification" content="SLOowdwNVGL_ZfBDJ6ufd3YwCEL0C_NyxzTiWFFtkxk" />
 
-   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="manifest" href="/site.webmanifest" />
@@ -29,7 +29,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,729 +49,939 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <!-- Animal Allies gallery: 16 uniform square photos, hover captions only -->
+  <style>
+    #animal-allies-gallery .portfolio-item {
+      position: relative;
+      overflow: hidden;
+      background: transparent !important;
+    }
+
+    #animal-allies-gallery .portfolio-item > img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 8px;
+    }
+
+    #animal-allies-gallery .portfolio-item .portfolio-info {
+      opacity: 0 !important;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+      border-radius: 0 0 8px 8px;
+    }
+
+    #animal-allies-gallery .portfolio-item:hover .portfolio-info {
+      opacity: 1 !important;
+      visibility: visible;
+    }
+
+    #animal-allies-gallery .portfolio-info h4 {
+      color: #0d3d14 !important;
+    }
+  </style>
 </head>
 
 <body class="index-page">
   <div class="littlegreengardians">
+
     <header id="header" class="header d-flex align-items-center">
       <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
         <a href="index.html" class="logo d-flex align-items-center">
-        
-          <img src="assets/img/tgeslogo.png"> 
+          <img src="assets/img/tgeslogo.png">
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="ourstory.html">Our Story</a></li>
-                                  <li><a href="projects.html">Notable Projects</a></li>
-             <li class="dropdown"><a href="#"><span>What We Do</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li><a href="projects.html">Notable Projects</a></li>
+
+            <li class="dropdown">
+              <a href="#">
+                <span>What We Do</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
               <ul>
-                <li class="dropdown"><a href="https://thegoodearthschool.org/environment.html"><span>For The Environment</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li class="dropdown">
+                  <a href="https://thegoodearthschool.org/environment.html">
+                    <span>For The Environment</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                  </a>
                   <ul>
                     <li><a href="preschool_programmes.html">Little Green Heroes</a></li>
                     <li><a href="primary_programmes.html">Childen's Voices for Biodiversity</a></li>
                     <li><a href="youth_for_a_green_future.html">Youth for a Green Future</a></li>
                     <li><a href="green_wisdom.html">Green Wisdom</a></li>
-          
                   </ul>
                 </li>
-                <li><a href="animalallies.html" target="_blank">For The Animals</a></li>
-                <li class="dropdown"><a href="#"><span>For Fellow Humans</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+
+                <li>
+                  <a href="animalallies.html" target="_blank">For The Animals</a>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#">
+                    <span>For Fellow Humans</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                  </a>
                   <ul>
                     <li><a href="sus_living.html">Sustainable Living</a></li>
                     <li><a href="volunteer.html">Doing good, Together.</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
-    </div>
-  </header>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
 
+      </div>
+    </header>
 
     <main class="main">
 
       <!-- Hero Section -->
       <section id="hero" class="hero section" style="background-color: #0d3d1400; color: white;">
 
-        <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel" >
-          <!-- Slide 1 -->
-            <div class="carousel-container">
-              <h1 class="animate__animated animate__fadeInDown" style="color: white; font-size: 9vw;">Animal Allies</h1>
-              <br><br>
-              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-              <table>
-                <tr>
-                  <td><i style="font-size:20px" class="fa">&#xf015;</i></td>
-                  <td><a href="index.html" style="color: white;"> Home </a></td>
-        
-                  <td><span style='font-size:20px;'>&#11208;</span></td>
-                  <td><a> For the animals </a></td>
-                </tr>
-              </table>
-            </div>
+        <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+          <div class="carousel-container">
+
+            <h1 class="animate__animated animate__fadeInDown" style="color: white; font-size: 9vw;">Animal Allies</h1>
+
+            <br><br>
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <table>
+              <tr>
+                <td><i style="font-size:20px" class="fa">&#xf015;</i></td>
+                <td><a href="index.html" style="color: white;"> Home </a></td>
+                <td><span style="font-size:20px;">&#11208;</span></td>
+                <td><a> For the animals </a></td>
+              </tr>
+            </table>
+
+          </div>
         </div>
 
       </section><!-- /Hero Section -->
   </div>
+
       <section id="portfolio" class="portfolio section">
-        <!-- event description -->
+
+        <!-- Event Description -->
         <div class="container" style="padding: 50px;">
-                  <h1>Animal Allies (Suitable for ages 4-24)</h1>
 
-                  <p>Understanding animals and what you can do to care for them! Curated in collaboration with <a style="text-decoration: underline;" href="https://animalwelfareacademy.com/">Animal Welfare Academy</a>.</p>
-                 <p>
-                      <b>Suitable for ages 4–18, organized into the following groups:</b>
-                  </p>
-                  <ul>
-                      <li>Kindergarten Group (K1 & K2): Ages 4–6</li>
-                      <li>Lower Primary Group (Primary 1 to 3): Ages 7–9</li>
-                      <li>Upper Primary Group (Primary 4 to 6): Ages 10–12</li>
-                      <li>Secondary Group (Secondary 1 to 4/5): Ages 13–16</li>
-                      <li>Tertiary Group (IHLs): Ages 17–24</li>
-                  </ul>
-                  <p>
-                      <b>Workshops in this series</b>
-                  </p>
-                  <ul>
-                    <li>Friends of Animals (Basic)</li>
-                    <li>Friends of Dogs (Intermediate)</li>
-                    <li>Friends of Cats (Intermediate)</li>
-                    <li>Friends of Guinea Pigs (Intermediate)</li>
-                    <li>Friends of Rabbits (Intermediate)</li>
-                    <li>Friends of Terrapins (Intermediate)</li>
-                    <li>Friends of Hamsters (Intermediate)</li>
-                    <li>Friends of Chickens (Intermediate)</li>
-                    <li>Junior Vet Workshop (Advanced)</li>
-                    <li>Junior Animal Rescuer Workshop (Advanced)</li>
-                  </ul>
-                  
-                  <div class="container">
-                      <a href="mailto:hello@thegoodearthschool.org" class="custom-button">Find Out More</a><br><br>
-                  </div>
+          <h1>Animal Allies (Suitable for ages 4-24)</h1>
 
-                  <b>Venue: On campus or one of our partner venues! <br> Located near:</b>
-                  <ul>
-                      <li>Tai Seng</li>
-                      <li>Botanic Gardens</li>
-                      <li>Maxwell</li>
-                  </ul>
+          <p>
+            Understanding animals and what you can do to care for them!
+            Curated in collaboration with
+            <a style="text-decoration: underline;" href="https://animalwelfareacademy.com/">Animal Welfare Academy</a>.
+          </p>
 
-                  <b>Fees:</b>
-                  <ul>
-                      <li>Animal Allies - S$99/Workshop</li>
-                      <li>Bring a friend! - S$148/Workshop</li>
-                      <li>Day Camp! - S$150 [3 workshops]</li>
-                  </ul>
+          <p>
+            <b>Suitable for ages 4-18, organized into the following groups:</b>
+          </p>
+
+          <ul>
+            <li>Kindergarten Group (K1 & K2): Ages 4-6</li>
+            <li>Lower Primary Group (Primary 1 to 3): Ages 7-9</li>
+            <li>Upper Primary Group (Primary 4 to 6): Ages 10-12</li>
+            <li>Secondary Group (Secondary 1 to 4/5): Ages 13-16</li>
+            <li>Tertiary Group (IHLs): Ages 17-24</li>
+          </ul>
+
+          <p><b>Workshops in this series</b></p>
+
+          <ul>
+            <li>Friends of Animals (Basic)</li>
+            <li>Friends of Dogs (Intermediate)</li>
+            <li>Friends of Cats (Intermediate)</li>
+            <li>Friends of Guinea Pigs (Intermediate)</li>
+            <li>Friends of Rabbits (Intermediate)</li>
+            <li>Friends of Terrapins (Intermediate)</li>
+            <li>Friends of Hamsters (Intermediate)</li>
+            <li>Friends of Chickens (Intermediate)</li>
+            <li>Junior Vet Workshop (Advanced)</li>
+            <li>Junior Animal Rescuer Workshop (Advanced)</li>
+          </ul>
+
+          <div class="container">
+            <a href="mailto:hello@thegoodearthschool.org" class="custom-button">Find Out More</a>
+            <br><br>
+          </div>
+
+          <b>Venue: On campus or one of our partner venues! <br>Located near:</b>
+
+          <ul>
+            <li>Tai Seng</li>
+            <li>Botanic Gardens</li>
+            <li>Maxwell</li>
+          </ul>
+
+          <b>Fees:</b>
+
+          <ul>
+            <li>Animal Allies - S$99/Workshop</li>
+            <li>Bring a friend! - S$148/Workshop</li>
+            <li>Day Camp! - S$150 [3 workshops]</li>
+          </ul>
+
         </div>
 
+        <!-- =====================================================
+             PROGRAMME 01: FRIENDS OF ANIMALS
+        ====================================================== -->
 
-              <!--for the list of workshops-->
-              <div class="container" style="padding: 50px;">
+        <div class="container" style="padding: 50px;">
 
-                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          
-                    <div class="tab-pane fade active show" id="features-tab-1">
-                      <div class="row">
-          
-                        <!-- Image Container -->
-                        <div class="col-lg-6 text-center" >
-                          <img src="assets/img/gallery18.png" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
-                        </div>
-          
-                        <!-- Text Content -->
-                        <div class="col-lg-6 mt-3 mt-lg-0">
-                          <h4> <strong>Friends of Animals</strong></h4>
-                          <h5 style="color: #0d3d14!important;">In this workshop, children/youth will learn about:</h5><br>
-                         <p class="fst-italic">
-                            - Common Misconceptions about the animals <br>
-                            - Introductory Animal Care Requirements <br>
-                            - Fun facts on the Animals' Behaviour and Care <br>
-                          </p>
-                                <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
-                          <p class="fst-italic">
-                               - Animal interaction* <br>
-                            - Hands-on with real pet care items including food <br>
-                          </p>
-                          </p>
-                      
-                        </div>
-          
-                      </div>
-                    </div><!-- End Tab Content Item -->
-          
-                  </div>
-                  <br><br>
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
 
-                </div>         
-        
-                <div class="container" style="padding: 50px;">
+            <div class="tab-pane fade active show" id="features-tab-1">
+              <div class="row">
 
-                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          
-                    <div class="tab-pane fade active show" id="features-tab-1">
-                      <div class="row">
-          
-                        <!-- Image Container -->
-                        <div class="col-lg-6 text-center" >
-                          <img src="assets/img/dog.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
-                        </div>
-          
-                        <!-- Text Content -->
-                        <div class="col-lg-6 mt-3 mt-lg-0">
-                          <h4> <strong>Friends of Dogs</strong></h4>
-                          <p>
-                          <h5 style="color: #0d3d14!important;">In this workshop, children/youth will learn about:</text></h5> 
-                        
-                          </p>
-                        
-                          <p class="fst-italic">
-                            - Common Misconceptions about the animal <br>
-                            - Dietary Requirements <br>
-                            - Housing <br>
-                            - Basic Animal Behaviour and Care <br>
-                          </p>
-                                <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
-                          <p class="fst-italic">
-                               - Animal interaction* <br>
-                            - Hands-on with real pet care items <br>
-                            - Fun team-based activities to build a sense of community and responsibility <br>
-                          </p>
-                          </p>
-                      
-                        </div>
-          
-                      </div>
-                    </div><!-- End Tab Content Item -->
-          
-                  </div>
-                  <br><br>
-
-                </div>
-    
-        
-                <div class="container" style="padding: 50px;">
-
-                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          
-                    <div class="tab-pane fade active show" id="features-tab-1">
-                      <div class="row">
-          
-                        <!-- Image Container -->
-                        <div class="col-lg-6 text-center" >
-                          <img src="assets/img/cat.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
-                        </div>
-          
-                        <!-- Text Content -->
-                        <div class="col-lg-6 mt-3 mt-lg-0">
-                          <h4> <strong>Friends of Cats</strong></h4>
-                          <h5 style="color: #0d3d14!important;">In this workshop, children/youth will learn about:</h5><br>
-                         <p class="fst-italic">
-                            - Common Misconceptions about the animal <br>
-                            - Dietary Requirements <br>
-                            - Housing <br>
-                            - Basic Animal Behaviour and Care <br>
-                          </p>
-                                <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
-                          <p class="fst-italic">
-                               - Animal interaction* <br>
-                            - Hands-on with real pet care items <br>
-                            - Fun team-based activities to build a sense of community and responsibility <br>
-                          </p>
-                          </p>
-                      
-                        </div>
-          
-                      </div>
-                    </div><!-- End Tab Content Item -->
-          
-                  </div>
-                  <br><br>
-
+                <!-- Image Container -->
+                <div class="col-lg-6 text-center">
+                  <img src="assets/img/aa1.webp" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
                 </div>
 
-                <div class="container" style="padding: 50px;">
-                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          
-                    <div class="tab-pane fade active show" id="features-tab-1">
-                      <div class="row">
-          
-                        <!-- Image Container -->
-                        <div class="col-lg-6 text-center" >
-                          <img src="assets/img/photo-14.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
-                        </div>
-          
-                        <!-- Text Content -->
-                        <div class="col-lg-6 mt-3 mt-lg-0">
-                          <h4> <strong>Friends of Guinea Pigs</strong></h4>
-                            <p class="fst-italic">
-                            - Common Misconceptions about the animal <br>
-                            - Dietary Requirements <br>
-                            - Housing <br>
-                            - Basic Animal Behaviour and Care <br>
-                          </p>
-                                <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
-                          <p class="fst-italic">
-                               - Animal interaction* <br>
-                            - Hands-on with real pet care items <br>
-                            - Fun team-based activities to build a sense of community and responsibility <br>
-                          </p>
-                          </p>
-                      
-                        </div>
-          
-                      </div>
-                    </div><!-- End Tab Content Item -->
-          
-                  </div>
-                  <br><br>
-                </div>
-            
-                <div class="container" style="padding: 50px;">
+                <!-- Text Content -->
+                <div class="col-lg-6 mt-3 mt-lg-0">
 
-                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          
-                    <div class="tab-pane fade active show" id="features-tab-1">
-                      <div class="row">
-          
-                        <!-- Image Container -->
-                        <div class="col-lg-6 text-center" >
-                          <img src="assets/img/rabbit.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
-                        </div>
-          
-                        <!-- Text Content -->
-                        <div class="col-lg-6 mt-3 mt-lg-0">
-                          <h4> <strong>Friends of Rabbits</strong></h4>
-                           <h5 style="color: #0d3d14!important;">In this workshop, children/youth will learn about:</h5><br>
-                <p class="fst-italic">
-                            - Common Misconceptions about the animal <br>
-                            - Dietary Requirements <br>
-                            - Housing <br>
-                            - Basic Animal Behaviour and Care <br>
-                          </p>
-                                <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
-                          <p class="fst-italic">
-                               - Animal interaction* <br>
-                            - Hands-on with real pet care items <br>
-                            - Fun team-based activities to build a sense of community and responsibility <br>
-                          </p>
-                          </p>
-                      
-                        </div>
-          
-                      </div>
-                    </div><!-- End Tab Content Item -->
-          
-                  </div>
-                  <br><br>
+                  <h4><strong>Friends of Animals</strong></h4>
+
+                  <h5 style="color: #0d3d14!important;">
+                    In this workshop, children/youth will learn about:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Common Misconceptions about the animals <br>
+                    - Introductory Animal Care Requirements <br>
+                    - Fun facts on the Animals' Behaviour and Care <br>
+                  </p>
+
+                  <h5 style="color: #0d3d14!important;">
+                    Activity highlights include:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Animal interaction* <br>
+                    - Hands-on with real pet care items including food <br>
+                  </p>
 
                 </div>
-          
-                <div class="container" style="padding: 50px;">
-                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          
-                    <div class="tab-pane fade active show" id="features-tab-1">
-                      <div class="row">
-                        <!-- Image Container -->
-                        <div class="col-lg-6 text-center" >
-                          <img src="assets/img/terrapin.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
-                        </div>
-            
-                          <!-- Text Content -->
-                          <div class="col-lg-6 mt-3 mt-lg-0">
-                            <h4> <strong>Friends of Terrapins</strong></h4>
-                            <h5 style="color: #0d3d14!important;">In this workshop, children/youth will learn about:</h5><br>
-              <p class="fst-italic">
-                            - Common Misconceptions about the animal <br>
-                            - Dietary Requirements <br>
-                            - Housing <br>
-                            - Basic Animal Behaviour and Care <br>
-                          </p>
-                                <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
-                          <p class="fst-italic">
-                               - Animal interaction* <br>
-                            - Hands-on with real pet care items <br>
-                            - Fun team-based activities to build a sense of community and responsibility <br>
-                          </p>
-                          </p>
-                      
-                        </div>
-          
-                      </div>
-                    </div><!-- End Tab Content Item -->
-          
-                  </div>
-                  <br><br>
-
-                </div>
-          
-                <div class="container" style="padding: 50px;">
-                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          
-                    <div class="tab-pane fade active show" id="features-tab-1">
-                      <div class="row">
-                        <!-- Image Container -->
-                        <div class="col-lg-6 text-center" >
-                          <img src="assets/img/hamster.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
-                        </div>
-            
-                          <!-- Text Content -->
-                          <div class="col-lg-6 mt-3 mt-lg-0">
-                            <h4> <strong>Friends of Hamsters</strong></h4>
-                            <h5 style="color: #0d3d14!important;">In this workshop, children/youth will learn about:</h5><br>
-              <p class="fst-italic">
-                            - Common Misconceptions about the animal <br>
-                            - Dietary Requirements <br>
-                            - Housing <br>
-                            - Basic Animal Behaviour and Care <br>
-                          </p>
-                                <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
-                          <p class="fst-italic">
-                               - Animal interaction* <br>
-                            - Hands-on with real pet care items <br>
-                            - Fun team-based activities to build a sense of community and responsibility <br>
-                          </p>
-                          </p>
-                      
-                        </div>
-          
-                      </div>
-                    </div><!-- End Tab Content Item -->
-        
-                  </div>
-                  <br><br>
-
-                </div>
-          
-                <div class="container" style="padding: 50px;">
-                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          
-                    <div class="tab-pane fade active show" id="features-tab-1">
-                      <div class="row">
-                        <!-- Image Container -->
-                        <div class="col-lg-6 text-center" >
-                          <img src="assets/img/chicken.png" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
-                        </div>
-            
-                          <!-- Text Content -->
-                          <div class="col-lg-6 mt-3 mt-lg-0">
-                            <h4> <strong>Friends of Chickens</strong></h4>
-                            <h5 style="color: #0d3d14!important;">In this workshop, children/youth will learn about:</h5><br>
-              <p class="fst-italic">
-                            - Common Misconceptions about the animal <br>
-                            - Dietary Requirements <br>
-                            - Housing <br>
-                            - Basic Animal Behaviour and Care <br>
-                          </p>
-                                <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
-                          <p class="fst-italic">
-                               - Animal interaction* <br>
-                            - Hands-on with real pet care items <br>
-                            - Fun team-based activities to build a sense of community and responsibility <br>
-                          </p>
-                          </p>
-                      
-                        </div>
-          
-                      </div>
-                    </div><!-- End Tab Content Item -->
-          
-                  </div>
-                  <br><br>
-
-                </div>
-                        <div class="container" style="padding: 50px;">
-
-                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          
-                    <div class="tab-pane fade active show" id="features-tab-1">
-                      <div class="row">
-          
-                        <!-- Image Container -->
-                        <div class="col-lg-6 text-center" >
-                          <img src="assets/img/photo-10.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
-                        </div>
-          
-                        <!-- Text Content -->
-                        <div class="col-lg-6 mt-3 mt-lg-0">
-                          <h4> <strong>Junior Vet Workshop </strong></h4>
-                          <h5 style="color: #0d3d14!important;">In this workshop, children/youth will learn about:</h5><br>
-                         <p class="fst-italic">
-                            - What a vet does in the clinic <br>
-                            - Basic medical Care for the animals <br>
-
-                          </p>
-                                <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
-                          <p class="fst-italic">
-                               - Animal interaction* <br>
-                            - Hands-on with real medical pet care items <br>
-                            - Dress up role play as a vet<br>
-                          </p>
-                          </p>
-                      
-                        </div>
-          
-                      </div>
-                    </div><!-- End Tab Content Item -->
-          
-                  </div>
-                  <br><br>
-
-                </div>
-                        <div class="container" style="padding: 50px;">
-
-                  <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-          
-                    <div class="tab-pane fade active show" id="features-tab-1">
-                      <div class="row">
-          
-                        <!-- Image Container -->
-                        <div class="col-lg-6 text-center" >
-                          <img src="assets/img/rescue.jpg" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
-                        </div>
-          
-                        <!-- Text Content -->
-                        <div class="col-lg-6 mt-3 mt-lg-0">
-                          <h4> <strong>Junior Animal Rescuer Workshop [coming soon!] </strong></h4>
-                          <h5 style="color: #0d3d14!important;">In this workshop, children/youth will learn about:</h5><br>
-                         <p class="fst-italic">
-                            - What do animal rescuers do <br>
-                            - Why do we need to rescue animals <br>
-                            - Tools used by animal rescuers <br>
-                          </p>
-                                <h5 style="color: #0d3d14!important;">Activity highlights include:</h5><br>
-                          <p class="fst-italic">
-                               - Explore an animal rescue van <br>
-                            - Hands-on with real animal rescue tools <br>
-                          </p>
-                          </p>
-                      
-                        </div>
-          
-                      </div>
-                    </div><!-- End Tab Content Item -->
-          
-                  </div>
-                  <br><br>
-
-                </div>
-        
-                <div class="container" style="padding: 50px;">
-                  <!-- Input your url -->
-                  <span>Chat with us on <a style="text-decoration: underline;" href="https://wa.me/+6587725464">WhatsApp</a> or follow us on <a style="text-decoration: underline;" href="https://www.instagram.com/thegoodearthschoolsg">Instagram</a> for upcoming events</span> <br><br>
-                *In the interest of both participant safety and animal welfare, live animals may or may not be used during the workshops. Unfamiliar environments can sometimes be stressful for animals + literature has shown that alternative methods like interactions with plushies or animal models can achieve similar learning outcomes.
-When live animals are part of the session, the activity will always be supervised by a seasoned animal handler to ensure the well-being and the safety of all participants and animals. However, do kindly note that the amount of direct interaction with live animals are not guaranteed.
-              
-                </div>
-
-              <!-- photo gallery -->
-              <div class="container" style="padding: 50px;">
-
-                <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-                  <div style="padding: 0px; justify-content: space-between; width: 100%;">
-                    <h1 style="color: black;"><b>Gallery</b></h1>
-                    <br><br>
-                  </div>
-
-                  <div class="container" style="width: 100%; max-width: 100%;">
-                    <div class="row gy-4 isotope-container">
-
-                      <!-- Gallery 01 -->
-                      <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app" style="position: relative;">
-                        <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eaf0e9;">
-                          <img src="assets/img/guineapig.jpg" class="img-fluid" alt="Friends of Guinea Pigs" loading="lazy" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;">
-                        </div>
-                        <div class="portfolio-info">
-                          <h4>Friends of Guinea Pigs</h4>
-                        </div>
-                      </div>
-
-                      <!-- Gallery 02 -->
-                      <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app" style="position: relative;">
-                        <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eaf0e9;">
-                          <img src="assets/img/guineapig2.jpg" class="img-fluid" alt="Friends of Guinea Pigs" loading="lazy" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;">
-                        </div>
-                        <div class="portfolio-info">
-                          <h4>Friends of Guinea Pigs</h4>
-                        </div>
-                      </div>
-
-                      <!-- Gallery 03 -->
-                      <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app" style="position: relative;">
-                        <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eaf0e9;">
-                          <img src="assets/img/terrapin1.jpg" class="img-fluid" alt="Friends of Terrapins" loading="lazy" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;">
-                        </div>
-                        <div class="portfolio-info">
-                          <h4>Friends of Terrapins</h4>
-                        </div>
-                      </div>
-
-                      <!-- Gallery 04 -->
-                      <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app" style="position: relative;">
-                        <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eaf0e9;">
-                          <img src="assets/img/dog3.jpg" class="img-fluid" alt="Friends of Dogs" loading="lazy" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;">
-                        </div>
-                        <div class="portfolio-info">
-                          <h4>Friends of Dogs</h4>
-                        </div>
-                      </div>
-
-                      <!-- Gallery 05 -->
-                      <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app" style="position: relative;">
-                        <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eaf0e9;">
-                          <img src="assets/img/rabbit2.jpg" class="img-fluid" alt="Friends of Rabbits" loading="lazy" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;">
-                        </div>
-                        <div class="portfolio-info">
-                          <h4>Friends of Rabbits</h4>
-                        </div>
-                      </div>
-
-                      <!-- Gallery 06 -->
-                      <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app" style="position: relative;">
-                        <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eaf0e9;">
-                          <img src="assets/img/cat2.jpg" class="img-fluid" alt="Friends of Cats" loading="lazy" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;">
-                        </div>
-                        <div class="portfolio-info">
-                          <h4>Friends of Cats</h4>
-                        </div>
-                      </div>
-
-                      <!-- Gallery 07 -->
-                      <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app" style="position: relative;">
-                        <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eaf0e9;">
-                          <img src="assets/img/rabbit3.jpg" class="img-fluid" alt="Friends of Rabbits" loading="lazy" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;">
-                        </div>
-                        <div class="portfolio-info">
-                          <h4>Friends of Rabbits</h4>
-                        </div>
-                      </div>
-
-                      <!-- Gallery 08 -->
-                      <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app" style="position: relative;">
-                        <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eaf0e9;">
-                          <img src="assets/img/guineapig4.jpg" class="img-fluid" alt="Friends of Guinea Pigs" loading="lazy" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;">
-                        </div>
-                        <div class="portfolio-info">
-                          <h4>Friends of Guinea Pigs</h4>
-                        </div>
-                      </div>
-
-                      <!-- Gallery 09 -->
-                      <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app" style="position: relative;">
-                        <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eaf0e9;">
-                          <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #0d3d14; font-weight: 600;">Photo 09</span>
-                          <img src="assets/img/animalallies9.webp" class="img-fluid" alt="Gallery Photo 09" loading="lazy" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;" onerror="this.style.display='none'">
-                        </div>
-                        <div class="portfolio-info">
-                          <h4>Gallery Photo 09</h4>
-                        </div>
-                      </div>
-
-                      <!-- Gallery 10 -->
-                      <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app" style="position: relative;">
-                        <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eaf0e9;">
-                          <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #0d3d14; font-weight: 600;">Photo 10</span>
-                          <img src="assets/img/animalallies10.webp" class="img-fluid" alt="Gallery Photo 10" loading="lazy" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;" onerror="this.style.display='none'">
-                        </div>
-                        <div class="portfolio-info">
-                          <h4>Gallery Photo 10</h4>
-                        </div>
-                      </div>
-
-                      <!-- Gallery 11 -->
-                      <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app" style="position: relative;">
-                        <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eaf0e9;">
-                          <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #0d3d14; font-weight: 600;">Photo 11</span>
-                          <img src="assets/img/animalallies11.webp" class="img-fluid" alt="Gallery Photo 11" loading="lazy" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;" onerror="this.style.display='none'">
-                        </div>
-                        <div class="portfolio-info">
-                          <h4>Gallery Photo 11</h4>
-                        </div>
-                      </div>
-
-                      <!-- Gallery 12 -->
-                      <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app" style="position: relative;">
-                        <div style="position: relative; width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; background: #eaf0e9;">
-                          <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #0d3d14; font-weight: 600;">Photo 12</span>
-                          <img src="assets/img/animalallies12.webp" class="img-fluid" alt="Gallery Photo 12" loading="lazy" style="position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px;" onerror="this.style.display='none'">
-                        </div>
-                        <div class="portfolio-info">
-                          <h4>Gallery Photo 12</h4>
-                        </div>
-                      </div>
-
-                    </div><!-- End Portfolio Container -->
-                  </div>
-
-                </div>
-
               </div>
+            </div>
+
+          </div>
+          <br><br>
+        </div>
+
+        <!-- =====================================================
+             PROGRAMME 02: FRIENDS OF DOGS
+        ====================================================== -->
+
+        <div class="container" style="padding: 50px;">
+
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="tab-pane fade active show" id="features-tab-1">
+              <div class="row">
+
+                <div class="col-lg-6 text-center">
+                  <img src="assets/img/aa2.webp" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0">
+
+                  <h4><strong>Friends of Dogs</strong></h4>
+
+                  <h5 style="color: #0d3d14!important;">
+                    In this workshop, children/youth will learn about:
+                  </h5>
+
+                  <p class="fst-italic">
+                    - Common Misconceptions about the animal <br>
+                    - Dietary Requirements <br>
+                    - Housing <br>
+                    - Basic Animal Behaviour and Care <br>
+                  </p>
+
+                  <h5 style="color: #0d3d14!important;">
+                    Activity highlights include:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Animal interaction* <br>
+                    - Hands-on with real pet care items <br>
+                    - Fun team-based activities to build a sense of community and responsibility <br>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+        </div>
+
+        <!-- =====================================================
+             PROGRAMME 03: FRIENDS OF CATS
+        ====================================================== -->
+
+        <div class="container" style="padding: 50px;">
+
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="tab-pane fade active show" id="features-tab-1">
+              <div class="row">
+
+                <div class="col-lg-6 text-center">
+                  <img src="assets/img/aa3.webp" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0">
+
+                  <h4><strong>Friends of Cats</strong></h4>
+
+                  <h5 style="color: #0d3d14!important;">
+                    In this workshop, children/youth will learn about:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Common Misconceptions about the animal <br>
+                    - Dietary Requirements <br>
+                    - Housing <br>
+                    - Basic Animal Behaviour and Care <br>
+                  </p>
+
+                  <h5 style="color: #0d3d14!important;">
+                    Activity highlights include:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Animal interaction* <br>
+                    - Hands-on with real pet care items <br>
+                    - Fun team-based activities to build a sense of community and responsibility <br>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+        </div>
+
+        <!-- =====================================================
+             PROGRAMME 04: FRIENDS OF GUINEA PIGS
+        ====================================================== -->
+
+        <div class="container" style="padding: 50px;">
+
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="tab-pane fade active show" id="features-tab-1">
+              <div class="row">
+
+                <div class="col-lg-6 text-center">
+                  <img src="assets/img/aa4.webp" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0">
+
+                  <h4><strong>Friends of Guinea Pigs</strong></h4>
+
+                  <p class="fst-italic">
+                    - Common Misconceptions about the animal <br>
+                    - Dietary Requirements <br>
+                    - Housing <br>
+                    - Basic Animal Behaviour and Care <br>
+                  </p>
+
+                  <h5 style="color: #0d3d14!important;">
+                    Activity highlights include:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Animal interaction* <br>
+                    - Hands-on with real pet care items <br>
+                    - Fun team-based activities to build a sense of community and responsibility <br>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+        </div>
+
+        <!-- =====================================================
+             PROGRAMME 05: FRIENDS OF RABBITS
+        ====================================================== -->
+
+        <div class="container" style="padding: 50px;">
+
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="tab-pane fade active show" id="features-tab-1">
+              <div class="row">
+
+                <div class="col-lg-6 text-center">
+                  <img src="assets/img/aa5.webp" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0">
+
+                  <h4><strong>Friends of Rabbits</strong></h4>
+
+                  <h5 style="color: #0d3d14!important;">
+                    In this workshop, children/youth will learn about:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Common Misconceptions about the animal <br>
+                    - Dietary Requirements <br>
+                    - Housing <br>
+                    - Basic Animal Behaviour and Care <br>
+                  </p>
+
+                  <h5 style="color: #0d3d14!important;">
+                    Activity highlights include:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Animal interaction* <br>
+                    - Hands-on with real pet care items <br>
+                    - Fun team-based activities to build a sense of community and responsibility <br>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+        </div>
+
+        <!-- =====================================================
+             PROGRAMME 06: FRIENDS OF TERRAPINS
+        ====================================================== -->
+
+        <div class="container" style="padding: 50px;">
+
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="tab-pane fade active show" id="features-tab-1">
+              <div class="row">
+
+                <div class="col-lg-6 text-center">
+                  <img src="assets/img/aa6.webp" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0">
+
+                  <h4><strong>Friends of Terrapins</strong></h4>
+
+                  <h5 style="color: #0d3d14!important;">
+                    In this workshop, children/youth will learn about:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Common Misconceptions about the animal <br>
+                    - Dietary Requirements <br>
+                    - Housing <br>
+                    - Basic Animal Behaviour and Care <br>
+                  </p>
+
+                  <h5 style="color: #0d3d14!important;">
+                    Activity highlights include:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Animal interaction* <br>
+                    - Hands-on with real pet care items <br>
+                    - Fun team-based activities to build a sense of community and responsibility <br>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+        </div>
+
+        <!-- =====================================================
+             PROGRAMME 07: FRIENDS OF HAMSTERS
+        ====================================================== -->
+
+        <div class="container" style="padding: 50px;">
+
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="tab-pane fade active show" id="features-tab-1">
+              <div class="row">
+
+                <div class="col-lg-6 text-center">
+                  <img src="assets/img/aa7.webp" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0">
+
+                  <h4><strong>Friends of Hamsters</strong></h4>
+
+                  <h5 style="color: #0d3d14!important;">
+                    In this workshop, children/youth will learn about:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Common Misconceptions about the animal <br>
+                    - Dietary Requirements <br>
+                    - Housing <br>
+                    - Basic Animal Behaviour and Care <br>
+                  </p>
+
+                  <h5 style="color: #0d3d14!important;">
+                    Activity highlights include:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Animal interaction* <br>
+                    - Hands-on with real pet care items <br>
+                    - Fun team-based activities to build a sense of community and responsibility <br>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+        </div>
+
+        <!-- =====================================================
+             PROGRAMME 08: FRIENDS OF CHICKENS
+        ====================================================== -->
+
+        <div class="container" style="padding: 50px;">
+
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="tab-pane fade active show" id="features-tab-1">
+              <div class="row">
+
+                <div class="col-lg-6 text-center">
+                  <img src="assets/img/aa8.webp" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0">
+
+                  <h4><strong>Friends of Chickens</strong></h4>
+
+                  <h5 style="color: #0d3d14!important;">
+                    In this workshop, children/youth will learn about:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Common Misconceptions about the animal <br>
+                    - Dietary Requirements <br>
+                    - Housing <br>
+                    - Basic Animal Behaviour and Care <br>
+                  </p>
+
+                  <h5 style="color: #0d3d14!important;">
+                    Activity highlights include:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Animal interaction* <br>
+                    - Hands-on with real pet care items <br>
+                    - Fun team-based activities to build a sense of community and responsibility <br>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+        </div>
+
+        <!-- =====================================================
+             PROGRAMME 09: JUNIOR VET WORKSHOP
+        ====================================================== -->
+
+        <div class="container" style="padding: 50px;">
+
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="tab-pane fade active show" id="features-tab-1">
+              <div class="row">
+
+                <div class="col-lg-6 text-center">
+                  <img src="assets/img/aa9.webp" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0">
+
+                  <h4><strong>Junior Vet Workshop</strong></h4>
+
+                  <h5 style="color: #0d3d14!important;">
+                    In this workshop, children/youth will learn about:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - What a vet does in the clinic <br>
+                    - Basic medical Care for the animals <br>
+                  </p>
+
+                  <h5 style="color: #0d3d14!important;">
+                    Activity highlights include:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Animal interaction* <br>
+                    - Hands-on with real medical pet care items <br>
+                    - Dress up role play as a vet <br>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+        </div>
+
+        <!-- =====================================================
+             PROGRAMME 10: JUNIOR ANIMAL RESCUER WORKSHOP
+        ====================================================== -->
+
+        <div class="container" style="padding: 50px;">
+
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="tab-pane fade active show" id="features-tab-1">
+              <div class="row">
+
+                <div class="col-lg-6 text-center">
+                  <img src="assets/img/aa10.webp" style="width: 400px; height: 400px; object-fit: cover; border-radius: 5px;" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6 mt-3 mt-lg-0">
+
+                  <h4>
+                    <strong>Junior Animal Rescuer Workshop [coming soon!]</strong>
+                  </h4>
+
+                  <h5 style="color: #0d3d14!important;">
+                    In this workshop, children/youth will learn about:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - What do animal rescuers do <br>
+                    - Why do we need to rescue animals <br>
+                    - Tools used by animal rescuers <br>
+                  </p>
+
+                  <h5 style="color: #0d3d14!important;">
+                    Activity highlights include:
+                  </h5>
+                  <br>
+
+                  <p class="fst-italic">
+                    - Explore an animal rescue van <br>
+                    - Hands-on with real animal rescue tools <br>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+        </div>
+
+        <!-- CONTACT AND ANIMAL WELFARE NOTE -->
+
+        <div class="container" style="padding: 50px;">
+
+          <span>
+            Chat with us on
+            <a style="text-decoration: underline;" href="https://wa.me/+6587725464">WhatsApp</a>
+            or follow us on
+            <a style="text-decoration: underline;" href="https://www.instagram.com/thegoodearthschoolsg">Instagram</a>
+            for upcoming events
+          </span>
+
+          <br><br>
+
+          *In the interest of both participant safety and animal welfare, live animals may or may not be used during the workshops. Unfamiliar environments can sometimes be stressful for animals + literature has shown that alternative methods like interactions with plushies or animal models can achieve similar learning outcomes.
+
+          When live animals are part of the session, the activity will always be supervised by a seasoned animal handler to ensure the well-being and the safety of all participants and animals. However, do kindly note that the amount of direct interaction with live animals are not guaranteed.
+
+        </div>
+
+        <!-- =====================================================
+             PHOTO GALLERY: AAG1.WEBP TO AAG16.WEBP
+             16 SQUARE IMAGES, HOVER LABELS ONLY
+        ====================================================== -->
+
+        <div class="container" id="animal-allies-gallery" style="padding: 50px;">
+
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+            <div style="padding: 0px; justify-content: space-between; width: 100%;">
+              <h1 style="color: black;"><b>Gallery</b></h1>
+              <br><br>
+            </div>
+
+            <div class="container" style="width: 100%; max-width: 100%;">
+
+              <div class="row gy-4 isotope-container">
+
+                <!-- Gallery 01 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag1.webp" class="img-fluid" alt="Friends of Guinea Pigs" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Friends of Guinea Pigs</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 02 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag2.webp" class="img-fluid" alt="Friends of Guinea Pigs" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Friends of Guinea Pigs</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 03 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag3.webp" class="img-fluid" alt="Friends of Terrapins" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Friends of Terrapins</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 04 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag4.webp" class="img-fluid" alt="Friends of Dogs" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Friends of Dogs</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 05 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag5.webp" class="img-fluid" alt="Friends of Rabbits" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Friends of Rabbits</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 06 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag6.webp" class="img-fluid" alt="Friends of Cats" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Friends of Cats</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 07 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag7.webp" class="img-fluid" alt="Friends of Rabbits" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Friends of Rabbits</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 08 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag8.webp" class="img-fluid" alt="Friends of Guinea Pigs" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Friends of Guinea Pigs</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 09 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag9.webp" class="img-fluid" alt="Gallery Photo 09" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Gallery Photo 09</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 10 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag10.webp" class="img-fluid" alt="Gallery Photo 10" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Gallery Photo 10</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 11 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag11.webp" class="img-fluid" alt="Gallery Photo 11" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Gallery Photo 11</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 12 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag12.webp" class="img-fluid" alt="Gallery Photo 12" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Gallery Photo 12</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 13 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag13.webp" class="img-fluid" alt="Gallery Photo 13" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Gallery Photo 13</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 14 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag14.webp" class="img-fluid" alt="Gallery Photo 14" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Gallery Photo 14</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 15 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag15.webp" class="img-fluid" alt="Gallery Photo 15" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Gallery Photo 15</h4>
+                  </div>
+                </div>
+
+                <!-- Gallery 16 -->
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
+                  <img src="assets/img/aag16.webp" class="img-fluid" alt="Gallery Photo 16" loading="lazy" decoding="async">
+                  <div class="portfolio-info">
+                    <h4>Gallery Photo 16</h4>
+                  </div>
+                </div>
+
+              </div><!-- End Portfolio Container -->
+
+            </div>
+
+          </div>
+
+        </div>
 
       </section><!-- /Portfolio Section -->
 
-
     </main>
 
-  <footer id="footer" class="footer footer-background">
-    <div class="container">      
-        <img src="assets/img/tgeslogo.png" width="300"> 
-    </a>
-      </button>
-      <br>
-      
-      <div style="padding: 20px;" class="social-links d-flex justify-content-center">
-       
-        
-        <a href="https://www.instagram.com/thegoodearthschoolsg"><i class="bi bi-instagram"></i></a>
-        <a href="mailto:hello@thegoodearthschool.org" title="Email Us"><i class="bi bi-envelope"></i></a>
-        <a href="https://www.linkedin.com/company/-tges/"><i class="bi bi-linkedin"></i></a>
-      </div>
+    <!-- FOOTER -->
+    <footer id="footer" class="footer footer-background">
       <div class="container">
-        <div class="copyright">
-          <span>Corporate | Media | Partnerships | Everything - Planet, Animals, Humans </span>
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          hello@thegoodearthschool.org</a>
 
-          <hr>
-          <span>© The Good Earth School. All Rights Reserved</span>
+        <img src="assets/img/tgeslogo.png" width="300">
+
+        <br>
+
+        <div style="padding: 20px;" class="social-links d-flex justify-content-center">
+
+          <a href="https://www.instagram.com/thegoodearthschoolsg">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="mailto:hello@thegoodearthschool.org" title="Email Us">
+            <i class="bi bi-envelope"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/company/-tges/">
+            <i class="bi bi-linkedin"></i>
+          </a>
+
         </div>
+
+        <div class="container">
+
+          <div class="copyright">
+            <span>Corporate | Media | Partnerships | Everything - Planet, Animals, Humans</span>
+          </div>
+
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+
+            hello@thegoodearthschool.org
+
+            <hr>
+
+            <span>&copy; The Good Earth School. All Rights Reserved</span>
+
+          </div>
+
+        </div>
+
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-  <script>
-    new PureCounter();
-  </script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <script>
+      new PureCounter();
+    </script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
