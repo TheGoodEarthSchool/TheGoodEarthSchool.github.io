@@ -31,6 +31,7 @@
     #sustainable-programmes .row > [class*="col-"] {
       display: flex;
     }
+
     #sustainable-programmes .programme-card {
       display: flex !important;
       flex-direction: column;
@@ -46,14 +47,17 @@
       box-shadow: 0 4px 18px rgba(0,0,0,.08);
       transition: transform .3s ease, box-shadow .3s ease;
     }
+
     #sustainable-programmes .programme-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 24px rgba(0,0,0,.14);
     }
+
     #sustainable-programmes .programme-card:focus-visible {
       outline: 3px solid #0d3d14;
       outline-offset: 4px;
     }
+
     #sustainable-programmes .programme-card > img {
       display: block !important;
       width: 100% !important;
@@ -64,6 +68,7 @@
       border-radius: 12px 12px 0 0 !important;
       flex-shrink: 0;
     }
+
     #sustainable-programmes .programme-card-content {
       display: flex;
       flex-direction: column;
@@ -71,6 +76,7 @@
       width: 100%;
       padding: 22px;
     }
+
     #sustainable-programmes .programme-card-content h4 {
       color: #0d3d14;
       font-weight: 700;
@@ -78,6 +84,7 @@
       line-height: 1.25;
       margin: 0 0 12px;
     }
+
     #sustainable-programmes .programme-card-content p {
       color: #0d3d14;
       font-size: 15px;
@@ -85,6 +92,7 @@
       flex: 1;
       margin: 0 0 16px;
     }
+
     #sustainable-programmes .programme-card-link {
       display: block;
       margin-top: auto;
@@ -101,17 +109,21 @@
       object-fit: cover;
       border-radius: 12px;
     }
+
     .programme-modal-section {
       margin-top: 24px;
     }
+
     .programme-modal-section h5 {
       color: #0d3d14 !important;
       font-weight: 700;
       margin-bottom: 10px;
     }
+
     .programme-modal-section li {
       margin-bottom: 7px;
     }
+
     .programme-modal-note {
       margin-top: 24px;
       padding: 15px;
@@ -125,7 +137,9 @@
       position: relative;
       overflow: hidden;
       cursor: default;
+      background: transparent !important;
     }
+
     #sustainable-gallery .portfolio-item > img {
       display: block !important;
       width: 100% !important;
@@ -135,33 +149,38 @@
       object-position: center;
       border-radius: 12px !important;
     }
+
+    /* Hide captions until the user hovers */
     #sustainable-gallery .portfolio-item .portfolio-info {
       pointer-events: none;
       border-radius: 0 0 12px 12px;
+      opacity: 0 !important;
+      visibility: hidden;
+      transition: opacity .25s ease, visibility .25s ease;
     }
+
+    #sustainable-gallery .portfolio-item:hover .portfolio-info {
+      opacity: 1 !important;
+      visibility: visible;
+    }
+
     #sustainable-gallery .portfolio-info h4 {
       color: #0d3d14 !important;
     }
-    #sustainable-gallery .gallery-placeholder {
-      position: absolute;
-      inset: 0 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #eaf1e7;
-      color: #0d3d14;
-      border-radius: 12px;
-      font-weight: 600;
-    }
 
     @media (max-width: 767px) {
-      #hero h1 { font-size: 14vw !important; }
+      #hero h1 {
+        font-size: 14vw !important;
+      }
+
       #sustainable-programmes .programme-card-content {
         padding: 16px;
       }
+
       #sustainable-programmes .programme-card-content h4 {
         min-height: 0;
       }
+
       .sus-section {
         padding-left: 18px !important;
         padding-right: 18px !important;
@@ -174,8 +193,10 @@
 
   <!-- Header and hero -->
   <div class="littlegreengardians">
+
     <header id="header" class="header d-flex align-items-center">
       <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
         <a href="index.html" class="logo d-flex align-items-center">
           <img src="assets/img/tgeslogo.png" alt="The Good Earth School">
         </a>
@@ -185,17 +206,20 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="ourstory.html">Our Story</a></li>
             <li><a href="projects.html">Notable Projects</a></li>
+
             <li class="dropdown">
               <a href="#">
                 <span>What We Do</span>
                 <i class="bi bi-chevron-down toggle-dropdown"></i>
               </a>
+
               <ul>
                 <li class="dropdown">
                   <a href="environment.html">
                     <span>For The Environment</span>
                     <i class="bi bi-chevron-down toggle-dropdown"></i>
                   </a>
+
                   <ul>
                     <li><a href="preschool_programmes.html">Little Green Heroes</a></li>
                     <li><a href="primary_programmes.html">Children's Voices for Biodiversity</a></li>
@@ -203,12 +227,17 @@
                     <li><a href="green_wisdom.html">Green Wisdom</a></li>
                   </ul>
                 </li>
-                <li><a href="animalallies.html" target="_blank">For The Animals</a></li>
+
+                <li>
+                  <a href="animalallies.html" target="_blank">For The Animals</a>
+                </li>
+
                 <li class="dropdown">
                   <a href="#">
                     <span>For Fellow Humans</span>
                     <i class="bi bi-chevron-down toggle-dropdown"></i>
                   </a>
+
                   <ul>
                     <li><a href="sus_living.html">Sustainable Living</a></li>
                     <li><a href="volunteer.html">Doing good, Together.</a></li>
@@ -217,36 +246,58 @@
               </ul>
             </li>
           </ul>
+
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+
       </div>
     </header>
 
-    <section id="hero" class="hero section"
-      style="background-color: #0d3d1400; color: white;">
-      <div id="hero-carousel"
+    <section
+      id="hero"
+      class="hero section"
+      style="background-color: #0d3d1400; color: white;"
+    >
+      <div
+        id="hero-carousel"
         data-bs-interval="5000"
         class="container carousel carousel-fade"
-        data-bs-ride="carousel">
+        data-bs-ride="carousel"
+      >
         <div class="carousel-container">
-          <h1 class="animate__animated animate__fadeInDown"
-            style="color: white; font-size: 9vw;">
+
+          <h1
+            class="animate__animated animate__fadeInDown"
+            style="color: white; font-size: 9vw;"
+          >
             Sustainable Living
           </h1>
+
           <br><br>
+
           <table>
             <tr>
-              <td><i class="fa" style="font-size:20px;">&#xf015;</i></td>
-              <td><a href="index.html" style="color:white;">Home</a></td>
-              <td><span style="font-size:20px;">&#11208;</span></td>
+              <td>
+                <i class="fa" style="font-size:20px;">&#xf015;</i>
+              </td>
+              <td>
+                <a href="index.html" style="color:white;">Home</a>
+              </td>
+              <td>
+                <span style="font-size:20px;">&#11208;</span>
+              </td>
               <td>For Fellow Humans</td>
-              <td><span style="font-size:20px;">&#11208;</span></td>
+              <td>
+                <span style="font-size:20px;">&#11208;</span>
+              </td>
               <td>Sustainable Living</td>
             </tr>
           </table>
+
         </div>
       </div>
     </section>
+
   </div>
 
   <main class="main">
@@ -254,7 +305,9 @@
 
       <!-- Introduction -->
       <div class="container sus-section" style="padding:50px;">
+
         <h1>Sustainable Living Workshops (Suitable for all ages*)</h1>
+
         <p>*Kids under 10 must be accompanied by an adult</p>
 
         <p>
@@ -269,20 +322,35 @@
         </p>
 
         <p><strong>Workshops in this series</strong></p>
-        <p>
-          Click on a workshop below to find out what participants
-          will learn and experience.
-        </p>
+
+        <ul>
+          <li>Jesmonite Workshop</li>
+          <li>Clay x Food Waste Craft</li>
+          <li>Diatomite Workshop</li>
+          <li>Eco-enzymes</li>
+          <li>Natural Dye Making and Craft</li>
+          <li>Making Your Own Beer / Fruit Wine</li>
+          <li>Cork Book Binding</li>
+          <li>Art Jam Using Upcycled / Recycled Materials</li>
+          <li>Soy Wax Lip Balm (with Cooking Oil)</li>
+          <li>Or have something else in mind (that meets our focus areas)? ↓</li>
+        </ul>
 
         <p>
-          <a href="mailto:hello@thegoodearthschool.org"
-            class="custom-button">Find Out More</a>
+          <a
+            href="mailto:hello@thegoodearthschool.org"
+            class="custom-button"
+          >
+            Find Out More
+          </a>
         </p>
 
         <p>
           <strong>Venue:</strong> On-campus or one of our partner venues!
-          <br>Located near:
+          <br>
+          Located near:
         </p>
+
         <ul>
           <li>Tai Seng</li>
           <li>Botanic Gardens</li>
@@ -290,398 +358,775 @@
         </ul>
 
         <strong>Fees:</strong>
+
         <ul>
           <li>Sustainable Living Workshops - S$70/Workshop</li>
           <li>Bring a friend! - S$118/Workshop</li>
           <li>Day Retreat - S$150 [3 workshops]</li>
         </ul>
+
         <p>
-          <small>
-            BCRS education sessions are quoted separately according to
-            group size and format.
-          </small>
+          Click on a workshop below to find out what participants
+          will learn and experience.
         </p>
+
       </div>
 
       <!-- Programme cards -->
-      <div class="container sus-section" id="sustainable-programmes"
-        style="padding:20px 50px 50px 50px;">
+      <div
+        class="container sus-section"
+        id="sustainable-programmes"
+        style="padding:20px 50px 50px 50px;"
+      >
+
         <div class="row gy-4">
 
-          <!-- Soy Wax Candle Making -->
+          <!-- Programme 01: Soy Wax Candle Making -->
           <div class="col-lg-4 col-md-6">
-            <button type="button" class="programme-card"
+
+            <button
+              type="button"
+              class="programme-card"
               data-bs-toggle="modal"
               data-bs-target="#programmeInfoModal"
               data-title="Soy Wax Candle Making"
-              data-image="assets/img/soycandle.jpg"
+              data-image="assets/img/slp1.webp"
               data-description="Compare plant-based soy wax with petroleum-derived paraffin wax while making a candle."
               data-learning="Compare the origins of soy wax and petroleum-derived paraffin wax|Consider sourcing, ingredients, packaging and product use|Understand why plant-based materials also have environmental impacts"
               data-activities="Explore different candle waxes and materials|Make and personalise a soy wax candle|Discuss candle care and more informed purchasing choices"
-              data-note="Candle-making activities involve heated materials and require suitable supervision.">
-              <img src="assets/img/soycandle.jpg"
-                alt="Soy Wax Candle Making" loading="lazy" decoding="async">
+              data-note="Candle-making activities involve heated materials and require suitable supervision."
+            >
+
+              <img
+                src="assets/img/slp1.webp"
+                alt="Soy Wax Candle Making"
+                loading="lazy"
+                decoding="async"
+              >
+
               <div class="programme-card-content">
+
                 <h4>Soy Wax Candle Making</h4>
+
                 <p>
                   Compare plant-based soy wax with petroleum-derived
                   paraffin wax while making a candle.
                 </p>
+
                 <span class="programme-card-link">
                   Find out more <i class="bi bi-arrow-right"></i>
                 </span>
+
               </div>
             </button>
+
           </div>
 
-          <!-- Essential Oil Blending -->
+          <!-- Programme 02: Essential Oil Blending -->
           <div class="col-lg-4 col-md-6">
-            <button type="button" class="programme-card"
+
+            <button
+              type="button"
+              class="programme-card"
               data-bs-toggle="modal"
               data-bs-target="#programmeInfoModal"
               data-title="Essential Oil Blending"
-              data-image="assets/img/essentialoil.png"
+              data-image="assets/img/slp2.webp"
               data-description="Compare plant-derived essential oils with conventional fragrance products and create a personal blend."
               data-learning="Explore where essential oils and fragrance ingredients come from|Understand concentration, sourcing, packaging and safe use|Consider environmental trade-offs rather than relying on product labels alone"
               data-activities="Explore selected scents and ingredient information|Compare different fragrance formats and packaging|Create a personal blend using appropriate dilution and handling practices"
-              data-note="Essential oils may cause irritation or sensitivities. Ingredients and activities are adjusted to participant needs.">
-              <img src="assets/img/essentialoil.png"
-                alt="Essential Oil Blending" loading="lazy" decoding="async">
+              data-note="Essential oils may cause irritation or sensitivities. Ingredients and activities are adjusted to participant needs."
+            >
+
+              <img
+                src="assets/img/slp2.webp"
+                alt="Essential Oil Blending"
+                loading="lazy"
+                decoding="async"
+              >
+
               <div class="programme-card-content">
+
                 <h4>Essential Oil Blending</h4>
+
                 <p>
                   Compare plant-derived essential oils with conventional
-                  fragrance products and create a personal blend.
+                  fragrance products and create a personalised blend.
                 </p>
+
                 <span class="programme-card-link">
                   Find out more <i class="bi bi-arrow-right"></i>
                 </span>
+
               </div>
             </button>
+
           </div>
 
-          <!-- Jesmonite Workshop -->
+          <!-- Programme 03: Jesmonite Workshop -->
           <div class="col-lg-4 col-md-6">
-            <button type="button" class="programme-card"
+
+            <button
+              type="button"
+              class="programme-card"
               data-bs-toggle="modal"
               data-bs-target="#programmeInfoModal"
               data-title="Jesmonite Workshop"
-              data-image="assets/img/jesmonite.jpg"
+              data-image="assets/img/slp3.webp"
               data-description="Make a reusable item while comparing material choices, durability and product lifespan."
               data-learning="Understand how composite materials are used in everyday products|Compare material use and durability with common alternatives|Consider how product lifespan and reuse affect waste"
               data-activities="Explore material properties and suitable moulds|Cast a functional or decorative item|Discuss how to care for and reuse the finished product"
-              data-note="Materials and methods may vary by venue and participant age.">
-              <img src="assets/img/jesmonite.jpg"
-                alt="Jesmonite Workshop" loading="lazy" decoding="async">
+              data-note="Materials and methods may vary by venue and participant age."
+            >
+
+              <img
+                src="assets/img/slp3.webp"
+                alt="Jesmonite Workshop"
+                loading="lazy"
+                decoding="async"
+              >
+
               <div class="programme-card-content">
+
                 <h4>Jesmonite Workshop</h4>
+
                 <p>
                   Make a reusable item while comparing material choices,
                   durability and product lifespan.
                 </p>
+
                 <span class="programme-card-link">
                   Find out more <i class="bi bi-arrow-right"></i>
                 </span>
+
               </div>
             </button>
+
           </div>
 
-          <!-- Diatomite Workshop -->
+          <!-- Programme 04: Natural Dye Making & Botanical Pigment Craft -->
           <div class="col-lg-4 col-md-6">
-            <button type="button" class="programme-card"
+
+            <button
+              type="button"
+              class="programme-card"
               data-bs-toggle="modal"
               data-bs-target="#programmeInfoModal"
-              data-title="Diatomite Workshop"
-              data-image="assets/img/suscraft.jpg"
-              data-description="Explore the absorbent properties of diatomite and make a practical household accessory."
-              data-learning="Learn what diatomite is and how its properties affect everyday uses|Compare it with other materials used for household accessories|Consider extraction, product care, durability and disposal"
-              data-activities="Observe and compare the absorbency of selected materials|Make or customise a suitable household item|Discuss the benefits and limits of different material choices"
-              data-note="The finished product and methods depend on available materials and participant suitability.">
-              <img src="assets/img/suscraft.jpg"
-                alt="Diatomite Workshop" loading="lazy" decoding="async">
+              data-title="Natural Dye Making &amp; Botanical Pigment Craft"
+              data-image="assets/img/slp4.webp"
+              data-description="Explore how colours can be extracted from plants, flowers and food materials to create natural dyes and pigments for art and craft."
+              data-learning="How pigments and colours can be extracted from botanical materials|The differences between natural and synthetic dyes, including their environmental impacts|How different plant materials and preparation methods affect colour and intensity"
+              data-activities="Explore and prepare botanical materials such as flowers, leaves and food scraps|Extract and mix natural colours to create dyes and pigments|Use the colours to paint or decorate a practical item, such as a bookmark, card or fabric piece"
+              data-note="The colours produced will vary depending on the botanical materials used. Some natural pigments may fade or change colour over time. Activities and materials can be adapted to the participants."
+            >
+
+              <img
+                src="assets/img/slp4.webp"
+                alt="Natural Dye Making and Botanical Pigment Craft"
+                loading="lazy"
+                decoding="async"
+              >
+
               <div class="programme-card-content">
-                <h4>Diatomite Workshop</h4>
+
+                <h4>Natural Dye Making &amp; Botanical Pigment Craft</h4>
+
                 <p>
-                  Explore the absorbent properties of diatomite and
-                  make a practical household accessory.
+                  Extract colours from plants, flowers and food scraps
+                  to create natural pigments for painting and craft.
                 </p>
+
                 <span class="programme-card-link">
                   Find out more <i class="bi bi-arrow-right"></i>
                 </span>
+
               </div>
             </button>
+
           </div>
 
-          <!-- Cork Book Binding -->
+          <!-- Programme 05: Cork Book Binding -->
           <div class="col-lg-4 col-md-6">
-            <button type="button" class="programme-card"
+
+            <button
+              type="button"
+              class="programme-card"
               data-bs-toggle="modal"
               data-bs-target="#programmeInfoModal"
               data-title="Cork Book Binding"
-              data-image="assets/img/bookbinding.jpg"
+              data-image="assets/img/slp5.webp"
               data-description="Compare cork with synthetic cover materials while making a notebook for everyday use."
               data-learning="Explore cork as a material and how it is sourced|Compare cork with conventional synthetic notebook covers|Understand how reuse, care and lifespan affect waste"
               data-activities="Explore cork and other cover materials|Learn simple book-binding techniques|Create a notebook and discuss ways to extend its use"
-              data-note="Book-binding methods and equipment depend on participant experience and workshop format.">
-              <img src="assets/img/bookbinding.jpg"
-                alt="Cork Book Binding" loading="lazy" decoding="async">
+              data-note="Book-binding methods and equipment depend on participant experience and workshop format."
+            >
+
+              <img
+                src="assets/img/slp5.webp"
+                alt="Cork Book Binding"
+                loading="lazy"
+                decoding="async"
+              >
+
               <div class="programme-card-content">
+
                 <h4>Cork Book Binding</h4>
+
                 <p>
                   Compare cork with synthetic cover materials while
                   making a notebook for everyday use.
                 </p>
+
                 <span class="programme-card-link">
                   Find out more <i class="bi bi-arrow-right"></i>
                 </span>
+
               </div>
             </button>
+
           </div>
 
-          <!-- BCRS Education -->
+          <!-- Programme 06: BCRS Education -->
           <div class="col-lg-4 col-md-6">
-            <button type="button" class="programme-card"
+
+            <button
+              type="button"
+              class="programme-card"
               data-bs-toggle="modal"
               data-bs-target="#programmeInfoModal"
               data-title="Beverage Container Return Scheme (BCRS) Education"
-              data-image="https://placehold.co/800x800/EAF1E7/0D3D14.png?text=BCRS+Education"
+              data-image="assets/img/slp6.webp"
               data-description="Learn how Singapore&#x27;s beverage container return scheme works and practise identifying eligible containers."
               data-learning="Understand the purpose of Singapore&#x27;s Beverage Container Return Scheme|Identify eligible containers and understand the deposit-return process|Learn how separate collection supports recycling and what consumers can do"
               data-activities="Identify scheme labels and sort example containers|Practise the steps involved in returning eligible containers|Take part in a demonstration or guided return activity where facilities permit"
-              data-note="This is an education session rather than a take-home craft workshop. Fees are quoted based on group size and format. Practical returns depend on local facilities.">
+              data-note="This is an education session rather than a take-home craft workshop. Fees are quoted based on group size and format. Practical returns depend on local facilities."
+            >
+
               <img
-                src="https://placehold.co/800x800/EAF1E7/0D3D14.png?text=BCRS+Education"
+                src="assets/img/slp6.webp"
                 alt="Beverage Container Return Scheme Education"
-                loading="lazy" decoding="async">
+                loading="lazy"
+                decoding="async"
+              >
+
               <div class="programme-card-content">
+
                 <h4>Beverage Container Return Scheme (BCRS) Education</h4>
+
                 <p>
                   Learn how Singapore's beverage container return scheme
                   works and practise identifying eligible containers.
                 </p>
+
                 <span class="programme-card-link">
                   Find out more <i class="bi bi-arrow-right"></i>
                 </span>
+
               </div>
             </button>
+
           </div>
 
         </div>
       </div>
 
       <!-- Shared programme pop-up -->
-      <div class="modal fade" id="programmeInfoModal"
+      <div
+        class="modal fade"
+        id="programmeInfoModal"
         tabindex="-1"
         aria-labelledby="programmeInfoModalTitle"
-        aria-hidden="true">
+        aria-hidden="true"
+      >
+
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+
           <div class="modal-content">
+
             <div class="modal-header">
-              <h2 class="modal-title fs-4"
-                id="programmeInfoModalTitle">Programme Information</h2>
-              <button type="button" class="btn-close"
-                data-bs-dismiss="modal" aria-label="Close"></button>
+
+              <h2
+                class="modal-title fs-4"
+                id="programmeInfoModalTitle"
+              >
+                Programme Information
+              </h2>
+
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+
             </div>
+
             <div class="modal-body">
-              <img id="programmeInfoModalImage"
-                src="" class="img-fluid rounded mb-4" alt="">
+
+              <img
+                id="programmeInfoModalImage"
+                src=""
+                class="img-fluid rounded mb-4"
+                alt=""
+              >
+
               <p id="programmeInfoModalDescription"></p>
 
               <div class="programme-modal-section">
+
                 <h5>In this workshop, participants will learn about:</h5>
+
                 <ul id="programmeInfoModalLearning"></ul>
+
               </div>
 
               <div class="programme-modal-section">
+
                 <h5>Activity highlights include:</h5>
+
                 <ul id="programmeInfoModalActivities"></ul>
+
               </div>
 
-              <div id="programmeInfoModalNoteContainer"
-                class="programme-modal-note" style="display:none;">
+              <div
+                id="programmeInfoModalNoteContainer"
+                class="programme-modal-note"
+                style="display:none;"
+              >
+
                 <strong>Please note:</strong>
+
                 <span id="programmeInfoModalNote"></span>
+
               </div>
+
             </div>
+
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary"
-                data-bs-dismiss="modal">Close</button>
-              <a id="programmeInfoModalEmail"
+
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+
+              <a
+                id="programmeInfoModalEmail"
                 href="mailto:hello@thegoodearthschool.org"
-                class="btn btn-success">Find Out More</a>
+                class="btn btn-success"
+              >
+                Find Out More
+              </a>
+
             </div>
+
           </div>
         </div>
       </div>
 
       <!-- Contact -->
       <div class="container sus-section" style="padding:50px;">
+
         <span>
           Chat with us on
-          <a href="https://wa.me/6587725464"
-            style="text-decoration:underline;">WhatsApp</a>
+
+          <a
+            href="https://wa.me/6587725464"
+            style="text-decoration:underline;"
+          >
+            WhatsApp
+          </a>
+
           or follow us on
-          <a href="https://www.instagram.com/thegoodearthschoolsg"
-            style="text-decoration:underline;">Instagram</a>
+
+          <a
+            href="https://www.instagram.com/thegoodearthschoolsg"
+            style="text-decoration:underline;"
+          >
+            Instagram
+          </a>
+
           for upcoming events.
         </span>
+
       </div>
 
       <!-- Gallery: 20 square photographs -->
-      <div class="container sus-section"
-        id="sustainable-gallery" style="padding:50px;">
-        <div class="isotope-layout"
+      <div
+        class="container sus-section"
+        id="sustainable-gallery"
+        style="padding:50px;"
+      >
+
+        <div
+          class="isotope-layout"
           data-default-filter="*"
           data-layout="masonry"
-          data-sort="original-order">
-          <h1 style="color:#0d3d14;"><strong>Gallery</strong></h1>
-          <p>Highlights from our Sustainable Living workshops and activities.</p>
+          data-sort="original-order"
+        >
+
+          <h1 style="color:#0d3d14;">
+            <strong>Gallery</strong>
+          </h1>
+
+          <p>
+            Highlights from our Sustainable Living workshops and activities.
+          </p>
 
           <div class="row gy-4 isotope-container">
 
+            <!-- Gallery 01 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/essentialoil.png" class="img-fluid"
-                alt="Essential Oil Workshop" loading="lazy" decoding="async">
-              <div class="portfolio-info"><h4>Essential Oil Workshop</h4></div>
+
+              <img
+                src="assets/img/sl1.webp"
+                class="img-fluid"
+                alt="Essential Oil Workshop"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <div class="portfolio-info">
+                <h4>Essential Oil Workshop</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 02 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/suscraft.jpg" class="img-fluid"
-                alt="Sustainable Crafts" loading="lazy" decoding="async">
-              <div class="portfolio-info"><h4>Sustainable Crafts</h4></div>
+
+              <img
+                src="assets/img/sl2.webp"
+                class="img-fluid"
+                alt="Sustainable Crafts"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <div class="portfolio-info">
+                <h4>Sustainable Crafts</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 03 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/suscraft2.jpg" class="img-fluid"
-                alt="Sustainable Craft" loading="lazy" decoding="async">
-              <div class="portfolio-info"><h4>Sustainable Craft</h4></div>
+
+              <img
+                src="assets/img/sl3.webp"
+                class="img-fluid"
+                alt="Sustainable Craft"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <div class="portfolio-info">
+                <h4>Sustainable Craft</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 04 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/jesmonite.jpg" class="img-fluid"
-                alt="Jesmonite" loading="lazy" decoding="async">
-              <div class="portfolio-info"><h4>Jesmonite</h4></div>
+
+              <img
+                src="assets/img/sl4.webp"
+                class="img-fluid"
+                alt="Jesmonite"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <div class="portfolio-info">
+                <h4>Jesmonite</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 05 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/bookbinding.jpg" class="img-fluid"
-                alt="Book Binding Workshop" loading="lazy" decoding="async">
-              <div class="portfolio-info"><h4>Book Binding Workshop</h4></div>
+
+              <img
+                src="assets/img/sl5.webp"
+                class="img-fluid"
+                alt="Book Binding Workshop"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <div class="portfolio-info">
+                <h4>Book Binding Workshop</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 06 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/mindfulbook.jpg" class="img-fluid"
-                alt="Mindful Book Binding" loading="lazy" decoding="async">
-              <div class="portfolio-info"><h4>Mindful Book Binding</h4></div>
+
+              <img
+                src="assets/img/sl6.webp"
+                class="img-fluid"
+                alt="Mindful Book Binding"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <div class="portfolio-info">
+                <h4>Mindful Book Binding</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 07 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/soycandle.jpg" class="img-fluid"
-                alt="Soy Wax Candle Workshop" loading="lazy" decoding="async">
-              <div class="portfolio-info"><h4>Soy Wax Candle Workshop</h4></div>
+
+              <img
+                src="assets/img/sl7.webp"
+                class="img-fluid"
+                alt="Soy Wax Candle Workshop"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <div class="portfolio-info">
+                <h4>Soy Wax Candle Workshop</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 08 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/soycandle1.jpg" class="img-fluid"
-                alt="Soy Wax Candle Workshop" loading="lazy" decoding="async">
-              <div class="portfolio-info"><h4>Soy Wax Candle Workshop</h4></div>
+
+              <img
+                src="assets/img/sl8.webp"
+                class="img-fluid"
+                alt="Soy Wax Candle Workshop"
+                loading="lazy"
+                decoding="async"
+              >
+
+              <div class="portfolio-info">
+                <h4>Soy Wax Candle Workshop</h4>
+              </div>
+
             </div>
 
-            <!-- New gallery photo slots -->
+            <!-- Gallery 09 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <span class="gallery-placeholder">Photo 09</span>
-              <img src="assets/img/susliving9.webp" class="img-fluid"
-                alt="Gallery Photo 09" loading="lazy"
-                onerror="this.style.visibility='hidden'">
-              <div class="portfolio-info"><h4>Gallery Photo 09</h4></div>
+
+              <img
+                src="assets/img/sl9.webp"
+                class="img-fluid"
+                alt="Gallery Photo 09"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.visibility='hidden'"
+              >
+
+              <div class="portfolio-info">
+                <h4>Gallery Photo 09</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 10 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <span class="gallery-placeholder">Photo 10</span>
-              <img src="assets/img/susliving10.webp" class="img-fluid"
-                alt="Gallery Photo 10" loading="lazy"
-                onerror="this.style.visibility='hidden'">
-              <div class="portfolio-info"><h4>Gallery Photo 10</h4></div>
+
+              <img
+                src="assets/img/sl10.webp"
+                class="img-fluid"
+                alt="Gallery Photo 10"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.visibility='hidden'"
+              >
+
+              <div class="portfolio-info">
+                <h4>Gallery Photo 10</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 11 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <span class="gallery-placeholder">Photo 11</span>
-              <img src="assets/img/susliving11.webp" class="img-fluid"
-                alt="Gallery Photo 11" loading="lazy"
-                onerror="this.style.visibility='hidden'">
-              <div class="portfolio-info"><h4>Gallery Photo 11</h4></div>
+
+              <img
+                src="assets/img/sl11.webp"
+                class="img-fluid"
+                alt="Gallery Photo 11"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.visibility='hidden'"
+              >
+
+              <div class="portfolio-info">
+                <h4>Gallery Photo 11</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 12 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <span class="gallery-placeholder">Photo 12</span>
-              <img src="assets/img/susliving12.webp" class="img-fluid"
-                alt="Gallery Photo 12" loading="lazy"
-                onerror="this.style.visibility='hidden'">
-              <div class="portfolio-info"><h4>Gallery Photo 12</h4></div>
+
+              <img
+                src="assets/img/sl12.webp"
+                class="img-fluid"
+                alt="Gallery Photo 12"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.visibility='hidden'"
+              >
+
+              <div class="portfolio-info">
+                <h4>Gallery Photo 12</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 13 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <span class="gallery-placeholder">Photo 13</span>
-              <img src="assets/img/susliving13.webp" class="img-fluid"
-                alt="Gallery Photo 13" loading="lazy"
-                onerror="this.style.visibility='hidden'">
-              <div class="portfolio-info"><h4>Gallery Photo 13</h4></div>
+
+              <img
+                src="assets/img/sl13.webp"
+                class="img-fluid"
+                alt="Gallery Photo 13"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.visibility='hidden'"
+              >
+
+              <div class="portfolio-info">
+                <h4>Gallery Photo 13</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 14 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <span class="gallery-placeholder">Photo 14</span>
-              <img src="assets/img/susliving14.webp" class="img-fluid"
-                alt="Gallery Photo 14" loading="lazy"
-                onerror="this.style.visibility='hidden'">
-              <div class="portfolio-info"><h4>Gallery Photo 14</h4></div>
+
+              <img
+                src="assets/img/sl14.webp"
+                class="img-fluid"
+                alt="Gallery Photo 14"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.visibility='hidden'"
+              >
+
+              <div class="portfolio-info">
+                <h4>Gallery Photo 14</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 15 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <span class="gallery-placeholder">Photo 15</span>
-              <img src="assets/img/susliving15.webp" class="img-fluid"
-                alt="Gallery Photo 15" loading="lazy"
-                onerror="this.style.visibility='hidden'">
-              <div class="portfolio-info"><h4>Gallery Photo 15</h4></div>
+
+              <img
+                src="assets/img/sl15.webp"
+                class="img-fluid"
+                alt="Gallery Photo 15"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.visibility='hidden'"
+              >
+
+              <div class="portfolio-info">
+                <h4>Gallery Photo 15</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 16 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <span class="gallery-placeholder">Photo 16</span>
-              <img src="assets/img/susliving16.webp" class="img-fluid"
-                alt="Gallery Photo 16" loading="lazy"
-                onerror="this.style.visibility='hidden'">
-              <div class="portfolio-info"><h4>Gallery Photo 16</h4></div>
+
+              <img
+                src="assets/img/sl16.webp"
+                class="img-fluid"
+                alt="Gallery Photo 16"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.visibility='hidden'"
+              >
+
+              <div class="portfolio-info">
+                <h4>Gallery Photo 16</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 17 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <span class="gallery-placeholder">Photo 17</span>
-              <img src="assets/img/susliving17.webp" class="img-fluid"
-                alt="Gallery Photo 17" loading="lazy"
-                onerror="this.style.visibility='hidden'">
-              <div class="portfolio-info"><h4>Gallery Photo 17</h4></div>
+
+              <img
+                src="assets/img/sl17.webp"
+                class="img-fluid"
+                alt="Gallery Photo 17"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.visibility='hidden'"
+              >
+
+              <div class="portfolio-info">
+                <h4>Gallery Photo 17</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 18 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <span class="gallery-placeholder">Photo 18</span>
-              <img src="assets/img/susliving18.webp" class="img-fluid"
-                alt="Gallery Photo 18" loading="lazy"
-                onerror="this.style.visibility='hidden'">
-              <div class="portfolio-info"><h4>Gallery Photo 18</h4></div>
+
+              <img
+                src="assets/img/sl18.webp"
+                class="img-fluid"
+                alt="Gallery Photo 18"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.visibility='hidden'"
+              >
+
+              <div class="portfolio-info">
+                <h4>Gallery Photo 18</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 19 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <span class="gallery-placeholder">Photo 19</span>
-              <img src="assets/img/susliving19.webp" class="img-fluid"
-                alt="Gallery Photo 19" loading="lazy"
-                onerror="this.style.visibility='hidden'">
-              <div class="portfolio-info"><h4>Gallery Photo 19</h4></div>
+
+              <img
+                src="assets/img/sl19.webp"
+                class="img-fluid"
+                alt="Gallery Photo 19"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.visibility='hidden'"
+              >
+
+              <div class="portfolio-info">
+                <h4>Gallery Photo 19</h4>
+              </div>
+
             </div>
 
+            <!-- Gallery 20 -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <span class="gallery-placeholder">Photo 20</span>
-              <img src="assets/img/susliving20.webp" class="img-fluid"
-                alt="Gallery Photo 20" loading="lazy"
-                onerror="this.style.visibility='hidden'">
-              <div class="portfolio-info"><h4>Gallery Photo 20</h4></div>
+
+              <img
+                src="assets/img/sl20.webp"
+                class="img-fluid"
+                alt="Gallery Photo 20"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.visibility='hidden'"
+              >
+
+              <div class="portfolio-info">
+                <h4>Gallery Photo 20</h4>
+              </div>
+
             </div>
 
           </div>
@@ -693,38 +1138,84 @@
 
   <!-- Footer -->
   <footer id="footer" class="footer footer-background">
+
     <div class="container">
-      <img src="assets/img/tgeslogo.png" width="300"
-        alt="The Good Earth School">
+
+      <img
+        src="assets/img/tgeslogo.png"
+        width="300"
+        alt="The Good Earth School"
+      >
+
       <br>
-      <div class="social-links d-flex justify-content-center"
-        style="padding:20px;">
-        <a href="https://www.instagram.com/thegoodearthschoolsg"
-          aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="mailto:hello@thegoodearthschool.org"
-          aria-label="Email"><i class="bi bi-envelope"></i></a>
-        <a href="https://www.linkedin.com/company/-tges/"
-          aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+
+      <div
+        class="social-links d-flex justify-content-center"
+        style="padding:20px;"
+      >
+
+        <a
+          href="https://www.instagram.com/thegoodearthschoolsg"
+          aria-label="Instagram"
+        >
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a
+          href="mailto:hello@thegoodearthschool.org"
+          aria-label="Email"
+        >
+          <i class="bi bi-envelope"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/-tges/"
+          aria-label="LinkedIn"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+
       </div>
+
       <div class="copyright">
-        <span>Corporate | Media | Partnerships | Everything - Planet, Animals, Humans</span>
+
+        <span>
+          Corporate | Media | Partnerships | Everything - Planet, Animals, Humans
+        </span>
+
       </div>
+
       <div class="credits">
-        <a href="mailto:hello@thegoodearthschool.org">hello@thegoodearthschool.org</a>
+
+        <a href="mailto:hello@thegoodearthschool.org">
+          hello@thegoodearthschool.org
+        </a>
+
         <hr>
-        <span>&copy; The Good Earth School. All Rights Reserved</span>
+
+        <span>
+          &copy; The Good Earth School. All Rights Reserved
+        </span>
+
       </div>
+
     </div>
   </footer>
 
-  <!-- Shared scripts -->
-  <a href="#" id="scroll-top"
+  <!-- Scroll Top -->
+  <a
+    href="#"
+    id="scroll-top"
     class="scroll-top d-flex align-items-center justify-content-center"
-    aria-label="Back to top">
+    aria-label="Back to top"
+  >
     <i class="bi bi-arrow-up-short"></i>
   </a>
+
+  <!-- Preloader -->
   <div id="preloader"></div>
 
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -733,25 +1224,35 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
   <script>
-    if (typeof PureCounter !== "undefined") new PureCounter();
+    if (typeof PureCounter !== "undefined") {
+      new PureCounter();
+    }
   </script>
+
   <script src="assets/js/main.js"></script>
 
   <!-- Programme pop-up -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+
       const modal = document.getElementById("programmeInfoModal");
+
       if (!modal) return;
 
       modal.addEventListener("show.bs.modal", function (event) {
+
         const card = event.relatedTarget;
+
         if (!card) return;
 
         const title = card.dataset.title || "Workshop Information";
+
         document.getElementById("programmeInfoModalTitle").textContent = title;
 
         const image = document.getElementById("programmeInfoModalImage");
+
         image.src = card.dataset.image || "";
         image.alt = title;
 
@@ -759,27 +1260,40 @@
           card.dataset.description || "";
 
         function renderList(id, value) {
+
           const ul = document.getElementById(id);
+
           ul.replaceChildren();
+
           (value || "").split("|").filter(Boolean).forEach(function (item) {
+
             const li = document.createElement("li");
+
             li.textContent = item.trim();
+
             ul.appendChild(li);
+
           });
+
         }
 
         renderList("programmeInfoModalLearning", card.dataset.learning);
+
         renderList("programmeInfoModalActivities", card.dataset.activities);
 
         const note = card.dataset.note || "";
+
         document.getElementById("programmeInfoModalNote").textContent = note;
+
         document.getElementById("programmeInfoModalNoteContainer").style.display =
           note.trim() ? "block" : "none";
 
         document.getElementById("programmeInfoModalEmail").href =
           "mailto:hello@thegoodearthschool.org?subject=" +
           encodeURIComponent(title + " Enquiry");
+
       });
+
     });
   </script>
 
