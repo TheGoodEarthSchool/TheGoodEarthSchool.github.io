@@ -9,9 +9,7 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>
-    Doing Good Together | The Good Earth School
-  </title>
+  <title>Doing Good Together | The Good Earth School</title>
 
   <meta
     name="description"
@@ -28,13 +26,11 @@
     href="https://fonts.googleapis.com"
     rel="preconnect"
   >
-
   <link
     href="https://fonts.gstatic.com"
     rel="preconnect"
     crossorigin
   >
-
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
     rel="stylesheet"
@@ -45,57 +41,49 @@
     href="assets/vendor/bootstrap/css/bootstrap.min.css"
     rel="stylesheet"
   >
-
   <link
     href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
     rel="stylesheet"
   >
-
   <link
     href="assets/vendor/aos/aos.css"
     rel="stylesheet"
   >
-
   <link
     href="assets/vendor/animate.css/animate.min.css"
     rel="stylesheet"
   >
-
   <link
     href="assets/vendor/glightbox/css/glightbox.min.css"
     rel="stylesheet"
   >
-
   <link
     href="assets/vendor/swiper/swiper-bundle.min.css"
     rel="stylesheet"
   >
 
   <!-- Existing Main CSS -->
-  <link
-    href="assets/css/main.css"
-    rel="stylesheet"
-  >
+  <link href="assets/css/main.css" rel="stylesheet">
 
-  <!--
-    Page-specific CSS.
-    This keeps all 3 sections in the same style.
-  -->
+  <!-- ==========================================
+       PAGE-SPECIFIC CSS
+       Consistent white background and green text
+  ========================================== -->
 
   <style>
 
-    /* ==========================================
-       GENERAL SECTION LAYOUT
-    ========================================== */
+    /* General sections */
 
     .good-section {
       background: #ffffff;
-      padding: 65px 0;
+      padding: 60px 0;
       color: #0d3d14;
     }
 
+    /* No dividing lines between sections */
+
     .good-section + .good-section {
-      border-top: 1px solid #e5ebe4;
+      border: none;
     }
 
     .good-section .good-heading {
@@ -129,23 +117,52 @@
       margin-bottom: 5px;
     }
 
-    /* ==========================================
-       PROGRAMME IMAGE AND TEXT
-    ========================================== */
+    /* Programme layouts */
 
     .good-programme {
-      margin-top: 45px;
-      margin-bottom: 55px;
+      margin: 45px 0 55px;
     }
 
-    .good-programme-image {
+    .good-photo-frame {
       width: 100%;
       max-width: 400px;
       aspect-ratio: 1 / 1;
-      object-fit: cover;
+      position: relative;
+      background: #f3f6f1;
       border-radius: 5px;
-      display: block;
+      overflow: hidden;
       margin: 0 auto;
+    }
+
+    .good-photo-frame > img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      z-index: 2;
+    }
+
+    .good-photo-fallback {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+      color: #0d3d14;
+      border: 1px dashed #a7b9a2;
+      border-radius: 5px;
+      font-size: 14px;
+      z-index: 1;
+    }
+
+    .good-photo-fallback span {
+      margin-top: 6px;
+      font-size: 12px;
     }
 
     .good-programme-details {
@@ -159,8 +176,7 @@
 
     .good-programme-details h5 {
       font-size: 18px;
-      margin-top: 22px;
-      margin-bottom: 12px;
+      margin: 22px 0 12px;
     }
 
     .good-programme-details p {
@@ -173,40 +189,11 @@
       line-height: 1.8;
     }
 
-    /* ==========================================
-       MAIN IMAGE PLACEHOLDERS
-    ========================================== */
-
-    .good-image-placeholder {
-      width: 100%;
-      max-width: 400px;
-      aspect-ratio: 1 / 1;
-      background: #f3f6f1;
-      border: 1px dashed #a7b9a2;
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #0d3d14;
-      margin: 0 auto;
-      padding: 20px;
+    .good-programme-details li {
+      margin-bottom: 7px;
     }
 
-    .good-image-placeholder strong {
-      font-size: 16px;
-      font-weight: 600;
-    }
-
-    .good-image-placeholder span {
-      font-size: 13px;
-      margin-top: 8px;
-    }
-
-    /* ==========================================
-       GALLERIES
-    ========================================== */
+    /* Gallery */
 
     .good-gallery {
       margin-top: 50px;
@@ -232,11 +219,9 @@
 
     .good-gallery-item {
       width: 100%;
-      max-width: 220px;
       aspect-ratio: 1 / 1;
       position: relative;
       background: #f3f6f1;
-      border: 1px dashed #a7b9a2;
       border-radius: 5px;
       overflow: hidden;
     }
@@ -257,16 +242,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      border: 1px dashed #a7b9a2;
+      border-radius: 5px;
       color: #0d3d14;
       font-size: 14px;
-      padding: 10px;
       z-index: 1;
     }
 
-    /* ==========================================
-       SOCIAL LINKS
-    ========================================== */
+    /* Contact links */
 
     .good-social {
       margin-top: 45px;
@@ -277,9 +260,7 @@
       text-decoration: underline;
     }
 
-    /* ==========================================
-       RESPONSIVE LAYOUT
-    ========================================== */
+    /* Responsive display */
 
     @media (max-width: 768px) {
 
@@ -288,8 +269,7 @@
       }
 
       .good-programme {
-        margin-top: 30px;
-        margin-bottom: 40px;
+        margin: 30px 0 40px;
       }
 
       .good-programme-details {
@@ -301,9 +281,8 @@
         gap: 15px;
       }
 
-      .good-image-placeholder,
-      .good-programme-image {
-        margin-bottom: 15px;
+      .good-photo-frame {
+        margin-bottom: 20px;
       }
 
     }
@@ -322,7 +301,7 @@
 <body class="index-page">
 
   <!-- ==========================================
-       EXISTING HEADER AND HERO
+       HEADER
   ========================================== -->
 
   <div class="littlegreengardians">
@@ -341,12 +320,10 @@
           href="index.html"
           class="logo d-flex align-items-center"
         >
-
           <img
             src="assets/img/tgeslogo.png"
             alt="The Good Earth School"
           >
-
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -526,7 +503,7 @@
 
 
     <!-- ==========================================
-         SECTION 1: VOLUNTEER WITH US
+         VOLUNTEER WITH US
     ========================================== -->
 
     <section
@@ -540,9 +517,6 @@
           Volunteer With Us
         </h2>
 
-
-        <!-- Introduction -->
-
         <div class="good-introduction">
 
           <p>
@@ -552,8 +526,7 @@
           <p>
             We always hope to have more individuals
             join us, to do good for the animals,
-            the environment, and the communities
-            we serve.
+            the environment, and the communities we serve.
           </p>
 
           <p>
@@ -594,7 +567,6 @@
           >
             Talk to us!
           </a>
-
 
           <p style="margin-top: 30px;">
             <strong>Things to note:</strong>
@@ -656,29 +628,32 @@
         </div>
 
 
-        <!-- ======================================
-             VOLUNTEER PROGRAMME
-        ====================================== -->
+        <!-- Volunteer Programme Card -->
 
         <div class="good-programme">
 
-          <div class="row gy-4">
-
-            <!-- Image -->
+          <div class="row gy-4 align-items-center">
 
             <div class="col-lg-6 text-center">
 
-              <img
-                src="assets/img/volunteermain.png"
-                alt="Volunteers taking part in an activity"
-                class="good-programme-image"
-                loading="lazy"
-              >
+              <div class="good-photo-frame">
+
+                <div class="good-photo-fallback">
+                  <strong>Programme Image</strong>
+                  <span>Volunteer With Us</span>
+                </div>
+
+                <img
+                  src="assets/img/vm1.webp"
+                  alt="Volunteers taking part in community activities"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                >
+
+              </div>
 
             </div>
 
-
-            <!-- Programme Details -->
 
             <div class="col-lg-6 good-programme-details">
 
@@ -721,7 +696,7 @@
         </div>
 
 
-        <!-- WhatsApp and Instagram -->
+        <!-- Social Links -->
 
         <div class="good-social">
 
@@ -740,9 +715,7 @@
         </div>
 
 
-        <!-- ======================================
-             VOLUNTEER GALLERY
-        ====================================== -->
+        <!-- Volunteer Gallery -->
 
         <div class="good-gallery">
 
@@ -752,75 +725,44 @@
 
           <div class="good-gallery-grid">
 
-            <!-- Gallery 1 -->
-
             <div class="good-gallery-item">
-
-              <span class="good-gallery-label">
-                Photo 1
-              </span>
-
+              <span class="good-gallery-label">Photo 1</span>
               <img
-                src="assets/img/volunteer1.png"
-                alt="Volunteer programme photo 1"
+                src="assets/img/vg1.webp"
+                alt="Volunteer gallery 1"
                 loading="lazy"
                 onerror="this.style.display='none'"
               >
-
             </div>
 
-
-            <!-- Gallery 2 -->
-
             <div class="good-gallery-item">
-
-              <span class="good-gallery-label">
-                Photo 2
-              </span>
-
+              <span class="good-gallery-label">Photo 2</span>
               <img
-                src="assets/img/volunteer2.png"
-                alt="Volunteer programme photo 2"
+                src="assets/img/vg2.webp"
+                alt="Volunteer gallery 2"
                 loading="lazy"
                 onerror="this.style.display='none'"
               >
-
             </div>
 
-
-            <!-- Gallery 3 -->
-
             <div class="good-gallery-item">
-
-              <span class="good-gallery-label">
-                Photo 3
-              </span>
-
+              <span class="good-gallery-label">Photo 3</span>
               <img
-                src="assets/img/volunteer3.png"
-                alt="Volunteer programme photo 3"
+                src="assets/img/vg3.webp"
+                alt="Volunteer gallery 3"
                 loading="lazy"
                 onerror="this.style.display='none'"
               >
-
             </div>
 
-
-            <!-- Gallery 4 -->
-
             <div class="good-gallery-item">
-
-              <span class="good-gallery-label">
-                Photo 4
-              </span>
-
+              <span class="good-gallery-label">Photo 4</span>
               <img
-                src="assets/img/volunteer4.png"
-                alt="Volunteer programme photo 4"
+                src="assets/img/vg4.webp"
+                alt="Volunteer gallery 4"
                 loading="lazy"
                 onerror="this.style.display='none'"
               >
-
             </div>
 
           </div>
@@ -834,7 +776,7 @@
 
 
     <!-- ==========================================
-         SECTION 2: SENIORS DOING GOOD
+         SENIORS DOING GOOD
     ========================================== -->
 
     <section
@@ -857,96 +799,101 @@
             Doing good has no age limit. Seniors bring
             valuable knowledge, experiences and skills
             that can be shared with others through
-            meaningful community activities.
+            meaningful community engagements.
           </p>
 
           <p>
-            [Add a second introduction paragraph
-            about the programme objectives,
-            who it supports and how seniors
-            can participate.]
+            If you are an Active Ageing Centre and want
+            to do good together to engage the community,
+            we would love to have a chat.
           </p>
 
         </div>
 
 
-        <!-- ======================================
-             SENIORS PROGRAMME
-        ====================================== -->
+        <!-- Seniors Programme Card -->
 
         <div class="good-programme">
 
-          <div class="row gy-4">
-
-            <!-- Image Placeholder -->
+          <div class="row gy-4 align-items-center">
 
             <div class="col-lg-6 text-center">
 
-              <div class="good-image-placeholder">
+              <div class="good-photo-frame">
 
-                <strong>
-                  Programme Image
-                </strong>
-
-                <span>
-                  Seniors Doing Good
-                </span>
-
-              </div>
-
-              <!--
-                Replace the placeholder above with:
+                <div class="good-photo-fallback">
+                  <strong>Programme Image</strong>
+                  <span>Seniors Doing Good</span>
+                </div>
 
                 <img
-                  src="assets/img/seniorsmain.webp"
-                  alt="Seniors participating in a community activity"
-                  class="good-programme-image"
+                  src="assets/img/sdgp1.webp"
+                  alt="Seniors participating in community activities"
                   loading="lazy"
+                  onerror="this.style.display='none'"
                 >
-              -->
+
+              </div>
 
             </div>
 
 
-            <!-- Programme Details -->
-
             <div class="col-lg-6 good-programme-details">
 
               <h4>
-                <strong>Sharing Skills, Giving Back</strong>
+                <strong>Seniors Take Charge</strong>
               </h4>
 
               <p>
-                [Add a short programme description
-                about what seniors can expect
-                and how they contribute.]
+                Initially catered for seniors, by seniors,
+                we started to realise, why limit it to
+                fellow seniors? It has now become
+                a programme by seniors, for everyone.
               </p>
 
               <h5>
                 We focus on these key areas:
               </h5>
 
-              <p class="fst-italic">
-                - [Focus area 1]
-                <br>
-                - [Focus area 2]
-                <br>
-                - [Focus area 3]
-              </p>
+              <ul class="fst-italic">
+
+                <li>
+                  Activities that encourage occupational
+                  function.
+                </li>
+
+                <li>
+                  Engagements that enhance quality of life
+                  through green activities.
+                </li>
+
+                <li>
+                  Reconnecting with animals and the
+                  environment, together.
+                </li>
+
+              </ul>
 
               <h5>
-                Activities and Participation
+                Activities include, but are not limited to:
               </h5>
 
-              <p class="fst-italic">
-                - [Activity 1]
-                <br>
-                - [Activity 2]
-                <br>
-                - [Activity 3]
-                <br>
-                - [Who can take part]
-              </p>
+              <ul class="fst-italic">
+
+                <li>
+                  Skincare classes using food waste.
+                </li>
+
+                <li>
+                  Nature walks together!
+                </li>
+
+                <li>
+                  Making furniture together, curated
+                  and taught by seniors, for everyone.
+                </li>
+
+              </ul>
 
             </div>
 
@@ -955,9 +902,7 @@
         </div>
 
 
-        <!-- ======================================
-             SENIORS GALLERY
-        ====================================== -->
+        <!-- Seniors Gallery -->
 
         <div class="good-gallery">
 
@@ -965,50 +910,49 @@
             Gallery
           </h3>
 
-          <p>
-            [Add a short introduction to the
-            Seniors Doing Good gallery.]
-          </p>
-
           <div class="good-gallery-grid">
 
             <div class="good-gallery-item">
-              <span class="good-gallery-label">
-                Photo 1
-              </span>
+              <span class="good-gallery-label">Photo 1</span>
+              <img
+                src="assets/img/sdg1.webp"
+                alt="Seniors Doing Good gallery 1"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
             </div>
 
             <div class="good-gallery-item">
-              <span class="good-gallery-label">
-                Photo 2
-              </span>
+              <span class="good-gallery-label">Photo 2</span>
+              <img
+                src="assets/img/sdg2.webp"
+                alt="Seniors Doing Good gallery 2"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
             </div>
 
             <div class="good-gallery-item">
-              <span class="good-gallery-label">
-                Photo 3
-              </span>
+              <span class="good-gallery-label">Photo 3</span>
+              <img
+                src="assets/img/sdg3.webp"
+                alt="Seniors Doing Good gallery 3"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
             </div>
 
             <div class="good-gallery-item">
-              <span class="good-gallery-label">
-                Photo 4
-              </span>
+              <span class="good-gallery-label">Photo 4</span>
+              <img
+                src="assets/img/sdg4.webp"
+                alt="Seniors Doing Good gallery 4"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
             </div>
 
           </div>
-
-          <!--
-            Future photo filenames:
-
-            assets/img/seniors1.webp
-            assets/img/seniors2.webp
-            assets/img/seniors3.webp
-            assets/img/seniors4.webp
-
-            Add each image inside its gallery item
-            using the same img format as section 1.
-          -->
 
         </div>
 
@@ -1019,7 +963,7 @@
 
 
     <!-- ==========================================
-         SECTION 3: DOING GOOD FOR THE COMMUNITY
+         DOING GOOD FOR THE COMMUNITY
     ========================================== -->
 
     <section
@@ -1039,102 +983,108 @@
         <div class="good-introduction">
 
           <p>
-            There are many ways to contribute
-            to the places and people around us.
-            From shared activities to caring
-            for community spaces, we hope to
-            bring people together to do
+            There are many ways to contribute to the
+            places and people around us. From shared
+            activities to caring for community spaces,
+            we hope to bring people together to do
             something meaningful.
           </p>
 
           <p>
-            [Add a second introduction paragraph
-            about community projects, partner
-            organisations and intended outcomes.]
+            For now, our emphasis is on building up
+            community spaces and encouraging creative
+            expression through murals and other art forms.
           </p>
 
         </div>
 
 
-        <!-- ======================================
-             COMMUNITY PROGRAMME
-        ====================================== -->
+        <!-- Community Programme Card -->
 
         <div class="good-programme">
 
-          <div class="row gy-4">
-
-            <!-- Image Placeholder -->
+          <div class="row gy-4 align-items-center">
 
             <div class="col-lg-6 text-center">
 
-              <div class="good-image-placeholder">
+              <div class="good-photo-frame">
 
-                <strong>
-                  Programme Image
-                </strong>
-
-                <span>
-                  Doing Good for the Community
-                </span>
-
-              </div>
-
-              <!--
-                Replace the placeholder above with:
+                <div class="good-photo-fallback">
+                  <strong>Programme Image</strong>
+                  <span>Doing Good for the Community</span>
+                </div>
 
                 <img
-                  src="assets/img/communitymain.webp"
-                  alt="Community engagement activity"
-                  class="good-programme-image"
+                  src="assets/img/dgtp1.webp"
+                  alt="Community members creating shared spaces"
                   loading="lazy"
+                  onerror="this.style.display='none'"
                 >
-              -->
+
+              </div>
 
             </div>
 
 
-            <!-- Programme Details -->
-
             <div class="col-lg-6 good-programme-details">
 
               <h4>
-                <strong>
-                  Making a Difference Together
-                </strong>
+                <strong>Making a Difference Together</strong>
               </h4>
 
               <p>
-                [Add a short description of the
-                programme and what participants
-                can expect.]
+                Participants work together across community
+                groups to do good for the community, from
+                setting up communal spaces in our shared
+                areas to expressing the kampung spirit
+                through murals and other art forms.
               </p>
 
               <h5>
                 We focus on these key areas:
               </h5>
 
-              <p class="fst-italic">
-                - [Focus area 1]
-                <br>
-                - [Focus area 2]
-                <br>
-                - [Focus area 3]
-              </p>
+              <ul class="fst-italic">
+
+                <li>
+                  Furniture upcycling to set up spaces
+                  for everyone using rescued or
+                  recycled items.
+                </li>
+
+                <li>
+                  Expression through nature-related
+                  murals and community art.
+                </li>
+
+                <li>
+                  Bonding across community groups.
+                </li>
+
+              </ul>
 
               <h5>
-                Activities and Participation
+                Activities include:
               </h5>
 
-              <p class="fst-italic">
-                - [Activity 1]
-                <br>
-                - [Activity 2]
-                <br>
-                - [Activity 3]
-                <br>
-                - [Who can take part]
-              </p>
+              <ul class="fst-italic">
+
+                <li>
+                  Mural art workshops across
+                  community groups.
+                </li>
+
+                <li>
+                  Setting up communal spaces
+                  in shared areas.
+                </li>
+
+                <li>
+                  Furniture rescue, upcycling
+                  and refreshing workshops.
+                </li>
+
+              </ul>
 
             </div>
 
@@ -1143,9 +1093,7 @@
         </div>
 
 
-        <!-- ======================================
-             COMMUNITY GALLERY
-        ====================================== -->
+        <!-- Community Gallery -->
 
         <div class="good-gallery">
 
@@ -1153,47 +1101,49 @@
             Gallery
           </h3>
 
-          <p>
-            [Add a short introduction to the
-            Doing Good for the Community gallery.]
-          </p>
-
           <div class="good-gallery-grid">
 
             <div class="good-gallery-item">
-              <span class="good-gallery-label">
-                Photo 1
-              </span>
+              <span class="good-gallery-label">Photo 1</span>
+              <img
+                src="assets/img/dgt1.webp"
+                alt="Doing Good for the Community gallery 1"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
             </div>
 
             <div class="good-gallery-item">
-              <span class="good-gallery-label">
-                Photo 2
-              </span>
+              <span class="good-gallery-label">Photo 2</span>
+              <img
+                src="assets/img/dgt2.webp"
+                alt="Doing Good for the Community gallery 2"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
             </div>
 
             <div class="good-gallery-item">
-              <span class="good-gallery-label">
-                Photo 3
-              </span>
+              <span class="good-gallery-label">Photo 3</span>
+              <img
+                src="assets/img/dgt3.webp"
+                alt="Doing Good for the Community gallery 3"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
             </div>
 
             <div class="good-gallery-item">
-              <span class="good-gallery-label">
-                Photo 4
-              </span>
+              <span class="good-gallery-label">Photo 4</span>
+              <img
+                src="assets/img/dgt4.webp"
+                alt="Doing Good for the Community gallery 4"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
             </div>
 
           </div>
-
-          <!--
-            Future photo filenames:
-
-            assets/img/community1.webp
-            assets/img/community2.webp
-            assets/img/community3.webp
-            assets/img/community4.webp
-          -->
 
         </div>
 
@@ -1201,12 +1151,11 @@
 
     </section>
 
-
   </main>
 
 
   <!-- ==========================================
-       EXISTING FOOTER
+       FOOTER
   ========================================== -->
 
   <footer
@@ -1253,7 +1202,6 @@
 
       </div>
 
-
       <div class="copyright">
 
         <span>
@@ -1262,7 +1210,6 @@
         </span>
 
       </div>
-
 
       <div class="credits">
 
@@ -1297,9 +1244,7 @@
   </footer>
 
 
-  <!-- ==========================================
-       SCROLL TOP
-  ========================================== -->
+  <!-- Scroll Top -->
 
   <a
     href="#"
@@ -1312,26 +1257,16 @@
   <div id="preloader"></div>
 
 
-  <!-- ==========================================
-       VENDOR JAVASCRIPT
-  ========================================== -->
+  <!-- Existing JavaScript -->
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
   <script src="assets/vendor/aos/aos.js"></script>
-
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-
   <script src="assets/js/main.js"></script>
 
 </body>
