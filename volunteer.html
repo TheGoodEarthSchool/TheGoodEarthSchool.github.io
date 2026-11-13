@@ -1,1 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Doing Good Together | The Good Earth School</title>
+
+  <meta
+    name="description"
+    content="Volunteer, share your skills and contribute to community programmes with The Good Earth School."
+  >
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com"
+    rel="preconnect"
+  >
+  <link
+    href="https://fonts.gstatic.com"
+    rel="preconnect"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Existing Vendor CSS -->
+  <link
+    href="assets/vendor/bootstrap/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <link
+    href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+    rel="stylesheet"
+  >
+  <link
+    href="assets/vendor/aos/aos.css"
+    rel="stylesheet"
+  >
+  <link
+    href="assets/vendor/animate.css/animate.min.css"
+    rel="stylesheet"
+  >
+  <link
+    href="assets/vendor/glightbox/css/glightbox.min.css"
+    rel="stylesheet"
+  >
+  <link
+    href="assets/vendor/swiper/swiper-bundle.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Existing Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- ==========================================
+       PAGE-SPECIFIC CSS
+       Consistent white background and green text
+  ========================================== -->
+
+  <style>
+
+    /* General sections */
+
+    .good-section {
+      background: #ffffff;
+      padding: 60px 0;
+      color: #0d3d14;
+    }
+
+    /* No dividing lines between sections */
+
+    .good-section + .good-section {
+      border: none;
+    }
+
+    .good-section .good-heading {
+      color: #0d3d14 !important;
+      font-size: clamp(28px, 3vw, 38px);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .good-section h3,
+    .good-section h4,
+    .good-section h5 {
+      color: #0d3d14 !important;
+    }
+
+    .good-introduction {
+      margin-bottom: 40px;
+    }
+
+    .good-introduction p {
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .good-introduction ul {
+      padding-left: 22px;
+      line-height: 1.8;
+    }
+
+    .good-introduction li {
+      margin-bottom: 5px;
+    }
+
+    /* Programme layouts */
+
+    .good-programme {
+      margin: 45px 0 55px;
+    }
+
+    .good-photo-frame {
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 1 / 1;
+      position: relative;
+      background: #f3f6f1;
+      border-radius: 5px;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .good-photo-frame > img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      z-index: 2;
+    }
+
+    .good-photo-fallback {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center;
+      color: #0d3d14;
+      border: 1px dashed #a7b9a2;
+      border-radius: 5px;
+      font-size: 14px;
+      z-index: 1;
+    }
+
+    .good-photo-fallback span {
+      margin-top: 6px;
+      font-size: 12px;
+    }
+
+    .good-programme-details {
+      padding-top: 10px;
+    }
+
+    .good-programme-details h4 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    .good-programme-details h5 {
+      font-size: 18px;
+      margin: 22px 0 12px;
+    }
+
+    .good-programme-details p {
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .good-programme-details ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+
+    .good-programme-details li {
+      margin-bottom: 7px;
+    }
+
+    /* Gallery */
+
+    .good-gallery {
+      margin-top: 50px;
+    }
+
+    .good-gallery .good-gallery-heading {
+      color: #0d3d14 !important;
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .good-gallery p {
+      line-height: 1.8;
+    }
+
+    .good-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 25px;
+    }
+
+    .good-gallery-item {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      position: relative;
+      background: #f3f6f1;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .good-gallery-item img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      z-index: 2;
+    }
+
+    .good-gallery-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px dashed #a7b9a2;
+      border-radius: 5px;
+      color: #0d3d14;
+      font-size: 14px;
+      z-index: 1;
+    }
+
+    /* Contact links */
+
+    .good-social {
+      margin-top: 45px;
+    }
+
+    .good-social a {
+      color: #0d3d14;
+      text-decoration: underline;
+    }
+
+    /* Responsive display */
+
+    @media (max-width: 768px) {
+
+      .good-section {
+        padding: 45px 0;
+      }
+
+      .good-programme {
+        margin: 30px 0 40px;
+      }
+
+      .good-programme-details {
+        padding-top: 15px;
+      }
+
+      .good-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+      }
+
+      .good-photo-frame {
+        margin-bottom: 20px;
+      }
+
+    }
+
+  </style>
+
+  <!--
+    Template: Selecao
+    Author: BootstrapMade
+    https://bootstrapmade.com/selecao-bootstrap-template/
+  -->
+
+</head>
+
+
+<body class="index-page">
+
+  <!-- ==========================================
+       HEADER
+  ========================================== -->
+
+  <div class="littlegreengardians">
+
+    <header
+      id="header"
+      class="header d-flex align-items-center"
+    >
+
+      <div
+        class="container-fluid container-xl position-relative
+               d-flex align-items-center justify-content-between"
+      >
+
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center"
+        >
+          <img
+            src="assets/img/tgeslogo.png"
+            alt="The Good Earth School"
+          >
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+
+          <ul>
+
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="ourstory.html">Our Story</a>
+            </li>
+
+            <li>
+              <a href="projects.html">Notable Projects</a>
+            </li>
+
+            <li class="dropdown">
+
+              <a href="#">
+                <span>What We Do</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+
+              <ul>
+
+                <li class="dropdown">
+
+                  <a href="https://thegoodearthschool.org/environment.html">
+                    <span>For The Environment</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                  </a>
+
+                  <ul>
+
+                    <li>
+                      <a href="preschool_programmes.html">
+                        Little Green Heroes
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="primary_programmes.html">
+                        Children's Voices for Biodiversity
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="youth_for_a_green_future.html">
+                        Youth for a Green Future
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="green_wisdom.html">
+                        Green Wisdom
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </li>
+
+                <li>
+                  <a href="animalallies.html" target="_blank">
+                    For The Animals
+                  </a>
+                </li>
+
+                <li class="dropdown">
+
+                  <a href="#">
+                    <span>For Fellow Humans</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i>
+                  </a>
+
+                  <ul>
+
+                    <li>
+                      <a href="sus_living.html">
+                        Sustainable Living
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="volunteer.html">
+                        Doing Good, Together
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </li>
+
+              </ul>
+
+            </li>
+
+          </ul>
+
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+        </nav>
+
+      </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+
+    <section
+      id="hero"
+      class="hero section"
+      style="background-color: #0d3d1400; color: white;"
+    >
+
+      <div
+        id="hero-carousel"
+        class="container carousel carousel-fade"
+        data-bs-interval="5000"
+        data-bs-ride="carousel"
+      >
+
+        <div class="carousel-container">
+
+          <h1
+            class="animate__animated animate__fadeInDown"
+            style="color: white; font-size: 9vw;"
+          >
+            Doing Good, Together
+          </h1>
+
+          <br><br>
+
+      <table>
+  <tr>
+    <td>
+      <a href="index.html" style="color: white;">
+        Home
+      </a>
+    </td>
+
+    <td>
+      <span style="font-size:20px;" aria-hidden="true">
+        &#11208;
+      </span>
+    </td>
+
+    <td>
+      For Fellow Humans
+    </td>
+
+    <td>
+      <span style="font-size:20px;" aria-hidden="true">
+        &#11208;
+      </span>
+    </td>
+
+    <td>
+      Doing Good Together
+    </td>
+  </tr>
+</table>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- ==========================================
+       MAIN CONTENT
+  ========================================== -->
+
+  <main class="main">
+
+
+    <!-- ==========================================
+         VOLUNTEER WITH US
+    ========================================== -->
+
+    <section
+      id="volunteer-with-us"
+      class="good-section"
+    >
+
+      <div class="container">
+
+        <h2 class="good-heading">
+          Volunteer With Us
+        </h2>
+
+        <div class="good-introduction">
+
+          <p>
+            <strong>Suitable for ages 15 and up!</strong>
+          </p>
+
+          <p>
+            We always hope to have more individuals
+            join us, to do good for the animals,
+            the environment, and the communities we serve.
+          </p>
+
+          <p>
+            <strong>What you can do:</strong>
+          </p>
+
+          <ul>
+
+            <li>
+              Volunteer Facilitator &amp; Befriender
+              for Inclusive Guided Nature Walks
+            </li>
+
+            <li>
+              Volunteer Facilitator
+              for Beach / Urban Cleanups
+            </li>
+
+            <li>
+              Volunteer Educator
+              for Recycled Furniture Making
+            </li>
+
+            <li>
+              Volunteer Educator on Environmental
+              Sustainability, Ecology, and Care
+            </li>
+
+            <li>
+              Or have something else in mind?
+            </li>
+
+          </ul>
+
+          <a
+            href="mailto:hello@thegoodearthschool.org"
+            class="custom-button"
+          >
+            Talk to us!
+          </a>
+
+          <p style="margin-top: 30px;">
+            <strong>Things to note:</strong>
+          </p>
+
+          <ul>
+
+            <li>
+              Volunteers aged 15 years must be
+              accompanied by a parent or guardian.
+            </li>
+
+            <li>
+              Volunteers below 21 years of age
+              require parental or guardian consent.
+            </li>
+
+            <li>
+              Volunteers should be able to communicate
+              respectfully with participants,
+              fellow volunteers, and staff.
+            </li>
+
+            <li>
+              Volunteers are expected to follow
+              programme guidelines, safety procedures,
+              and staff instructions at all times.
+            </li>
+
+            <li>
+              Please arrive punctually for your
+              confirmed volunteer session.
+            </li>
+
+            <li>
+              Some volunteer opportunities may involve
+              interactions with animals. Training and
+              guidance will be provided, and volunteers
+              are expected to follow all animal welfare
+              and handling protocols.
+            </li>
+
+            <li>
+              Some programmes may take place in parks,
+              gardens, forests, farms, beaches,
+              or other natural environments.
+              Volunteers should be prepared for outdoor
+              conditions and wear appropriate attire.
+            </li>
+
+            <li>
+              Closed-toe shoes, comfortable clothing,
+              and a reusable water bottle are recommended
+              unless otherwise stated.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- Volunteer Programme Card -->
+
+        <div class="good-programme">
+
+          <div class="row gy-4 align-items-center">
+
+            <div class="col-lg-6 text-center">
+
+              <div class="good-photo-frame">
+
+                <div class="good-photo-fallback">
+                  <strong>Programme Image</strong>
+                  <span>Volunteer With Us</span>
+                </div>
+
+                <img
+                  src="assets/img/vm1.webp"
+                  alt="Volunteers taking part in community activities"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                >
+
+              </div>
+
+            </div>
+
+
+            <div class="col-lg-6 good-programme-details">
+
+              <h4>
+                <strong>Do good with Us!</strong>
+              </h4>
+
+              <h5>
+                We focus on these key areas:
+              </h5>
+
+              <p class="fst-italic">
+                - Intergenerational Learning &amp; befriending
+                <br>
+                - Adaptive and Inclusive Activities
+                <br>
+                - Innovation and Skill transfer
+              </p>
+
+              <h5>
+                Volunteer Roles
+              </h5>
+
+              <p class="fst-italic">
+                - Curriculum Planner
+                <br>
+                - Volunteer Facilitator
+                <br>
+                - Volunteer Educator
+                <br>
+                - Befriender
+                <br>
+                - Or have another role in mind?
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Social Links -->
+
+        <div class="good-social">
+
+          <p>
+            Chat with us on
+            <a href="https://wa.me/+6587725464">
+              WhatsApp
+            </a>
+            or follow us on
+            <a href="https://www.instagram.com/thegoodearthschoolsg">
+              Instagram
+            </a>
+            for upcoming events.
+          </p>
+
+        </div>
+
+
+        <!-- Volunteer Gallery -->
+
+        <div class="good-gallery">
+
+          <h3 class="good-gallery-heading">
+            Gallery
+          </h3>
+
+          <div class="good-gallery-grid">
+
+            <div class="good-gallery-item">
+              <span class="good-gallery-label">Photo 1</span>
+              <img
+                src="assets/img/vg1.webp"
+                alt="Volunteer gallery 1"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+
+            <div class="good-gallery-item">
+              <span class="good-gallery-label">Photo 2</span>
+              <img
+                src="assets/img/vg2.webp"
+                alt="Volunteer gallery 2"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+
+            <div class="good-gallery-item">
+              <span class="good-gallery-label">Photo 3</span>
+              <img
+                src="assets/img/vg3.webp"
+                alt="Volunteer gallery 3"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+
+            <div class="good-gallery-item">
+              <span class="good-gallery-label">Photo 4</span>
+              <img
+                src="assets/img/vg4.webp"
+                alt="Volunteer gallery 4"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         SENIORS DOING GOOD
+    ========================================== -->
+
+    <section
+      id="seniors-doing-good"
+      class="good-section"
+    >
+
+      <div class="container">
+
+        <h2 class="good-heading">
+          Seniors Doing Good
+        </h2>
+
+
+        <!-- Introduction -->
+
+        <div class="good-introduction">
+
+          <p>
+            Doing good has no age limit. Seniors bring
+            valuable knowledge, experiences and skills
+            that can be shared with others through
+            meaningful community engagements.
+          </p>
+
+          <p>
+            If you are an Active Ageing Centre and want
+            to do good together to engage the community,
+            we would love to have a chat.
+          </p>
+
+        </div>
+
+
+        <!-- Seniors Programme Card -->
+
+        <div class="good-programme">
+
+          <div class="row gy-4 align-items-center">
+
+            <div class="col-lg-6 text-center">
+
+              <div class="good-photo-frame">
+
+                <div class="good-photo-fallback">
+                  <strong>Programme Image</strong>
+                  <span>Seniors Doing Good</span>
+                </div>
+
+                <img
+                  src="assets/img/sdgp1.webp"
+                  alt="Seniors participating in community activities"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                >
+
+              </div>
+
+            </div>
+
+
+            <div class="col-lg-6 good-programme-details">
+
+              <h4>
+                <strong>Seniors Take Charge</strong>
+              </h4>
+
+              <p>
+                Initially catered for seniors, by seniors,
+                we started to realise, why limit it to
+                fellow seniors? It has now become
+                a programme by seniors, for everyone.
+              </p>
+
+              <h5>
+                We focus on these key areas:
+              </h5>
+
+              <ul class="fst-italic">
+
+                <li>
+                  Activities that encourage occupational
+                  function.
+                </li>
+
+                <li>
+                  Engagements that enhance quality of life
+                  through green activities.
+                </li>
+
+                <li>
+                  Reconnecting with animals and the
+                  environment, together.
+                </li>
+
+              </ul>
+
+              <h5>
+                Activities include, but are not limited to:
+              </h5>
+
+              <ul class="fst-italic">
+
+                <li>
+                  Skincare classes using food waste.
+                </li>
+
+                <li>
+                  Nature walks together!
+                </li>
+
+                <li>
+                  Making furniture together, curated
+                  and taught by seniors, for everyone.
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Seniors Gallery -->
+
+        <div class="good-gallery">
+
+          <h3 class="good-gallery-heading">
+            Gallery
+          </h3>
+
+          <div class="good-gallery-grid">
+
+            <div class="good-gallery-item">
+              <span class="good-gallery-label">Photo 1</span>
+              <img
+                src="assets/img/sdg1.webp"
+                alt="Seniors Doing Good gallery 1"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+
+            <div class="good-gallery-item">
+              <span class="good-gallery-label">Photo 2</span>
+              <img
+                src="assets/img/sdg2.webp"
+                alt="Seniors Doing Good gallery 2"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+
+            <div class="good-gallery-item">
+              <span class="good-gallery-label">Photo 3</span>
+              <img
+                src="assets/img/sdg3.webp"
+                alt="Seniors Doing Good gallery 3"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+
+            <div class="good-gallery-item">
+              <span class="good-gallery-label">Photo 4</span>
+              <img
+                src="assets/img/sdg4.webp"
+                alt="Seniors Doing Good gallery 4"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         DOING GOOD FOR THE COMMUNITY
+    ========================================== -->
+
+    <section
+      id="doing-good-community"
+      class="good-section"
+    >
+
+      <div class="container">
+
+        <h2 class="good-heading">
+          Doing Good for the Community
+        </h2>
+
+
+        <!-- Introduction -->
+
+        <div class="good-introduction">
+
+          <p>
+            There are many ways to contribute to the
+            places and people around us. From shared
+            activities to caring for community spaces,
+            we hope to bring people together to do
+            something meaningful.
+          </p>
+
+          <p>
+            For now, our emphasis is on building up
+            community spaces and encouraging creative
+            expression through murals and other art forms.
+          </p>
+
+        </div>
+
+
+        <!-- Community Programme Card -->
+
+        <div class="good-programme">
+
+          <div class="row gy-4 align-items-center">
+
+            <div class="col-lg-6 text-center">
+
+              <div class="good-photo-frame">
+
+                <div class="good-photo-fallback">
+                  <strong>Programme Image</strong>
+                  <span>Doing Good for the Community</span>
+                </div>
+
+                <img
+                  src="assets/img/dgtp1.webp"
+                  alt="Community members creating shared spaces"
+                  loading="lazy"
+                  onerror="this.style.display='none'"
+                >
+
+              </div>
+
+            </div>
+
+
+            <div class="col-lg-6 good-programme-details">
+
+              <h4>
+                <strong>Making a Difference Together</strong>
+              </h4>
+
+              <p>
+                Participants work together across community
+                groups to do good for the community, from
+                setting up communal spaces in our shared
+                areas to expressing the kampung spirit
+                through murals and other art forms.
+              </p>
+
+              <h5>
+                We focus on these key areas:
+              </h5>
+
+              <ul class="fst-italic">
+
+                <li>
+                  Furniture upcycling to set up spaces
+                  for everyone using rescued or
+                  recycled items.
+                </li>
+
+                <li>
+                  Expression through nature-related
+                  murals and community art.
+                </li>
+
+                <li>
+                  Bonding across community groups.
+                </li>
+
+              </ul>
+
+              <h5>
+                Activities include:
+              </h5>
+
+              <ul class="fst-italic">
+
+                <li>
+                  Mural art workshops across
+                  community groups.
+                </li>
+
+                <li>
+                  Setting up communal spaces
+                  in shared areas.
+                </li>
+
+                <li>
+                  Furniture rescue, upcycling
+                  and refreshing workshops.
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Community Gallery -->
+
+        <div class="good-gallery">
+
+          <h3 class="good-gallery-heading">
+            Gallery
+          </h3>
+
+          <div class="good-gallery-grid">
+
+            <div class="good-gallery-item">
+              <span class="good-gallery-label">Photo 1</span>
+              <img
+                src="assets/img/dgt1.webp"
+                alt="Doing Good for the Community gallery 1"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+
+            <div class="good-gallery-item">
+              <span class="good-gallery-label">Photo 2</span>
+              <img
+                src="assets/img/dgt2.webp"
+                alt="Doing Good for the Community gallery 2"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+
+            <div class="good-gallery-item">
+              <span class="good-gallery-label">Photo 3</span>
+              <img
+                src="assets/img/dgt3.webp"
+                alt="Doing Good for the Community gallery 3"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+
+            <div class="good-gallery-item">
+              <span class="good-gallery-label">Photo 4</span>
+              <img
+                src="assets/img/dgt4.webp"
+                alt="Doing Good for the Community gallery 4"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+<!-- ==========================================
+     FOOTER - THE GOOD EARTH SCHOOL
+========================================== -->
+
+<footer class="footer footer-background" id="footer">
+
+  <div class="container">
+
+    <!-- Logo -->
+    <img
+      alt="The Good Earth School"
+      src="assets/img/tgeslogo.png"
+      width="300"
+    />
+
+    <br />
+
+    <!-- Social Media Links -->
+    <div
+      class="social-links d-flex justify-content-center"
+      style="padding: 20px;"
+    >
+
+      <a
+        href="https://www.instagram.com/thegoodearthschoolsg"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+      >
+        <i class="bi bi-instagram"></i>
+      </a>
+
+      <a
+        href="mailto:hello@thegoodearthschool.org"
+        title="Email Us"
+        aria-label="Email Us"
+
+      >
+        <i class="bi bi-envelope"></i>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/company/-tges/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <i class="bi bi-linkedin"></i>
+      </a>
+
+    </div>
+
+    <!-- Copyright and Contact Details -->
+    <div class="container">
+
+      <div class="copyright">
+
+        <span>
+          Corporate | Media | Partnerships | Everything - Planet, Animals, Humans
+        </span>
+
+      </div>
+
+      <div class="credits">
+
+<a
+    href="mailto:hello@thegoodearthschool.org"
+    style="color: #ffffff !important;"
+  >
+    hello@thegoodearthschool.org
+  </a>
+
+
+        <hr />
+
+        <span>
+          &copy; The Good Earth School. All Rights Reserved
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+  <!-- Scroll Top -->
+
+  <a
+    href="#"
+    id="scroll-top"
+    class="scroll-top d-flex align-items-center justify-content-center"
+  >
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="preloader"></div>
+
+
+  <!-- Existing JavaScript -->
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
