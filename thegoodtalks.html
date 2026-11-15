@@ -1,302 +1,304 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>
-    The Good Conversations | The Good Earth School
-  </title>
+  <title>The Good Talks | The Good Earth School</title>
 
   <meta
     name="description"
     content="Parenting talks, corporate talks and career pathway conversations by The Good Earth School."
   >
-
   <meta
     property="og:title"
-    content="The Good Conversations | The Good Earth School"
+    content="The Good Talks | The Good Earth School"
   >
-
   <meta
     property="og:description"
     content="A space for anyone who wants to learn more about animals, the environment and sustainability careers."
   >
+  <meta property="og:image" content="assets/img/edu.png">
 
-  <meta
-    property="og:image"
-    content="assets/img/edu.png"
-  >
-
-  <meta name="theme-color" content="#0d3d14">
-
-  <!-- Existing website icons -->
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="/apple-touch-icon.png"
-  >
-
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="/favicon-32x32.png"
-  >
-
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="/favicon-16x16.png"
-  >
-
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png">
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Fonts -->
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  >
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
     crossorigin
   >
-
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   >
-
-  <!-- Existing CSS files -->
   <link
-    href="assets/vendor/bootstrap/css/bootstrap.min.css"
     rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   >
 
-  <link
-    href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-    rel="stylesheet"
-  >
+  <!-- Existing CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 
-  <link
-    href="assets/vendor/aos/aos.css"
-    rel="stylesheet"
-  >
-
-  <link
-    href="assets/vendor/animate.css/animate.min.css"
-    rel="stylesheet"
-  >
-
-  <link
-    href="assets/vendor/glightbox/css/glightbox.min.css"
-    rel="stylesheet"
-  >
-
-  <link
-    href="assets/vendor/swiper/swiper-bundle.min.css"
-    rel="stylesheet"
-  >
-
-  <link
-    href="assets/css/main.css"
-    rel="stylesheet"
-  >
-
-  <!-- Page-specific CSS -->
+  <!-- Page-specific styling -->
   <style>
-
-    .conversations-page {
-      background: #ffffff;
+    #talks-page {
       color: #0d3d14;
     }
 
-    .conversations-page .content-wrap {
-      width: 100%;
-      max-width: 1140px;
-      margin-inline: auto;
-      padding-inline: 12px;
+    #talks-page .talks-block {
+      padding: 45px 0;
     }
 
-    .conversations-page .content-section {
-      padding: 54px 0 24px;
+    #talks-page .talks-inner {
+      padding-left: 38px;
+      padding-right: 38px;
     }
 
-    .conversations-page h2,
-    .conversations-page h3,
-    .conversations-page h4 {
+    #talks-page h2,
+    #talks-page h3,
+    #talks-page h4 {
       color: #0d3d14 !important;
     }
 
-    .conversations-page .section-title {
-      font-size: clamp(28px, 3vw, 38px);
-      font-weight: 600;
-      margin-bottom: 20px;
+    #talks-page .section-heading {
+      font-size: clamp(28px, 3vw, 36px);
+      font-weight: 700;
+      margin-bottom: 18px;
     }
 
-    .conversations-page p,
-    .conversations-page li {
-      line-height: 1.8;
+    #talks-page p,
+    #talks-page li {
+      line-height: 1.75;
     }
 
-    /* Introduction */
-
-    .conversations-page .intro-list {
-      margin: 12px 0 25px;
-      padding-left: 22px;
+    #talks-page ul {
+      padding-left: 24px;
     }
 
-    .conversations-page .intro-list li {
-      margin-bottom: 4px;
+    #talks-page .intro-label {
+      display: block;
+      font-weight: 700;
+      margin-top: 22px;
     }
 
-    .conversations-page .intro-cta {
-      margin: 22px 0 32px;
+    /* Matching programme and speaker cards */
+
+    #talks-page .programme-grid > [class*="col-"] {
+      display: flex;
     }
 
-    /* Programme and speaker rows */
-
-    .conversations-page .content-row {
-      margin-bottom: 62px;
-      align-items: flex-start;
+    #talks-page .programme-card,
+    #talks-page .speaker-card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      overflow: hidden;
+      border: 0;
+      border-radius: 10px;
+      background: #ffffff;
+      text-align: left;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      transition: transform .25s ease, box-shadow .25s ease;
     }
 
-    /* All main content images use square frames */
+    #talks-page button.programme-card,
+    #talks-page button.speaker-card {
+      cursor: pointer;
+    }
 
-    .conversations-page .content-image {
+    #talks-page .programme-card:hover,
+    #talks-page .speaker-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.14);
+    }
+
+    #talks-page .programme-card:focus-visible,
+    #talks-page .speaker-card:focus-visible {
+      outline: 3px solid #0d3d14;
+      outline-offset: 4px;
+    }
+
+    #talks-page .programme-card > img,
+    #talks-page .speaker-card > img {
       display: block;
       width: 100%;
-      max-width: 400px;
       height: auto;
-      aspect-ratio: 1 / 1;
+      aspect-ratio: 4 / 3;
       object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    #talks-page .speaker-card > img {
+      aspect-ratio: 1 / 1;
+    }
+
+    #talks-page .card-copy {
+      padding: 20px;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+
+    #talks-page .card-copy h4 {
+      margin: 0 0 10px;
+      font-size: 21px;
+      font-weight: 700;
+    }
+
+    #talks-page .card-copy p {
+      color: #0d3d14;
+      margin: 0 0 15px;
+      font-size: 15px;
+      flex: 1;
+    }
+
+    #talks-page .card-link {
+      margin-top: auto;
+      font-weight: 600;
+      color: #0d3d14;
+    }
+
+    /* Pop-up information */
+
+    #talks-page .modal-section {
+      margin-top: 22px;
+    }
+
+    #talks-page .modal-section h5 {
+      color: #0d3d14 !important;
+      font-weight: 700;
+    }
+
+    #talks-page .modal-section li {
+      margin-bottom: 7px;
+    }
+
+    #talks-page .modal-image {
+      width: 100%;
+      max-height: 390px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    /* Gallery */
+
+    #talks-gallery .gallery-tile {
+      position: relative;
+      overflow: hidden;
       border-radius: 5px;
-      margin: 0 auto;
+      aspect-ratio: 1 / 1;
       background: #f3f6f1;
     }
 
-    /* Text alignment */
-
-    .conversations-page .content-details {
-      padding-top: 4px;
+    #talks-gallery .gallery-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      position: absolute;
+      inset: 0;
     }
 
-    .conversations-page .content-details h3 {
-      font-size: clamp(21px, 2.1vw, 25px);
-      font-weight: 600;
-      margin: 0 0 20px;
+    #talks-gallery .gallery-fallback {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      height: 100%;
+      color: #648063;
+      font-size: 14px;
+      border: 1px dashed #b2c6af;
     }
 
-    .conversations-page .content-details h4 {
-      font-size: 18px;
-      font-weight: 600;
-      margin: 20px 0 8px;
+    #talks-gallery .portfolio-info {
+      pointer-events: none;
+      opacity: 0 !important;
+      visibility: hidden;
+      transition: opacity .25s ease;
     }
 
-    .conversations-page .content-details ul,
-    .conversations-page .content-details ol {
-      padding-left: 22px;
-      margin: 0 0 18px;
+    #talks-gallery .gallery-tile:hover .portfolio-info {
+      opacity: 1 !important;
+      visibility: visible;
     }
 
-    .conversations-page .content-details p {
-      margin-bottom: 14px;
+    #talks-gallery .portfolio-info h4 {
+      color: #0d3d14 !important;
     }
 
-    /* Contact information */
+    /* Match the standard TGES footer */
 
-    .conversations-page .contact-line {
-      margin: 20px 0 38px;
+    .footer .credits a {
+      color: #ffffff !important;
     }
 
-    .conversations-page .contact-line a {
-      color: #0d3d14;
-      text-decoration: underline;
-    }
+    /* Mobile screens */
 
-    /* Speaker section */
-
-    .conversations-page .speakers-section {
-      padding-top: 12px;
-      padding-bottom: 46px;
-    }
-
-    /* Mobile layout */
-
-    @media (max-width: 991px) {
-
-      .conversations-page .content-section {
-        padding-top: 38px;
+    @media (max-width: 767px) {
+      #hero h1 {
+        font-size: 14vw !important;
       }
 
-      .conversations-page .content-row {
-        margin-bottom: 44px;
+      #hero table {
+        font-size: 13px;
       }
 
-      .conversations-page .content-details {
-        padding-top: 0;
+      #hero td {
+        padding-right: 4px;
       }
 
+      #talks-page .talks-block {
+        padding: 32px 0;
+      }
+
+      #talks-page .talks-inner {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      #talks-page .card-copy {
+        padding: 16px;
+      }
     }
-
   </style>
 
   <!--
-    Template: Selecao by BootstrapMade
+    Selecao template by BootstrapMade
     https://bootstrapmade.com/selecao-bootstrap-template/
   -->
-
 </head>
-
 
 <body class="index-page">
 
   <!-- HEADER -->
-
   <div class="littlegreengardians">
 
-    <header
-      id="header"
-      class="header d-flex align-items-center"
-    >
+    <header id="header" class="header d-flex align-items-center">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <div
-        class="container-fluid container-xl position-relative
-               d-flex align-items-center justify-content-between"
-      >
-
-        <a
-          href="index.html"
-          class="logo d-flex align-items-center"
-        >
-          <img
-            src="assets/img/tgeslogo.png"
-            alt="The Good Earth School"
-          >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/tgeslogo.png" alt="The Good Earth School">
         </a>
 
         <nav id="navmenu" class="navmenu">
-
           <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-
-            <li>
-              <a href="ourstory.html">Our Story</a>
-            </li>
-
-            <li>
-              <a href="projects.html">Notable Projects</a>
-            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ourstory.html">Our Story</a></li>
+            <li><a href="projects.html">Notable Projects</a></li>
 
             <li class="dropdown">
               <a href="#">
@@ -305,7 +307,6 @@
               </a>
 
               <ul>
-
                 <li class="dropdown">
                   <a href="https://thegoodearthschool.org/environment.html">
                     <span>For The Environment</span>
@@ -313,38 +314,15 @@
                   </a>
 
                   <ul>
-                    <li>
-                      <a href="preschool_programmes.html">
-                        Little Green Heroes
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="primary_programmes.html">
-                        Children's Voices for Biodiversity
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="youth_for_a_green_future.html">
-                        Youth for a Green Future
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="green_wisdom.html">
-                        Green Wisdom
-                      </a>
-                    </li>
+                    <li><a href="preschool_programmes.html">Little Green Heroes</a></li>
+                    <li><a href="primary_programmes.html">Children's Voices for Biodiversity</a></li>
+                    <li><a href="youth_for_a_green_future.html">Youth for a Green Future</a></li>
+                    <li><a href="green_wisdom.html">Green Wisdom</a></li>
                   </ul>
                 </li>
 
                 <li>
-                  <a
-                    href="animalallies.html"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="animalallies.html" target="_blank" rel="noopener noreferrer">
                     For The Animals
                   </a>
                 </li>
@@ -356,553 +334,636 @@
                   </a>
 
                   <ul>
-                    <li>
-                      <a href="sus_living.html">
-                        Sustainable Living
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="volunteer.html">
-                        Doing Good, Together.
-                      </a>
-                    </li>
+                    <li><a href="sus_living.html">Sustainable Living</a></li>
+                    <li><a href="volunteer.html">Doing Good, Together.</a></li>
                   </ul>
                 </li>
-
               </ul>
             </li>
           </ul>
 
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-
         </nav>
-
       </div>
     </header>
 
-
-    <!-- HERO SECTION -->
-
+    <!-- HERO AND BREADCRUMB -->
     <section
       id="hero"
       class="hero section"
       style="background-color: #0d3d1400; color: white;"
     >
-
       <div
         id="hero-carousel"
         class="container carousel carousel-fade"
         data-bs-interval="5000"
         data-bs-ride="carousel"
       >
-
         <div class="carousel-container">
 
           <h1
             class="animate__animated animate__fadeInDown"
             style="color: white; font-size: 9vw;"
           >
-            The Good Conversations
+            The Good Talks
           </h1>
 
-          <div
-            class="d-flex align-items-center gap-2 flex-wrap"
-            style="color: white;"
-          >
+          <br><br>
 
-            <a href="index.html" style="color: white;">
-              Home
-            </a>
+          <table aria-label="Breadcrumb">
+            <tr>
+              <td>
+                <i class="fa" style="font-size:20px" aria-hidden="true">
+                  &#xf015;
+                </i>
+              </td>
 
-            <span aria-hidden="true">&gt;</span>
+              <td>
+                <a href="index.html" style="color:white;">
+                  Home
+                </a>
+              </td>
 
-            <span>The Good Conversations</span>
+              <td>
+                <span style="font-size:20px;" aria-hidden="true">
+                  &#11208;
+                </span>
+              </td>
 
-          </div>
-
+              <td aria-current="page">
+                The Good Talks
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </section>
 
   </div>
 
-
-  <!-- MAIN CONTENT -->
-
-  <main class="main conversations-page">
-
+  <main class="main" id="talks-page">
 
     <!-- INTRODUCTION -->
+    <section class="portfolio section talks-block" id="talks-intro">
+      <div class="container talks-inner">
 
-    <section
-      class="content-section"
-      id="conversations-intro"
-    >
-
-      <div class="container content-wrap">
-
-        <h2 class="section-title">
-          The Good Conversations
-        </h2>
+        <h2 class="section-heading">The Good Talks</h2>
 
         <p>
-          <strong>
-            A space for anyone who wants to learn more.
-          </strong>
+          <strong>A space for anyone who wants to learn more.</strong>
         </p>
 
-        <p>
-          <strong>Workshops in this series</strong>
-        </p>
+        <p><strong>Talks in this series:</strong></p>
 
-        <ul class="intro-list">
+        <ul>
           <li>Parenting Talks</li>
           <li>Corporate Talks</li>
           <li>Career Pathway Conversations</li>
         </ul>
 
-        <p class="intro-cta">
+        <p>
           <a
-            href="mailto:hello@thegoodearthschool.org"
+            href="mailto:hello@thegoodearthschool.org?subject=The%20Good%20Talks%20Enquiry"
             class="custom-button"
           >
             Find Out More
           </a>
         </p>
 
-        <p>
-          <strong>Venue:</strong>
-          On campus, on site or at one of our
-          partner venues, including locations near
-          Tai Seng, Botanic Gardens and Maxwell.
-        </p>
+        <strong class="intro-label">
+          Venue: On campus, on site or at one of our partner venues!
+        </strong>
 
-        <p>
-          <strong>Fees:</strong>
-        </p>
+        <strong>Located near:</strong>
+        <ul>
+          <li>Tai Seng</li>
+          <li>Botanic Gardens</li>
+          <li>Maxwell</li>
+        </ul>
 
-        <ul class="intro-list">
+        <strong class="intro-label">Fees:</strong>
+        <ul>
           <li>Parenting Talks - S$500/talk</li>
           <li>Corporate Talks - S$800/talk</li>
           <li>Career Pathway Conversations - S$800/talk</li>
         </ul>
 
-      </div>
-    </section>
-
-
-    <!-- PROGRAMME SECTIONS -->
-
-    <section
-      class="content-section"
-      id="talk-programmes"
-    >
-
-      <div class="container content-wrap">
-
-
-        <!-- PROGRAMME 1: PARENTING AND ANIMALS -->
-
-        <article class="row g-4 content-row">
-
-          <div class="col-lg-6 text-center">
-
-            <img
-              class="content-image"
-              src="assets/img/pt2.webp"
-              alt="Parenting talk about kindness to animals"
-              loading="lazy"
-            >
-
-          </div>
-
-          <div class="col-lg-6 content-details">
-
-            <h3>
-              Parenting Talks - Nurturing Kindness
-              to Animals at Home
-            </h3>
-
-            <h4>What will be covered:</h4>
-
-            <ol>
-              <li>
-                Simple yet meaningful ways to foster
-                compassion and responsibility for animals.
-              </li>
-
-              <li>
-                Fun, hands-on ideas for building bonds
-                with pets or connecting with nature.
-              </li>
-
-              <li>
-                TGES resources to support you.
-              </li>
-            </ol>
-
-            <h4>Who should attend?</h4>
-
-            <p>
-              Parents eager to teach their children
-              how to care for animals and respect
-              all living beings.
-            </p>
-
-          </div>
-        </article>
-
-
-        <!-- PROGRAMME 2: PARENTING AND ENVIRONMENT -->
-
-        <article class="row g-4 content-row">
-
-          <div class="col-lg-6 text-center">
-
-            <img
-              class="content-image"
-              src="assets/img/pt.webp"
-              alt="Parenting talk about environmental care"
-              loading="lazy"
-            >
-
-          </div>
-
-          <div class="col-lg-6 content-details">
-
-            <h3>
-              Parenting Talks - Nurturing
-              Environmental Stewardship at Home
-            </h3>
-
-            <h4>What will be covered:</h4>
-
-            <ol>
-              <li>
-                How to instil environmental
-                stewardship at home.
-              </li>
-
-              <li>
-                Simple eco-friendly practices
-                for busy families.
-              </li>
-
-              <li>
-                TGES resources to support you.
-              </li>
-            </ol>
-
-            <h4>Why it matters:</h4>
-
-            <p>
-              Teaching environmental stewardship
-              at home equips children with the
-              mindset and habits to live sustainably.
-            </p>
-
-            <h4>Who should attend?</h4>
-
-            <p>
-              Parents eager to cultivate
-              sustainability values in their children.
-            </p>
-
-          </div>
-        </article>
-
-
-        <!-- PROGRAMME 3: CAREER PATHWAYS -->
-
-        <article class="row g-4 content-row">
-
-          <div class="col-lg-6 text-center">
-
-            <img
-              class="content-image"
-              src="assets/img/cp.webp"
-              alt="Career pathway conversation"
-              loading="lazy"
-            >
-
-          </div>
-
-          <div class="col-lg-6 content-details">
-
-            <h3>Career Pathways</h3>
-
-            <h4>Topics covered:</h4>
-
-            <ul>
-              <li>
-                Why we need the sustainability industry.
-              </li>
-
-              <li>
-                The relationship between the industry
-                and day-to-day consumers.
-              </li>
-
-              <li>
-                Understanding the sustainability
-                industry and possible career paths.
-              </li>
-            </ul>
-
-            <h4>Why it matters:</h4>
-
-            <p>
-              Understanding the sustainability sector
-              helps participants connect their interests
-              and skills to possible career options.
-            </p>
-
-            <h4>Who should attend?</h4>
-
-            <p>
-              Individuals who want to find out more
-              about jobs in the sustainability sector,
-              including fresh graduates, IHL interns
-              and career switchers.
-            </p>
-
-          </div>
-        </article>
-
-
-        <!-- PROGRAMME 4: CORPORATE TALKS -->
-
-        <article class="row g-4 content-row">
-
-          <div class="col-lg-6 text-center">
-
-            <img
-              class="content-image"
-              src="assets/img/ted.webp"
-              alt="Corporate talk on sustainability"
-              loading="lazy"
-            >
-
-          </div>
-
-          <div class="col-lg-6 content-details">
-
-            <h3>Corporate Talks</h3>
-
-            <h4>Topics covered:</h4>
-
-            <ul>
-              <li>The case for sustainability.</li>
-              <li>Current circular economy landscape.</li>
-              <li>What each individual can do.</li>
-            </ul>
-
-            <h4>Who should attend?</h4>
-
-            <p>
-              Corporates and departments interested in
-              reducing waste, their carbon footprint,
-              or simply learning how to live
-              more sustainably.
-            </p>
-
-          </div>
-        </article>
-
-
-        <!-- SOCIAL LINKS -->
-
-        <p class="contact-line">
-          Chat with us on
-          <a href="https://wa.me/+6587725464">
-            WhatsApp
-          </a>
-          or follow us on
-          <a href="https://www.instagram.com/thegoodearthschoolsg">
-            Instagram
-          </a>
-          for upcoming events.
+        <strong class="intro-label">Talks in this series:</strong>
+        <p>
+          Click on a talk to find out more about the topics covered and who should attend.
         </p>
 
       </div>
     </section>
 
+    <!-- TALK CARDS -->
+    <section class="portfolio section talks-block" id="talks-programmes">
+      <div class="container talks-inner">
+        <div class="row gy-4 programme-grid">
 
-    <!-- SPEAKERS -->
-
-    <section
-      class="content-section speakers-section"
-      id="speakers"
-    >
-
-      <div class="container content-wrap">
-
-        <h2 class="section-title">
-          Meet The Speakers
-        </h2>
-
-
-        <!-- SPEAKER 1: DR CYNTHIA WONG -->
-
-        <article class="row g-4 content-row">
-
-          <div class="col-lg-6 text-center">
-
-            <img
-              class="content-image"
-              src="assets/img/cynthia2.webp"
-              alt="Dr Cynthia Wong"
-              loading="lazy"
+          <!-- Parenting Talk: Animals -->
+          <div class="col-lg-4 col-md-6">
+            <button
+              class="programme-card"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#talkInfoModal"
+              data-title="Parenting Talks - Nurturing Kindness to Animals at Home"
+              data-image="assets/img/pt2.webp"
+              data-description="Simple ways for parents to foster care and responsibility for animals at home."
+              data-topics="Simple yet meaningful ways to foster compassion and responsibility for animals|Fun, hands-on ideas for building bonds with pets or connecting with nature|TGES resources to support you"
+              data-audience="Parents eager to teach their children how to care for animals and respect all living beings."
+              data-why=""
             >
+              <img
+                src="assets/img/pt2.webp"
+                alt="Parenting talk about kindness to animals"
+                loading="lazy"
+              >
 
+              <div class="card-copy">
+                <h4>Parenting Talks - Kindness to Animals</h4>
+                <p>
+                  Ways to foster compassion and responsibility for animals at home.
+                </p>
+
+                <span class="card-link">
+                  Find out more <i class="bi bi-arrow-right"></i>
+                </span>
+              </div>
+            </button>
           </div>
 
-          <div class="col-lg-6 content-details">
-
-            <h3>Dr Cynthia Wong</h3>
-
-            <h4>About the speaker</h4>
-
-            <p>
-              Dr Cynthia Wong is a seasoned marine
-              ecologist with 10 years of experience
-              in the academic and research industry.
-            </p>
-
-            <p>
-              She is committed to helping young
-              individuals develop a deep understanding
-              and appreciation for marine ecology.
-            </p>
-
-            <p>
-              Her dedication has motivated her to
-              educate young minds at different
-              Institutes of Higher Education.
-              Through her teaching, she not only
-              imparts knowledge but also cultivates
-              close collaboration with academia
-              and conservation partners, enhancing
-              her students' learning experiences
-              in science-related fields.
-            </p>
-
-          </div>
-        </article>
-
-
-        <!-- SPEAKER 2: COACH AIFA AHMAD -->
-
-        <article class="row g-4 content-row">
-
-          <div class="col-lg-6 text-center">
-
-            <img
-              class="content-image"
-              src="assets/img/aifa2.webp"
-              alt="Coach Aifa Ahmad"
-              loading="lazy"
+          <!-- Parenting Talk: Environment -->
+          <div class="col-lg-4 col-md-6">
+            <button
+              class="programme-card"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#talkInfoModal"
+              data-title="Parenting Talks - Nurturing Environmental Stewardship at Home"
+              data-image="assets/img/pt.webp"
+              data-description="Practical ways to help children develop care for the environment."
+              data-topics="How to instil environmental stewardship at home|Simple eco-friendly practices for busy families|TGES resources to support you"
+              data-audience="Parents eager to cultivate sustainability values in their children."
+              data-why="Teaching environmental stewardship at home equips children with the mindset and habits to live sustainably."
             >
+              <img
+                src="assets/img/pt.webp"
+                alt="Parenting talk about environmental stewardship"
+                loading="lazy"
+              >
 
+              <div class="card-copy">
+                <h4>Parenting Talks - Environmental Stewardship</h4>
+
+                <p>
+                  Simple practices for families to develop sustainable habits together.
+                </p>
+
+                <span class="card-link">
+                  Find out more <i class="bi bi-arrow-right"></i>
+                </span>
+              </div>
+            </button>
           </div>
 
-          <div class="col-lg-6 content-details">
-
-            <h3>Coach Aifa Ahmad</h3>
-
-            <h4>About the speaker</h4>
-
-            <p>
-              Aifa Ahmad is a seasoned trainer and
-              coach with over 20 years of experience
-              in teambuilding, facilitation,
-              and outdoor education.
-            </p>
-
-            <p>
-              Her passion for training began when
-              she was a teen, where she saw the value
-              of sharing knowledge and inspiring
-              others through outdoor training.
-              Over the years, Aifa has cultivated
-              expertise in wellness and entrepreneurship,
-              delivering programmes that support
-              individuals and foster personal growth.
-            </p>
-
-            <p>
-              Her work has reached diverse audiences,
-              from students to professionals, as she
-              continues to champion meaningful
-              connections and positive change
-              through her facilitation.
-            </p>
-
-          </div>
-        </article>
-
-
-        <!-- SPEAKER 3: JERYL YEP -->
-
-        <article class="row g-4 content-row">
-
-          <div class="col-lg-6 text-center">
-
-            <img
-              class="content-image"
-              src="assets/img/jeryl2.webp"
-              alt="Jeryl Yep"
-              loading="lazy"
+          <!-- Career Pathway Conversations -->
+          <div class="col-lg-4 col-md-6">
+            <button
+              class="programme-card"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#talkInfoModal"
+              data-title="Career Pathway Conversations"
+              data-image="assets/img/cp.webp"
+              data-description="Find out more about work and career options in the sustainability sector."
+              data-topics="Why we need the sustainability industry|The relationship between the industry and day-to-day consumers|Understanding the sustainability industry and possible career paths"
+              data-audience="Individuals interested in jobs in the sustainability sector, including fresh graduates, IHL interns and career switchers."
+              data-why="Understanding the sustainability sector helps participants connect their interests and skills to possible career options."
             >
+              <img
+                src="assets/img/cp.webp"
+                alt="Career pathway conversation"
+                loading="lazy"
+              >
 
+              <div class="card-copy">
+                <h4>Career Pathway Conversations</h4>
+
+                <p>
+                  Learn about the sustainability industry and possible career options.
+                </p>
+
+                <span class="card-link">
+                  Find out more <i class="bi bi-arrow-right"></i>
+                </span>
+              </div>
+            </button>
           </div>
 
-          <div class="col-lg-6 content-details">
+          <!-- Corporate Talks -->
+          <div class="col-lg-4 col-md-6">
+            <button
+              class="programme-card"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#talkInfoModal"
+              data-title="Corporate Talks"
+              data-image="assets/img/ted.webp"
+              data-description="Explore sustainability, circular economy topics and practical choices for everyday life."
+              data-topics="The case for sustainability|Current circular economy landscape|What each individual can do"
+              data-audience="Corporates and departments interested in reducing waste, their carbon footprint, or simply learning how to live more sustainably."
+              data-why=""
+            >
+              <img
+                src="assets/img/ted.webp"
+                alt="Corporate talk on sustainability"
+                loading="lazy"
+              >
 
-            <h3>Jeryl Yep</h3>
+              <div class="card-copy">
+                <h4>Corporate Talks</h4>
 
-            <h4>About the speaker</h4>
+                <p>
+                  Sustainability, circular economy topics and steps individuals can take.
+                </p>
 
-            <p>
-              Jeryl Yep is an innovator and trained
-              chemical engineer with a wealth of
-              experience in environmental leadership.
-              His career path began with roles focused
-              on driving environmental responsibility,
-              including his time as an environmental
-              engineer at a local NGO, where he led
-              certifications, product development,
-              and training programmes.
-            </p>
-
-            <p>
-              He also championed energy-saving
-              initiatives and guided students and
-              industries in adopting more sustainable
-              practices. Jeryl continues to inspire
-              collaboration and create solutions
-              that support individuals and businesses
-              in making a lasting impact on
-              the environment.
-            </p>
-
+                <span class="card-link">
+                  Find out more <i class="bi bi-arrow-right"></i>
+                </span>
+              </div>
+            </button>
           </div>
-        </article>
 
+        </div>
       </div>
     </section>
 
+    <!-- TALK INFORMATION POP-UP -->
+    <div
+      class="modal fade"
+      id="talkInfoModal"
+      tabindex="-1"
+      aria-labelledby="talkInfoModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h2 class="modal-title fs-4" id="talkInfoModalTitle">
+              Talk Information
+            </h2>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              id="talkInfoModalImage"
+              class="modal-image mb-4"
+              src=""
+              alt=""
+            >
+
+            <p id="talkInfoModalDescription"></p>
+
+            <div class="modal-section">
+              <h5>What will be covered:</h5>
+              <ul id="talkInfoModalTopics"></ul>
+            </div>
+
+            <div class="modal-section" id="talkInfoWhySection" hidden>
+              <h5>Why it matters:</h5>
+              <p id="talkInfoModalWhy"></p>
+            </div>
+
+            <div class="modal-section">
+              <h5>Who should attend?</h5>
+              <p id="talkInfoModalAudience"></p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+
+            <a
+              id="talkInfoModalEmail"
+              href="mailto:hello@thegoodearthschool.org"
+              class="btn btn-success"
+            >
+              Find Out More
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SPEAKERS -->
+    <section class="portfolio section talks-block" id="talks-speakers">
+      <div class="container talks-inner">
+
+        <h2 class="section-heading">Meet The Speakers</h2>
+
+        <div class="row gy-4 programme-grid">
+
+          <!-- Dr Cynthia Wong -->
+          <div class="col-lg-4 col-md-6">
+            <button
+              class="speaker-card"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#speakerInfoModal"
+              data-name="Dr Cynthia Wong"
+              data-image="assets/img/cynthia2.webp"
+              data-bio="Dr Cynthia Wong is a seasoned marine ecologist with 10 years of experience in the academic and research industry.|She is committed to helping young individuals develop a deep understanding and appreciation for marine ecology.|Her dedication has motivated her to educate young minds at different Institutes of Higher Education. Through her teaching, she not only imparts knowledge but also cultivates close collaboration with academia and conservation partners, enhancing her students' learning experiences in science-related fields."
+            >
+              <img
+                src="assets/img/cynthia2.webp"
+                alt="Dr Cynthia Wong"
+                loading="lazy"
+              >
+
+              <div class="card-copy">
+                <h4>Dr Cynthia Wong</h4>
+
+                <p>
+                  Marine ecologist with 10 years of experience in academia and research.
+                </p>
+
+                <span class="card-link">
+                  About the speaker <i class="bi bi-arrow-right"></i>
+                </span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Coach Aifa Ahmad -->
+          <div class="col-lg-4 col-md-6">
+            <button
+              class="speaker-card"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#speakerInfoModal"
+              data-name="Coach Aifa Ahmad"
+              data-image="assets/img/aifa2.webp"
+              data-bio="Aifa Ahmad is a seasoned trainer and coach with over 20 years of experience in teambuilding, facilitation, and outdoor education.|Her passion for training began when she was a teen, where she saw the value of sharing knowledge and inspiring others through outdoor training. Over the years, Aifa has cultivated expertise in wellness and entrepreneurship, delivering programmes that support individuals and foster personal growth.|Her work has reached diverse audiences, from students to professionals, as she continues to champion meaningful connections and positive change through her facilitation."
+            >
+              <img
+                src="assets/img/aifa2.webp"
+                alt="Coach Aifa Ahmad"
+                loading="lazy"
+              >
+
+              <div class="card-copy">
+                <h4>Coach Aifa Ahmad</h4>
+
+                <p>
+                  Trainer and coach with over 20 years of experience in facilitation and outdoor education.
+                </p>
+
+                <span class="card-link">
+                  About the speaker <i class="bi bi-arrow-right"></i>
+                </span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Jeryl Yep -->
+          <div class="col-lg-4 col-md-6">
+            <button
+              class="speaker-card"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#speakerInfoModal"
+              data-name="Jeryl Yep"
+              data-image="assets/img/jeryl2.webp"
+              data-bio="Jeryl Yep is an innovator and trained chemical engineer with a wealth of experience in environmental leadership. His career path began with roles focused on driving environmental responsibility, including his time as an environmental engineer at a local NGO, where he led certifications, product development, and training programmes.|He also championed energy-saving initiatives and guided students and industries in adopting more sustainable practices. Jeryl continues to inspire collaboration and create solutions that support individuals and businesses in making a lasting impact on the environment."
+            >
+              <img
+                src="assets/img/jeryl2.webp"
+                alt="Jeryl Yep"
+                loading="lazy"
+              >
+
+              <div class="card-copy">
+                <h4>Jeryl Yep</h4>
+
+                <p>
+                  Chemical engineer with experience in environmental projects and training.
+                </p>
+
+                <span class="card-link">
+                  About the speaker <i class="bi bi-arrow-right"></i>
+                </span>
+              </div>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKER INFORMATION POP-UP -->
+    <div
+      class="modal fade"
+      id="speakerInfoModal"
+      tabindex="-1"
+      aria-labelledby="speakerInfoModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h2 class="modal-title fs-4" id="speakerInfoModalTitle">
+              About the speaker
+            </h2>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              id="speakerInfoModalImage"
+              src=""
+              class="modal-image mb-4"
+              alt=""
+            >
+
+            <div id="speakerInfoModalBio"></div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section class="portfolio section talks-block" id="talks-contact">
+      <div class="container talks-inner">
+        <p>
+          Chat with us on
+          <a
+            style="text-decoration:underline;"
+            href="https://wa.me/6587725464"
+          >
+            WhatsApp
+          </a>
+          or follow us on
+          <a
+            style="text-decoration:underline;"
+            href="https://www.instagram.com/thegoodearthschoolsg"
+          >
+            Instagram
+          </a>
+          for upcoming events.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="portfolio section talks-block" id="talks-gallery">
+      <div class="container talks-inner">
+
+        <h2 class="section-heading">Gallery</h2>
+
+        <p>
+          Highlights from The Good Talks. Images can be added as sessions take place.
+        </p>
+
+        <div class="row gy-4 mt-1">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-tile">
+              <span class="gallery-fallback">Photo 1</span>
+              <img
+                src="assets/img/gt1.webp"
+                alt="The Good Talks gallery 1"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-tile">
+              <span class="gallery-fallback">Photo 2</span>
+              <img
+                src="assets/img/gt2.webp"
+                alt="The Good Talks gallery 2"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-tile">
+              <span class="gallery-fallback">Photo 3</span>
+              <img
+                src="assets/img/gt3.webp"
+                alt="The Good Talks gallery 3"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-tile">
+              <span class="gallery-fallback">Photo 4</span>
+              <img
+                src="assets/img/gt4.webp"
+                alt="The Good Talks gallery 4"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-tile">
+              <span class="gallery-fallback">Photo 5</span>
+              <img
+                src="assets/img/gt5.webp"
+                alt="The Good Talks gallery 5"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-tile">
+              <span class="gallery-fallback">Photo 6</span>
+              <img
+                src="assets/img/gt6.webp"
+                alt="The Good Talks gallery 6"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-tile">
+              <span class="gallery-fallback">Photo 7</span>
+              <img
+                src="assets/img/gt7.webp"
+                alt="The Good Talks gallery 7"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="gallery-tile">
+              <span class="gallery-fallback">Photo 8</span>
+              <img
+                src="assets/img/gt8.webp"
+                alt="The Good Talks gallery 8"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              >
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
-
-  <!-- FOOTER -->
-
-  <footer
-    id="footer"
-    class="footer footer-background"
-  >
-
+  <!-- STANDARD TGES FOOTER -->
+  <footer id="footer" class="footer footer-background">
     <div class="container">
 
       <img
@@ -911,13 +972,16 @@
         alt="The Good Earth School"
       >
 
+      <br>
+
       <div
         class="social-links d-flex justify-content-center"
-        style="padding: 20px;"
+        style="padding:20px;"
       >
-
         <a
           href="https://www.instagram.com/thegoodearthschoolsg"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Instagram"
         >
           <i class="bi bi-instagram"></i>
@@ -925,56 +989,49 @@
 
         <a
           href="mailto:hello@thegoodearthschool.org"
-          aria-label="Email"
           title="Email Us"
+          aria-label="Email"
         >
           <i class="bi bi-envelope"></i>
         </a>
 
         <a
           href="https://www.linkedin.com/company/-tges/"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
           <i class="bi bi-linkedin"></i>
         </a>
-
       </div>
 
-      <div class="copyright">
-        <span>
-          Corporate | Media | Partnerships |
-          Everything - Planet, Animals, Humans
-        </span>
-      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>
+            Corporate | Media | Partnerships | Everything - Planet, Animals, Humans
+          </span>
+        </div>
 
-      <div class="credits">
+        <div class="credits">
+          <a
+            href="mailto:hello@thegoodearthschool.org"
+            style="color:#ffffff !important;"
+          >
+            hello@thegoodearthschool.org
+          </a>
 
-        <p>hello@thegoodearthschool.org</p>
+          <hr>
 
-        <hr>
-
-        <span>
-          &copy; The Good Earth School.
-          All Rights Reserved
-        </span>
-
-        <p>
-          <small>
-            Designed by
-            <a href="https://bootstrapmade.com/">
-              BootstrapMade
-            </a>
-          </small>
-        </p>
-
+          <span>
+            &copy; The Good Earth School. All Rights Reserved
+          </span>
+        </div>
       </div>
 
     </div>
   </footer>
 
-
-  <!-- Scroll to top -->
-
+  <!-- SCROLL TOP -->
   <a
     href="#"
     id="scroll-top"
@@ -986,9 +1043,7 @@
 
   <div id="preloader"></div>
 
-
   <!-- Existing JavaScript -->
-
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -997,7 +1052,89 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+  <script>
+    if (typeof PureCounter !== 'undefined') new PureCounter();
+  </script>
+
   <script src="assets/js/main.js"></script>
 
+  <!-- POP-UP FUNCTIONS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Talk information
+      const talkModal = document.getElementById('talkInfoModal');
+
+      talkModal.addEventListener('show.bs.modal', function (event) {
+        const card = event.relatedTarget;
+        if (!card) return;
+
+        const title = card.dataset.title || 'Talk Information';
+
+        document.getElementById('talkInfoModalTitle').textContent = title;
+
+        const image = document.getElementById('talkInfoModalImage');
+        image.src = card.dataset.image || '';
+        image.alt = title;
+
+        document.getElementById('talkInfoModalDescription').textContent =
+          card.dataset.description || '';
+
+        const topics = document.getElementById('talkInfoModalTopics');
+        topics.replaceChildren();
+
+        (card.dataset.topics || '')
+          .split('|')
+          .filter(Boolean)
+          .forEach(function (value) {
+            const li = document.createElement('li');
+            li.textContent = value.trim();
+            topics.appendChild(li);
+          });
+
+        const why = card.dataset.why || '';
+
+        document.getElementById('talkInfoWhySection').hidden = !why;
+        document.getElementById('talkInfoModalWhy').textContent = why;
+
+        document.getElementById('talkInfoModalAudience').textContent =
+          card.dataset.audience || '';
+
+        document.getElementById('talkInfoModalEmail').href =
+          'mailto:hello@thegoodearthschool.org?subject=' +
+          encodeURIComponent(title + ' Enquiry');
+      });
+
+      // Speaker biographies
+      const speakerModal = document.getElementById('speakerInfoModal');
+
+      speakerModal.addEventListener('show.bs.modal', function (event) {
+        const card = event.relatedTarget;
+        if (!card) return;
+
+        const name = card.dataset.name || 'About the speaker';
+
+        document.getElementById('speakerInfoModalTitle').textContent = name;
+
+        const image = document.getElementById('speakerInfoModalImage');
+        image.src = card.dataset.image || '';
+        image.alt = name;
+
+        const bio = document.getElementById('speakerInfoModalBio');
+        bio.replaceChildren();
+
+        (card.dataset.bio || '')
+          .split('|')
+          .filter(Boolean)
+          .forEach(function (paragraph) {
+            const p = document.createElement('p');
+            p.textContent = paragraph.trim();
+            bio.appendChild(p);
+          });
+      });
+
+    });
+  </script>
 </body>
 </html>
